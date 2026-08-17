@@ -1,0 +1,73 @@
+# Candidate models for the EmoNet-Face E0 sweep.
+# Columns: <hf_id> <lf_template> <weights_gb> <act_gb_per_sample> <env> <notes>
+#
+# weights_gb        resting VRAM after the model loads (VramTracker's after_load).
+# act_gb_per_sample activation + KV cost per image in a batch, at --max-image-pixels 262144.
+#
+# Both are MEASURED. Peak VRAM is linear in batch size -- evaluation/vram_profile.py's sweeps
+# show it cleanly (Qwen2.5-VL-3B activations at bs 4/8/16: 2.00 / 4.08 / 8.21 GB) -- so these
+# two numbers reproduce every measured point and extrapolate to any card:
+#
+#     peak_gb(bs, arm) = weights_gb + act_gb_per_sample * bs * ARM_FACTOR[arm]
+#
+# evaluation/vram_map.py inverts that for the largest batch a given GPU pool can hold and
+# emits the matching gres request. It replaces the old `shard_gb` and `batch_size` columns,
+# which were measured once on a 46 GB A40 and then reused verbatim -- on the HPC cluster's 80 GB A100
+# that left more than half the card idle, and on the `ours` arm GLM-4.6V-Flash used 22.6 GB
+# of a 35 GB request.
+#
+#     python evaluation/vram_map.py --gpu a100 --arm paper_retry
+#     python evaluation/vram_map.py --gpu a40  --arm ours
+#
+# Where the slope came from: (peak - weights) / batch_size on each model's completed
+# `paper_retry` run -- the FULL runs, not the profile sweeps. The profiles ran `paper_once`
+# over 16 images and understate a real run, because it is generated length, not prompt
+# length, that drives the KV cache. Fitting the profile and then applying a blanket safety
+# factor punished models that were already cheap: gemma-4-12B's real arm cost is 1.04x, so a
+# global 1.5x pushed it from a batch of 8 that demonstrably worked down to 6. Fitting the
+# most expensive arm directly makes the table reproduce every measured peak by construction,
+# and vram_map.py's ARM_FACTOR scales the cheaper arms down from there.
+#
+# MiniCPM-V-4.6 is the one row that is NOT measured -- it has never completed a run. Its two
+# numbers are back-solved from the old shard request of 28 GB and should be replaced the
+# first time it profiles.
+#
+# Measured at --max-image-pixels 262144, which beat 1048576 on every single model while using
+# 5-7 GB less VRAM. A larger pixel cap raises the slope (GLM 0.78 -> ~1.15), so these numbers
+# are valid at 262144 only -- re-profile if that changes.
+#
+# The shard request itself has not changed meaning: the A40 nodes advertise shard:a40:144
+# over 3 GPUs (48 shards per 46 GB card, 960 MiB each) and the H100 node 94 shards per card
+# (1019 MiB), so a shard is ~1 GB on both and sizes port across pools. Requesting gpu:a40:1
+# reserves no VRAM at all and lets two models collide on one card, which is how
+# Ministral-3-14B OOM'd with 15 MiB free. the HPC cluster has no shard gres and allocates whole GPUs.
+#
+# WARNING on batch sizes above 16: vram_profile.py defaulted to --images 16 and builds one
+# batch from exactly that many images, so bs=24 silently re-ran the same 16 as a batch of 16
+# and reported identical numbers. This file's previous claim that "throughput saturates at
+# batch 16 (24 measures identically), so 16 is the cap" was that artifact, not a finding.
+# VRAM above 16 extrapolates cleanly; THROUGHPUT above 16 has never been measured. Re-profile
+# with --images 128 --batch-sizes 8,16,32,64 before treating the top of the range as a
+# throughput recommendation.
+#
+# --- newest per family, 7-14B band ---
+Qwen/Qwen3.5-9B qwen3_5_nothink 17.84 1.41 emonet-cu130 newest-qwen-native-mm
+google/gemma-4-12B-it gemma4n 22.58 1.89 emonet-cu130 needs-transformers>5.8-emonet-infer
+zai-org/GLM-4.6V-Flash glm4_5v 19.45 1.02 emonet-cu130 zhipu
+mistralai/Ministral-3-14B-Instruct-2512 ministral3 28.62 1.47 emonet-cu130 mistral,no-h100-fp8-kernels-package-missing
+OpenGVLab/InternVL3_5-8B-HF intern_vl 16.78 1.14 emonet-cu130 opengvlab
+openbmb/MiniCPM-V-4.6 minicpm_v_4_6 18.00 0.90 emonet-lf openbmb-UNPROFILED-back-solved-from-old-shard-28,no-h100-env-emonet-lf-absent-there
+Qwen/Qwen3-VL-8B-Instruct qwen3_vl_nothink 16.86 1.16 emonet-cu130 qwen-prev-gen
+XiaomiMiMo/MiMo-VL-7B-RL-2508 qwen2_vl 15.73 1.20 emonet-cu130 xiaomi
+# internlm/Intern-S1-mini intern_s1 - - internlm  [STRUCK: see docs/model_selection.md]
+# OpenMOSS-Team/MOSS-VL-Instruct-0708 moss_vl - - emonet-h100  [STRUCK: needs transformers.utils.generic.OutputRecorder, absent in 5.14.1; CUDA13 on H100 fixed torchcodec but not this]
+# tencent/Youtu-VL-4B-Instruct youtu_vl - - tencent-small  [STRUCK: see docs/model_selection.md]
+# microsoft/Phi-4-multimodal-instruct - - - eval-only-no-lf-template  [STRUCK: see docs/model_selection.md]
+#
+# --- controls / anchors ---
+Qwen/Qwen2.5-VL-3B-Instruct qwen2_vl 7.57 0.76 emonet-cu130 weak-base-control
+google/gemma-3-4b-it gemma3 8.63 0.99 emonet-cu130 best-measured-open
+google/gemma-3-12b-it gemma3 23.00 2.09 emonet-cu130 generational-pair
+#
+# --- struck off ---
+# Kwai-Keye/Keye-VL-1_5-8B keye_vl - - config not registered under any AutoModel class

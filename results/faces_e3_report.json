@@ -1,0 +1,625 @@
+{
+  "results_dir": "results_faces",
+  "replicates": 200,
+  "rows": [
+    {
+      "model": "GLM-4.6V-Flash",
+      "acc_verify": 0.7110136452241715,
+      "acc_generative": 0.7046783625730995,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.006335282651072083,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": -0.007334307992202715,
+        "ci_hi": 0.020467836257309968,
+        "excludes_zero": false
+      },
+      "verify_by_age": {
+        "middle": 0.7172619047619048,
+        "old": 0.6432748538011696,
+        "young": 0.771551724137931
+      },
+      "verify_by_gender": {
+        "female": 0.7333333333333333,
+        "male": 0.688953488372093
+      },
+      "verify_by_emotion": {
+        "anger": 0.7309941520467836,
+        "disgust": 0.23976608187134502,
+        "fear": 0.9239766081871345,
+        "happy": 1.0,
+        "neutral": 0.9883040935672515,
+        "sad": 0.3830409356725146
+      },
+      "generative_by_age": {
+        "middle": 0.6979166666666666,
+        "old": 0.6432748538011696,
+        "young": 0.771551724137931
+      },
+      "generative_by_gender": {
+        "female": 0.7107843137254902,
+        "male": 0.6986434108527132
+      },
+      "generative_by_emotion": {
+        "anger": 0.4415204678362573,
+        "disgust": 0.52046783625731,
+        "fear": 0.9707602339181286,
+        "happy": 1.0,
+        "neutral": 0.9883040935672515,
+        "sad": 0.30701754385964913
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.0029239766081871343,
+        "acc_a": 0.7110136452241715,
+        "acc_b": 0.7119883040935673,
+        "acc_delta": 0.0009746588693957392,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "acc_verify": 0.8401559454191033,
+      "acc_generative": 0.8001949317738791,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.0399610136452242,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": 0.024792884990253346,
+        "ci_hi": 0.052156432748538054,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.8571428571428571,
+        "old": 0.7558479532163743,
+        "young": 0.9066091954022989
+      },
+      "verify_by_gender": {
+        "female": 0.8284313725490197,
+        "male": 0.8517441860465116
+      },
+      "verify_by_emotion": {
+        "anger": 0.6871345029239766,
+        "disgust": 0.5935672514619883,
+        "fear": 0.9152046783625731,
+        "happy": 1.0,
+        "neutral": 0.9707602339181286,
+        "sad": 0.8742690058479532
+      },
+      "generative_by_age": {
+        "middle": 0.8095238095238095,
+        "old": 0.7339181286549707,
+        "young": 0.8563218390804598
+      },
+      "generative_by_gender": {
+        "female": 0.8049019607843138,
+        "male": 0.7955426356589147
+      },
+      "generative_by_emotion": {
+        "anger": 0.3830409356725146,
+        "disgust": 0.8976608187134503,
+        "fear": 0.9122807017543859,
+        "happy": 1.0,
+        "neutral": 1.0,
+        "sad": 0.6081871345029239
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.009259259259259259,
+        "acc_a": 0.8401559454191033,
+        "acc_b": 0.8347953216374269,
+        "acc_delta": 0.005360623781676455,
+        "same_mount": false
+      }
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "acc_verify": 0.6232943469785575,
+      "acc_generative": 0.6437621832358674,
+      "unparsed_generative": 0,
+      "gate": "INVALID",
+      "gate_gap": 0.1736765088622252,
+      "delta": -0.020467836257309968,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": -0.034125243664717426,
+        "ci_hi": -0.007785087719298242,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.6309523809523809,
+        "old": 0.5804093567251462,
+        "young": 0.6580459770114943
+      },
+      "verify_by_gender": {
+        "female": 0.6088235294117647,
+        "male": 0.6375968992248062
+      },
+      "verify_by_emotion": {
+        "anger": 0.7514619883040936,
+        "disgust": 0.23976608187134502,
+        "fear": 0.6491228070175439,
+        "happy": 1.0,
+        "neutral": 0.9912280701754386,
+        "sad": 0.10818713450292397
+      },
+      "generative_by_age": {
+        "middle": 0.6681547619047619,
+        "old": 0.5891812865497076,
+        "young": 0.6738505747126436
+      },
+      "generative_by_gender": {
+        "female": 0.6431372549019608,
+        "male": 0.6443798449612403
+      },
+      "generative_by_emotion": {
+        "anger": 0.6900584795321637,
+        "disgust": 0.2631578947368421,
+        "fear": 0.7339181286549707,
+        "happy": 1.0,
+        "neutral": 0.97953216374269,
+        "sad": 0.195906432748538
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.010721247563352826,
+        "acc_a": 0.6232943469785575,
+        "acc_b": 0.6228070175438597,
+        "acc_delta": 0.0004873294346977586,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "acc_verify": 0.6686159844054581,
+      "acc_generative": 0.6588693957115009,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.00974658869395717,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": -0.010233918128654929,
+        "ci_hi": 0.029727095516569157,
+        "excludes_zero": false
+      },
+      "verify_by_age": {
+        "middle": 0.6696428571428571,
+        "old": 0.6008771929824561,
+        "young": 0.7341954022988506
+      },
+      "verify_by_gender": {
+        "female": 0.6754901960784314,
+        "male": 0.6618217054263565
+      },
+      "verify_by_emotion": {
+        "anger": 0.868421052631579,
+        "disgust": 0.05555555555555555,
+        "fear": 0.7339181286549707,
+        "happy": 1.0,
+        "neutral": 0.9824561403508771,
+        "sad": 0.3713450292397661
+      },
+      "generative_by_age": {
+        "middle": 0.6636904761904762,
+        "old": 0.5760233918128655,
+        "young": 0.735632183908046
+      },
+      "generative_by_gender": {
+        "female": 0.6490196078431373,
+        "male": 0.6686046511627907
+      },
+      "generative_by_emotion": {
+        "anger": 0.45614035087719296,
+        "disgust": 0.5175438596491229,
+        "fear": 0.7982456140350878,
+        "happy": 1.0,
+        "neutral": 1.0,
+        "sad": 0.18128654970760233
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.0043859649122807015,
+        "acc_a": 0.6686159844054581,
+        "acc_b": 0.6695906432748538,
+        "acc_delta": 0.0009746588693957392,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "acc_verify": 0.6842105263157895,
+      "acc_generative": 0.5696881091617934,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.11452241715399614,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": 0.10085282651072122,
+        "ci_hi": 0.13014132553606242,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.6904761904761905,
+        "old": 0.5687134502923976,
+        "young": 0.7916666666666666
+      },
+      "verify_by_gender": {
+        "female": 0.6676470588235294,
+        "male": 0.7005813953488372
+      },
+      "verify_by_emotion": {
+        "anger": 0.5380116959064327,
+        "disgust": 0.28654970760233917,
+        "fear": 0.8654970760233918,
+        "happy": 0.9970760233918129,
+        "neutral": 0.827485380116959,
+        "sad": 0.5906432748538012
+      },
+      "generative_by_age": {
+        "middle": 0.5818452380952381,
+        "old": 0.4502923976608187,
+        "young": 0.6752873563218391
+      },
+      "generative_by_gender": {
+        "female": 0.5774509803921568,
+        "male": 0.562015503875969
+      },
+      "generative_by_emotion": {
+        "anger": 0.19298245614035087,
+        "disgust": 0.06725146198830409,
+        "fear": 0.7807017543859649,
+        "happy": 0.956140350877193,
+        "neutral": 0.8742690058479532,
+        "sad": 0.5467836257309941
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "acc_verify": 0.577485380116959,
+      "acc_generative": 0.5263157894736842,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.051169590643274865,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": 0.0360501949317739,
+        "ci_hi": 0.0697246588693957,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.5744047619047619,
+        "old": 0.5292397660818714,
+        "young": 0.6278735632183908
+      },
+      "verify_by_gender": {
+        "female": 0.5754901960784313,
+        "male": 0.5794573643410853
+      },
+      "verify_by_emotion": {
+        "anger": 0.17251461988304093,
+        "disgust": 0.8070175438596491,
+        "fear": 0.3362573099415205,
+        "happy": 0.9766081871345029,
+        "neutral": 1.0,
+        "sad": 0.17251461988304093
+      },
+      "generative_by_age": {
+        "middle": 0.5372023809523809,
+        "old": 0.46637426900584794,
+        "young": 0.5747126436781609
+      },
+      "generative_by_gender": {
+        "female": 0.5313725490196078,
+        "male": 0.5213178294573644
+      },
+      "generative_by_emotion": {
+        "anger": 0.3713450292397661,
+        "disgust": 0.41812865497076024,
+        "fear": 0.41228070175438597,
+        "happy": 0.8713450292397661,
+        "neutral": 1.0,
+        "sad": 0.0847953216374269
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.021929824561403508,
+        "acc_a": 0.577485380116959,
+        "acc_b": 0.5799220272904484,
+        "acc_delta": 0.002436647173489348,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "acc_verify": 0.7621832358674464,
+      "acc_generative": 0.7519493177387915,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.010233918128654929,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": -0.0029361598440546615,
+        "ci_hi": 0.023879142300194944,
+        "excludes_zero": false
+      },
+      "verify_by_age": {
+        "middle": 0.7752976190476191,
+        "old": 0.6944444444444444,
+        "young": 0.8160919540229885
+      },
+      "verify_by_gender": {
+        "female": 0.7676470588235295,
+        "male": 0.7567829457364341
+      },
+      "verify_by_emotion": {
+        "anger": 0.8070175438596491,
+        "disgust": 0.08771929824561403,
+        "fear": 0.9619883040935673,
+        "happy": 1.0,
+        "neutral": 0.9707602339181286,
+        "sad": 0.7456140350877193
+      },
+      "generative_by_age": {
+        "middle": 0.7485119047619048,
+        "old": 0.6637426900584795,
+        "young": 0.8419540229885057
+      },
+      "generative_by_gender": {
+        "female": 0.7627450980392156,
+        "male": 0.7412790697674418
+      },
+      "generative_by_emotion": {
+        "anger": 0.6988304093567251,
+        "disgust": 0.32748538011695905,
+        "fear": 0.9502923976608187,
+        "happy": 1.0,
+        "neutral": 0.9941520467836257,
+        "sad": 0.5409356725146199
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.00682261208576998,
+        "acc_a": 0.7621832358674464,
+        "acc_b": 0.7597465886939572,
+        "acc_delta": 0.002436647173489237,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "acc_verify": 0.8148148148148148,
+      "acc_generative": 0.7514619883040936,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.06335282651072116,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": 0.049707602339181256,
+        "ci_hi": 0.07407407407407407,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.8169642857142857,
+        "old": 0.7821637426900585,
+        "young": 0.8448275862068966
+      },
+      "verify_by_gender": {
+        "female": 0.8107843137254902,
+        "male": 0.8187984496124031
+      },
+      "verify_by_emotion": {
+        "anger": 0.3216374269005848,
+        "disgust": 0.8888888888888888,
+        "fear": 0.9678362573099415,
+        "happy": 1.0,
+        "neutral": 0.9883040935672515,
+        "sad": 0.7222222222222222
+      },
+      "generative_by_age": {
+        "middle": 0.75,
+        "old": 0.7090643274853801,
+        "young": 0.7945402298850575
+      },
+      "generative_by_gender": {
+        "female": 0.7617647058823529,
+        "male": 0.7412790697674418
+      },
+      "generative_by_emotion": {
+        "anger": 0.05263157894736842,
+        "disgust": 0.9707602339181286,
+        "fear": 0.9766081871345029,
+        "happy": 1.0,
+        "neutral": 1.0,
+        "sad": 0.5087719298245614
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.012183235867446393,
+        "acc_a": 0.8148148148148148,
+        "acc_b": 0.8109161793372319,
+        "acc_delta": 0.003898635477582846,
+        "same_mount": false
+      }
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "acc_verify": 0.6749512670565302,
+      "acc_generative": 0.7383040935672515,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": -0.06335282651072127,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": -0.07703460038986362,
+        "ci_hi": -0.04824561403508776,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.6413690476190477,
+        "old": 0.6228070175438597,
+        "young": 0.7586206896551724
+      },
+      "verify_by_gender": {
+        "female": 0.6715686274509803,
+        "male": 0.6782945736434108
+      },
+      "verify_by_emotion": {
+        "anger": 0.3157894736842105,
+        "disgust": 0.7777777777777778,
+        "fear": 0.9883040935672515,
+        "happy": 1.0,
+        "neutral": 0.30994152046783624,
+        "sad": 0.6578947368421053
+      },
+      "generative_by_age": {
+        "middle": 0.7306547619047619,
+        "old": 0.7017543859649122,
+        "young": 0.7816091954022989
+      },
+      "generative_by_gender": {
+        "female": 0.7303921568627451,
+        "male": 0.7461240310077519
+      },
+      "generative_by_emotion": {
+        "anger": 0.2573099415204678,
+        "disgust": 0.8245614035087719,
+        "fear": 0.9912280701754386,
+        "happy": 1.0,
+        "neutral": 0.9707602339181286,
+        "sad": 0.38596491228070173
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.014132553606237816,
+        "acc_a": 0.6749512670565302,
+        "acc_b": 0.6744639376218323,
+        "acc_delta": 0.0004873294346978696,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "acc_verify": 0.7368421052631579,
+      "acc_generative": 0.6876218323586745,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.049220272904483386,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": 0.03406432748538009,
+        "ci_hi": 0.06728801169590647,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.7455357142857143,
+        "old": 0.6418128654970761,
+        "young": 0.8218390804597702
+      },
+      "verify_by_gender": {
+        "female": 0.7176470588235294,
+        "male": 0.7558139534883721
+      },
+      "verify_by_emotion": {
+        "anger": 0.2807017543859649,
+        "disgust": 0.5760233918128655,
+        "fear": 0.9736842105263158,
+        "happy": 1.0,
+        "neutral": 0.6900584795321637,
+        "sad": 0.9005847953216374
+      },
+      "generative_by_age": {
+        "middle": 0.6934523809523809,
+        "old": 0.5833333333333334,
+        "young": 0.7844827586206896
+      },
+      "generative_by_gender": {
+        "female": 0.6892156862745098,
+        "male": 0.686046511627907
+      },
+      "generative_by_emotion": {
+        "anger": 0.4152046783625731,
+        "disgust": 0.30701754385964913,
+        "fear": 0.97953216374269,
+        "happy": 0.9941520467836257,
+        "neutral": 0.9912280701754386,
+        "sad": 0.43859649122807015
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.018518518518518517,
+        "acc_a": 0.7368421052631579,
+        "acc_b": 0.7387914230019493,
+        "acc_delta": 0.0019493177387914784,
+        "same_mount": true
+      }
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "acc_verify": 0.7821637426900585,
+      "acc_generative": 0.7168615984405458,
+      "unparsed_generative": 0,
+      "gate": "CLEAN",
+      "gate_gap": 0.0,
+      "delta": 0.06530214424951275,
+      "paired_ci": {
+        "n_persons": 171,
+        "ci_lo": 0.048708576998050625,
+        "ci_hi": 0.08333333333333326,
+        "excludes_zero": true
+      },
+      "verify_by_age": {
+        "middle": 0.78125,
+        "old": 0.7134502923976608,
+        "young": 0.8505747126436781
+      },
+      "verify_by_gender": {
+        "female": 0.788235294117647,
+        "male": 0.7761627906976745
+      },
+      "verify_by_emotion": {
+        "anger": 0.15789473684210525,
+        "disgust": 0.9064327485380117,
+        "fear": 0.9532163742690059,
+        "happy": 1.0,
+        "neutral": 0.9883040935672515,
+        "sad": 0.6871345029239766
+      },
+      "generative_by_age": {
+        "middle": 0.7217261904761905,
+        "old": 0.5847953216374269,
+        "young": 0.8419540229885057
+      },
+      "generative_by_gender": {
+        "female": 0.7323529411764705,
+        "male": 0.7015503875968992
+      },
+      "generative_by_emotion": {
+        "anger": 0.13742690058479531,
+        "disgust": 0.695906432748538,
+        "fear": 0.9385964912280702,
+        "happy": 1.0,
+        "neutral": 1.0,
+        "sad": 0.5292397660818714
+      },
+      "numerical": {
+        "n": 2052,
+        "label_churn": 0.015107212475633527,
+        "acc_a": 0.7821637426900585,
+        "acc_b": 0.7831384015594542,
+        "acc_delta": 0.0009746588693957392,
+        "same_mount": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/hq.csv
+data/FACES/
+data/faces_siglip2_emb.npz

@@ -1,0 +1,126 @@
+{
+  "n": 2052,
+  "collapsed_classes": [
+    "angry",
+    "neutral"
+  ],
+  "surviving_classes": [
+    "disgust",
+    "fear",
+    "happy",
+    "sad"
+  ],
+  "axes": {
+    "age": {
+      "per_class": {
+        "angry": {
+          "young": 0.0,
+          "middle": 0.0,
+          "old": 0.0
+        },
+        "disgust": {
+          "young": 0.8448275862068966,
+          "middle": 0.9285714285714286,
+          "old": 0.9473684210526315
+        },
+        "fear": {
+          "young": 0.603448275862069,
+          "middle": 0.6517857142857143,
+          "old": 0.5701754385964912
+        },
+        "happy": {
+          "young": 1.0,
+          "middle": 1.0,
+          "old": 1.0
+        },
+        "neutral": {
+          "young": 0.008620689655172414,
+          "middle": 0.0,
+          "old": 0.0
+        },
+        "sad": {
+          "young": 0.9568965517241379,
+          "middle": 0.8660714285714286,
+          "old": 0.5526315789473685
+        }
+      },
+      "micro": {
+        "young": 0.5689655172413793,
+        "middle": 0.5744047619047619,
+        "old": 0.5116959064327485
+      },
+      "macro_all": {
+        "young": 0.5689655172413793,
+        "middle": 0.5744047619047619,
+        "old": 0.5116959064327485
+      },
+      "macro_surviving": {
+        "young": 0.8512931034482758,
+        "middle": 0.8616071428571428,
+        "old": 0.7675438596491229
+      },
+      "spread_macro_all": 0.06270885547201333,
+      "spread_macro_surviving": 0.09406328320801993,
+      "ci_macro_all": [
+        0.029789643379281586,
+        0.10682498152949707
+      ],
+      "ci_macro_surviving": [
+        0.04315700941778521,
+        0.15959702679367008
+      ],
+      "verdict": "group effect survives composition control"
+    },
+    "gender": {
+      "per_class": {
+        "angry": {
+          "female": 0.0,
+          "male": 0.0
+        },
+        "disgust": {
+          "female": 0.8588235294117647,
+          "male": 0.9534883720930233
+        },
+        "fear": {
+          "female": 0.6058823529411764,
+          "male": 0.6104651162790697
+        },
+        "happy": {
+          "female": 1.0,
+          "male": 1.0
+        },
+        "neutral": {
+          "female": 0.0,
+          "male": 0.005813953488372093
+        },
+        "sad": {
+          "female": 0.7941176470588235,
+          "male": 0.7906976744186046
+        }
+      },
+      "micro": {
+        "female": 0.5431372549019607,
+        "male": 0.560077519379845
+      },
+      "macro_all": {
+        "female": 0.5431372549019607,
+        "male": 0.560077519379845
+      },
+      "macro_surviving": {
+        "female": 0.8147058823529412,
+        "male": 0.8386627906976745
+      },
+      "spread_macro_all": 0.016940264477884215,
+      "spread_macro_surviving": 0.023956908344733296,
+      "ci_macro_all": [
+        0.0007898856112948578,
+        0.051429581964220525
+      ],
+      "ci_macro_surviving": [
+        0.0012345340681869988,
+        0.07466646141215108
+      ],
+      "verdict": "consistent with no group effect"
+    }
+  }
+}

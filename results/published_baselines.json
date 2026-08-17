@@ -1,0 +1,93 @@
+{
+  "anchor": 0.46831394640244495,
+  "reliable_alpha": 0.3,
+  "n_reliable": 5,
+  "rows": [
+    {
+      "annotator": "Empathic Insight Face Small",
+      "kappa_w": 0.5506499449815777,
+      "mean_nonzero": 17.172206647977575,
+      "sd_nonzero": 2.602788863582662
+    },
+    {
+      "annotator": "Empathic Insight Face Large",
+      "kappa_w": 0.5341161060690276,
+      "mean_nonzero": 18.710130718954247,
+      "sd_nonzero": 2.9180465054123377
+    },
+    {
+      "annotator": "Gemini 2.0 Flash ZS",
+      "kappa_w": 0.4988018837393608,
+      "mean_nonzero": 19.498,
+      "sd_nonzero": 8.507337773945501
+    },
+    {
+      "annotator": "Hume Face*",
+      "kappa_w": 0.46590441581146075,
+      "mean_nonzero": 31,
+      "sd_nonzero": 0.0
+    },
+    {
+      "annotator": "Gemini 2.5 Flash MS",
+      "kappa_w": 0.41885537981747306,
+      "mean_nonzero": 4.925570228091236,
+      "sd_nonzero": 0.3442525655700312
+    },
+    {
+      "annotator": "Gemini 2.5 Pro 03-25 ZS",
+      "kappa_w": 0.4182193971751615,
+      "mean_nonzero": 4.837588267246062,
+      "sd_nonzero": 0.5097841678895471
+    },
+    {
+      "annotator": "Gemini 2.0 Flash MS",
+      "kappa_w": 0.37478938413311247,
+      "mean_nonzero": 4.176282051282051,
+      "sd_nonzero": 0.654874442799297
+    },
+    {
+      "annotator": "Qwen Plus ZS",
+      "kappa_w": 0.010983428634155667,
+      "mean_nonzero": 25,
+      "sd_nonzero": 0.0
+    },
+    {
+      "annotator": "GPT-4o ZS",
+      "kappa_w": 0.009893576374900093,
+      "mean_nonzero": 24.9968,
+      "sd_nonzero": 0.15996799679935983
+    },
+    {
+      "annotator": "Random Baseline",
+      "kappa_w": 0.008864084674970619,
+      "mean_nonzero": 40,
+      "sd_nonzero": 0.0
+    },
+    {
+      "annotator": "Pixtral Large ZS",
+      "kappa_w": 0.0069997278731244615,
+      "mean_nonzero": 24.9924,
+      "sd_nonzero": 0.3799239923984796
+    },
+    {
+      "annotator": "Claude 3.7 MS",
+      "kappa_w": 0.006341904682466026,
+      "mean_nonzero": 4.6712,
+      "sd_nonzero": 0.7698639879874886
+    },
+    {
+      "annotator": "Nova Pro ZS",
+      "kappa_w": 0.0050593269922383,
+      "mean_nonzero": 25,
+      "sd_nonzero": 0.0
+    },
+    {
+      "annotator": "Gemini 2.5 Flash ZS",
+      "kappa_w": 0.0016660704465754517,
+      "mean_nonzero": 25,
+      "sd_nonzero": 0.0
+    }
+  ],
+  "human_nonzero_mean": 8.1368,
+  "human_nonzero_sd": 4.000610673384752
+}

@@ -1,0 +1,27 @@
+{
+  "replicates": 200,
+  "n_models": 11,
+  "models": [
+    "GLM-4.6V-Flash",
+    "InternVL3_5-8B-HF",
+    "MiMo-VL-7B-RL-2508",
+    "MiniCPM-V-4.6",
+    "Ministral-3-14B-Instruct-2512",
+    "Qwen2.5-VL-3B-Instruct",
+    "Qwen3-VL-8B-Instruct",
+    "Qwen3.5-9B",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
+    "gemma-4-12B-it"
+  ],
+  "kappa_drop_mean": -0.19351274604314203,
+  "kappa_drop_ci": [
+    -0.20557614607780106,
+    -0.1820098886807803
+  ],
+  "map_drop_mean": -0.24750497506714325,
+  "map_drop_ci": [
+    -0.25368742552130746,
+    -0.24026811366129391
+  ]
+}

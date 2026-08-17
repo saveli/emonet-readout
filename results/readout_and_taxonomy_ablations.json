@@ -1,0 +1,203 @@
+{
+  "results_dir": "results_verify_prefill",
+  "threshold": 0.5,
+  "anchors": {
+    "reliable_5": 0.46831394640244495,
+    "unreliable_35": 0.1664829999712868,
+    "all_40": 0.20421186827518154
+  },
+  "rows": [
+    {
+      "arm": "GLM-4.6V-Flash",
+      "kappa_continuous": 0.5860710956047585,
+      "kappa_binarised": 0.38081769836680424,
+      "map_continuous": 0.8169737427531547,
+      "map_binarised": 0.6267985665210192,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5860710956047585,
+      "kappa_unreliable_35": 0.24960532696323148,
+      "kappa_all_40": 0.2916635480434223,
+      "readout_delta": -0.20525339723795422
+    },
+    {
+      "arm": "InternVL3_5-8B-HF",
+      "kappa_continuous": 0.5756251122521341,
+      "kappa_binarised": 0.4227315084239994,
+      "map_continuous": 0.8133388724636677,
+      "map_binarised": 0.5383534239369411,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5756251122521341,
+      "kappa_unreliable_35": 0.2493161418567732,
+      "kappa_all_40": 0.2901047631561934,
+      "readout_delta": -0.15289360382813466
+    },
+    {
+      "arm": "MiMo-VL-7B-RL-2508",
+      "kappa_continuous": 0.5476247055213546,
+      "kappa_binarised": 0.31648708090117433,
+      "map_continuous": 0.7754457689173098,
+      "map_binarised": 0.5028447123621653,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5476247055213546,
+      "kappa_unreliable_35": 0.21557415789614254,
+      "kappa_all_40": 0.2570804763492941,
+      "readout_delta": -0.23113762462018023
+    },
+    {
+      "arm": "MiniCPM-V-4.6",
+      "kappa_continuous": 0.5346229835952848,
+      "kappa_binarised": 0.37918690075708705,
+      "map_continuous": 0.711286327667216,
+      "map_binarised": 0.5783420553297582,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5346229835952848,
+      "kappa_unreliable_35": 0.20285130377672464,
+      "kappa_all_40": 0.24432276375404466,
+      "readout_delta": -0.15543608283819776
+    },
+    {
+      "arm": "Ministral-3-14B-Instruct-2512",
+      "kappa_continuous": 0.5352502785143409,
+      "kappa_binarised": 0.35883006281211666,
+      "map_continuous": 0.7635306460305278,
+      "map_binarised": 0.5559894630235587,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5352502785143409,
+      "kappa_unreliable_35": 0.19281031721349112,
+      "kappa_all_40": 0.23561531237609729,
+      "readout_delta": -0.17642021570222427
+    },
+    {
+      "arm": "Qwen2.5-VL-3B-Instruct",
+      "kappa_continuous": 0.5071767373634124,
+      "kappa_binarised": 0.31659445278782467,
+      "map_continuous": 0.7433297995944786,
+      "map_binarised": 0.5564084316525195,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5071767373634124,
+      "kappa_unreliable_35": 0.19036574476640739,
+      "kappa_all_40": 0.229967118841033,
+      "readout_delta": -0.19058228457558773
+    },
+    {
+      "arm": "Qwen3-VL-8B-Instruct",
+      "kappa_continuous": 0.5550608592629199,
+      "kappa_binarised": 0.3996812745164225,
+      "map_continuous": 0.7892743096606222,
+      "map_binarised": 0.55989447947067,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5550608592629199,
+      "kappa_unreliable_35": 0.22169115877805995,
+      "kappa_all_40": 0.26336237133866747,
+      "readout_delta": -0.15537958474649743
+    },
+    {
+      "arm": "Qwen3.5-9B",
+      "kappa_continuous": 0.565599582444001,
+      "kappa_binarised": 0.40836624221824885,
+      "map_continuous": 0.8025843765142527,
+      "map_binarised": 0.5422373136615366,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.565599582444001,
+      "kappa_unreliable_35": 0.2334069294920898,
+      "kappa_all_40": 0.27493101111107865,
+      "readout_delta": -0.15723334022575214
+    },
+    {
+      "arm": "baseline:all-one",
+      "kappa_continuous": 0.008359955230412974,
+      "kappa_binarised": 0.008359955230412974,
+      "map_continuous": 0.40168,
+      "map_binarised": 0.40168,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.008359955230412974,
+      "kappa_unreliable_35": 0.002153889440906807,
+      "kappa_all_40": 0.0029296476645950783,
+      "readout_delta": 0.0
+    },
+    {
+      "arm": "baseline:all-zero",
+      "kappa_continuous": 0.008359955230412974,
+      "kappa_binarised": 0.008359955230412974,
+      "map_continuous": 0.40168,
+      "map_binarised": 0.40168,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.008359955230412974,
+      "kappa_unreliable_35": 0.002153889440906807,
+      "kappa_all_40": 0.0029296476645950783,
+      "readout_delta": 0.0
+    },
+    {
+      "arm": "baseline:gt-prior",
+      "kappa_continuous": 0.008359955230412974,
+      "kappa_binarised": 0.008359955230412974,
+      "map_continuous": 0.40168,
+      "map_binarised": 0.40168,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.008359955230412974,
+      "kappa_unreliable_35": 0.002153889440906807,
+      "kappa_all_40": 0.0029296476645950783,
+      "readout_delta": 0.0
+    },
+    {
+      "arm": "baseline:per-emotion-mean",
+      "kappa_continuous": 0.008359955230412974,
+      "kappa_binarised": 0.008359955230412974,
+      "map_continuous": 0.40168,
+      "map_binarised": 0.40168,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.008359955230412974,
+      "kappa_unreliable_35": 0.002153889440906807,
+      "kappa_all_40": 0.0029296476645950783,
+      "readout_delta": 0.0
+    },
+    {
+      "arm": "baseline:random",
+      "kappa_continuous": 0.003540871928612144,
+      "kappa_binarised": 0.013171376133026791,
+      "map_continuous": 0.40399353539262306,
+      "map_binarised": 0.4007875354452087,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.003540871928612144,
+      "kappa_unreliable_35": 0.0012724898114559726,
+      "kappa_all_40": 0.001556037576100494,
+      "readout_delta": 0.009630504204414646
+    },
+    {
+      "arm": "gemma-3-12b-it",
+      "kappa_continuous": 0.5267657865190349,
+      "kappa_binarised": 0.3023053521347318,
+      "map_continuous": 0.7774769998744333,
+      "map_binarised": 0.558529681347798,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5267657865190349,
+      "kappa_unreliable_35": 0.2044799665910723,
+      "kappa_all_40": 0.24476569408206766,
+      "readout_delta": -0.22446043438430313
+    },
+    {
+      "arm": "gemma-3-4b-it",
+      "kappa_continuous": 0.5207971580885642,
+      "kappa_binarised": 0.2538478222244057,
+      "map_continuous": 0.7173512550930194,
+      "map_binarised": 0.5554627366162348,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5207971580885642,
+      "kappa_unreliable_35": 0.19855672732863403,
+      "kappa_all_40": 0.23883678117362525,
+      "readout_delta": -0.2669493358641585
+    },
+    {
+      "arm": "gemma-4-12B-it",
+      "kappa_continuous": 0.5591460389759441,
+      "kappa_binarised": 0.344314671767057,
+      "map_continuous": 0.7957066484971709,
+      "map_binarised": 0.5204914806658844,
+      "tie_fraction_binarised": 1.0,
+      "kappa_reliable_5": 0.5591460389759441,
+      "kappa_unreliable_35": 0.21574304970237987,
+      "kappa_all_40": 0.25866842336157536,
+      "readout_delta": -0.21483136720888707
+    }
+  ]
+}

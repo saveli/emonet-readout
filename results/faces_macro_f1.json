@@ -1,0 +1,182 @@
+{
+  "replicates": 2000,
+  "seed": 0,
+  "n_persons": 171,
+  "n_images": 2052,
+  "n_gate_passed": 10,
+  "mean_delta_acc": 0.03464912280701754,
+  "mean_delta_f1": 0.03448687188924112,
+  "mean_delta_f1_ci": [
+    0.02724023143447529,
+    0.0422164369797373
+  ],
+  "mean_delta_f1_excludes_zero": true,
+  "n_delta_f1_excludes_zero": 7,
+  "rows": [
+    {
+      "model": "GLM-4.6V-Flash",
+      "gate": "CLEAN",
+      "acc_generative": 0.7046783625730995,
+      "acc_verify": 0.7110136452241715,
+      "delta_acc": 0.006335282651072083,
+      "f1_generative": 0.6886521875942991,
+      "f1_verify": 0.6893616885622377,
+      "delta_f1": 0.0007095009679385367,
+      "delta_f1_ci": [
+        -0.015204650500825154,
+        0.0170512195527869
+      ],
+      "delta_f1_excludes_zero": false
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "gate": "CLEAN",
+      "acc_generative": 0.8001949317738791,
+      "acc_verify": 0.8401559454191033,
+      "delta_acc": 0.0399610136452242,
+      "f1_generative": 0.788420313797474,
+      "f1_verify": 0.8382694474001858,
+      "delta_f1": 0.049849133602711815,
+      "delta_f1_ci": [
+        0.03383745166210204,
+        0.06501525549717017
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "gate": "INVALID",
+      "acc_generative": 0.6437621832358674,
+      "acc_verify": 0.6232943469785575,
+      "delta_acc": -0.020467836257309968,
+      "f1_generative": 0.6121536724561286,
+      "f1_verify": 0.5792754986948049,
+      "delta_f1": -0.03287817376132374,
+      "delta_f1_ci": [
+        -0.04945886031414565,
+        -0.016576816832401857
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "gate": "CLEAN",
+      "acc_generative": 0.6588693957115009,
+      "acc_verify": 0.6686159844054581,
+      "delta_acc": 0.00974658869395717,
+      "f1_generative": 0.6431116996982306,
+      "f1_verify": 0.6258772856325664,
+      "delta_f1": -0.017234414065664172,
+      "delta_f1_ci": [
+        -0.03792232276082611,
+        0.0036260869792517133
+      ],
+      "delta_f1_excludes_zero": false
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "gate": "CLEAN",
+      "acc_generative": 0.5696881091617934,
+      "acc_verify": 0.6842105263157895,
+      "delta_acc": 0.11452241715399614,
+      "f1_generative": 0.5386704817941604,
+      "f1_verify": 0.6760582841351992,
+      "delta_f1": 0.13738780234103876,
+      "delta_f1_ci": [
+        0.11975401494357779,
+        0.15471313932341002
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "gate": "CLEAN",
+      "acc_generative": 0.5263157894736842,
+      "acc_verify": 0.577485380116959,
+      "delta_acc": 0.051169590643274865,
+      "f1_generative": 0.5149490677443801,
+      "f1_verify": 0.5348299854180311,
+      "delta_f1": 0.019880917673650966,
+      "delta_f1_ci": [
+        0.0007255927129499686,
+        0.04045262444674247
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "gate": "CLEAN",
+      "acc_generative": 0.7519493177387915,
+      "acc_verify": 0.7621832358674464,
+      "delta_acc": 0.010233918128654929,
+      "f1_generative": 0.7406189149067087,
+      "f1_verify": 0.7285037135987887,
+      "delta_f1": -0.012115201307919987,
+      "delta_f1_ci": [
+        -0.027411714275578456,
+        0.003563220780674104
+      ],
+      "delta_f1_excludes_zero": false
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "gate": "CLEAN",
+      "acc_generative": 0.7514619883040936,
+      "acc_verify": 0.8148148148148148,
+      "delta_acc": 0.06335282651072116,
+      "f1_generative": 0.7000717105452271,
+      "f1_verify": 0.8014704896197724,
+      "delta_f1": 0.10139877907454531,
+      "delta_f1_ci": [
+        0.0840933468715939,
+        0.11910269317910756
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "gate": "CLEAN",
+      "acc_generative": 0.7383040935672515,
+      "acc_verify": 0.6749512670565302,
+      "delta_acc": -0.06335282651072127,
+      "f1_generative": 0.7102824136176059,
+      "f1_verify": 0.6588117517041829,
+      "delta_f1": -0.05147066191342298,
+      "delta_f1_ci": [
+        -0.07050310322662577,
+        -0.033578659860316384
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "gate": "CLEAN",
+      "acc_generative": 0.6876218323586745,
+      "acc_verify": 0.7368421052631579,
+      "delta_acc": 0.049220272904483386,
+      "f1_generative": 0.6712676009198887,
+      "f1_verify": 0.7273501847500342,
+      "delta_f1": 0.05608258383014553,
+      "delta_f1_ci": [
+        0.03687301723755077,
+        0.07556764390522026
+      ],
+      "delta_f1_excludes_zero": true
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "gate": "CLEAN",
+      "acc_generative": 0.7168615984405458,
+      "acc_verify": 0.7821637426900585,
+      "delta_acc": 0.06530214424951275,
+      "f1_generative": 0.6895969688859248,
+      "f1_verify": 0.7499772475753123,
+      "delta_f1": 0.060380278689387445,
+      "delta_f1_ci": [
+        0.04294035043509965,
+        0.07757346126276973
+      ],
+      "delta_f1_excludes_zero": true
+    }
+  ]
+}
