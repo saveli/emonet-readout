@@ -1,0 +1,44 @@
+Data licence
+
+Applies to the DATA in this repository: results/ and data/.
+The code (evaluation/ and analysis/) is covered by LICENSE instead.
+
+Copyright (c) 2026 <ANONYMISED FOR REVIEW>
+
+Except where stated below, these files are licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0):
+
+    https://creativecommons.org/licenses/by/4.0/
+    Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+You may share and adapt them for any purpose, including commercially, provided
+you give appropriate credit and indicate whether changes were made.
+
+UPSTREAM TERMS THAT SURVIVE THIS GRANT
+
+1. Predictions over EmoNet-Face-HQ are derived from a corpus released by its
+   authors under CC BY 4.0. Attribution runs to them as well as to this work.
+
+2. Predictions over FACES (results/faces/, results/faces_noimg/,
+   results/faces_rows3/, and any file derived from them) are derived from a
+   corpus distributed under a research agreement that we cannot sublicense.
+   They are provided for verification of the results reported in the paper.
+   Anyone redistributing or reusing them must obtain their own FACES licence
+   from the corpus authors; the CC BY grant above does not extend to them.
+
+USE RESTRICTIONS INHERITED FROM EMONET-FACE-HQ
+
+Its dataset card states that the corpus, and models trained on it, must not be
+used in sensitive, high-stakes domains. That covers, at least:
+
+  * emotion recognition in workplaces or educational settings
+  * real-time or retrospective surveillance in public spaces
+  * law enforcement, border control, or asylum decisions
+  * credit scoring, insurance, or hiring decisions
+  * any application involving manipulation, deception, or unlawful
+    discrimination
+
+These restrictions are the corpus authors', not conditions of CC BY 4.0. We
+reproduce them because this repository ships artifacts derived from that corpus,
+and because the paper's own finding is that scores in this domain are easy to
+mistake for measurements of perception.

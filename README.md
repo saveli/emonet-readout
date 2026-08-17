@@ -114,6 +114,21 @@ Pass `--gate off` for the ungated numbers.
 
 ## License
 
-Code is released under the MIT License (`LICENSE`). Predictions are derived works of the
-respective corpora and inherit their terms; consult the original dataset licenses before
-redistributing.
+Two licences, because the code and the numbers need different ones — Creative Commons
+licences are not intended for software, and MIT is a poor fit for a table of results.
+
+| what | licence |
+|---|---|
+| `evaluation/`, `analysis/` — the code | MIT (`LICENSE`) |
+| `results/`, `data/` — the predictions and computed tables | CC BY 4.0 (`LICENSE-DATA`) |
+
+CC BY 4.0 matches EmoNet-Face-HQ upstream. Two things survive that grant and are spelled out
+in `LICENSE-DATA`:
+
+- **Predictions over FACES cannot be sublicensed by us.** That corpus ships under a research
+  agreement; its predictions are here so the paper's results can be verified, and anyone
+  reusing them needs their own FACES licence from the corpus authors.
+- **EmoNet-Face-HQ's use restrictions are inherited.** Its dataset card forbids use in
+  workplace or educational emotion recognition, surveillance, law enforcement, border and
+  asylum decisions, credit, insurance or hiring. Those are the corpus authors' conditions,
+  not conditions of CC BY, and they apply to what is shipped here.
