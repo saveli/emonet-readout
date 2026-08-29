@@ -75,7 +75,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--results-dir", type=Path, default=Path("results_faces_noimg"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/noimg_control.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/noimg_control.json"))
     args = ap.parse_args()
 
     files = sorted(p for p in args.results_dir.glob("*__faces_*.json")

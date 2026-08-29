@@ -96,7 +96,7 @@ def main() -> int:
     ap.add_argument("--results-dir", type=Path, default=Path("results_e1"))
     ap.add_argument("--hq-csv", type=Path, default=Path("/tmp/hq.csv"))
     ap.add_argument("--index-map", type=Path, default=Path("data/hq_image_index_map.json"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/e1_report.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/e1_report.json"))
     ap.add_argument("--seed", type=int, default=0)
     args = ap.parse_args()
 

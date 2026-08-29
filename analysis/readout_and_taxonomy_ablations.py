@@ -77,7 +77,7 @@ def main() -> int:
     ap.add_argument("--hq-csv", type=Path, default=Path("/tmp/hq.csv"))
     ap.add_argument("--index-map", type=Path, default=Path("data/hq_image_index_map.json"))
     ap.add_argument("--out", type=Path,
-                    default=Path("analysis/readout_and_taxonomy_ablations.json"))
+                    default=Path("results/readout_and_taxonomy_ablations.json"))
     ap.add_argument("--threshold", type=float, default=0.5,
                     help="P(yes) cut standing in for the greedy-decoded answer")
     args = ap.parse_args()

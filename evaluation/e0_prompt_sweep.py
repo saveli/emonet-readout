@@ -320,6 +320,11 @@ def write_results(args, ordered, attempts, emotions, n, started, suffix="", vram
             # elapsed_s is visibly NOT the total compute the row cost.
             "resumed_from": resumed_from,
             "vram": vram.summary() if vram is not None else None,
+            # The image cap is part of a run's identity and used to be absent here, which
+            # made results_e0_px1024 unverifiable after the fact: e0_submit.sh defaults
+            # PIXELS to 262144 and passes it explicitly, so a run that MEANT 1048576 but
+            # lost the env var is byte-indistinguishable from the 512 sweep in its output.
+            "max_image_pixels": args.max_image_pixels,
             "attn": args.attn, "thinking": args.thinking,
             "sampling": {"policy": args.sampling, "seed": args.seed,
                          "accept": resolve_accept(args),

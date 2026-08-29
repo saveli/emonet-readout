@@ -62,7 +62,7 @@ def main() -> int:
     ap.add_argument("--results-dir", type=Path, default=Path("results_verify_prefill"))
     ap.add_argument("--hq-csv", type=Path, default=Path("data/hq.csv"))
     ap.add_argument("--index-map", type=Path, default=Path("data/hq_image_index_map.json"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/readout_bootstrap.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/readout_bootstrap.json"))
     ap.add_argument("-B", "--replicates", type=int, default=500)
     ap.add_argument("--threshold", type=float, default=0.5)
     ap.add_argument("--seed", type=int, default=0)

@@ -1,0 +1,90 @@
+{
+ "params_b": {
+  "GLM-4.6V-Flash": 10.29,
+  "InternVL3_5-8B-HF": 8.53,
+  "MiMo-VL-7B-RL-2508": 8.31,
+  "MiniCPM-V-4.6": 1.3,
+  "Ministral-3-14B-Instruct-2512": 13.95,
+  "Qwen2.5-VL-3B-Instruct": 3.75,
+  "Qwen3-VL-8B-Instruct": 8.77,
+  "Qwen3.5-9B": 9.65,
+  "gemma-3-4b-it": 4.3,
+  "gemma-3-12b-it": 12.19,
+  "gemma-4-12B-it": 11.96
+ },
+ "correlations": [
+  {
+   "label": "five reliable, as reported",
+   "n": 11,
+   "spearman_rho": 0.36363636363636365,
+   "spearman_p": 0.2716375409938228,
+   "pearson_r": 0.4082071483528922,
+   "pearson_p": 0.21263049865867745
+  },
+  {
+   "label": "five reliable, leakage-adjusted",
+   "n": 11,
+   "spearman_rho": 0.43636363636363645,
+   "spearman_p": 0.17966487658001123,
+   "pearson_r": 0.5696083179233407,
+   "pearson_p": 0.06736618661475867
+  },
+  {
+   "label": "all 40, as reported",
+   "n": 11,
+   "spearman_rho": 0.24545454545454545,
+   "spearman_p": 0.4669223669820163,
+   "pearson_r": 0.2730275831685275,
+   "pearson_p": 0.41660813636808197
+  }
+ ],
+ "kappa_five": {
+  "GLM-4.6V-Flash": 0.5860710956047585,
+  "InternVL3_5-8B-HF": 0.5756251122521341,
+  "MiMo-VL-7B-RL-2508": 0.5476247055213546,
+  "MiniCPM-V-4.6": 0.5346229835952848,
+  "Ministral-3-14B-Instruct-2512": 0.5352502785143409,
+  "Qwen2.5-VL-3B-Instruct": 0.5071767373634124,
+  "Qwen3-VL-8B-Instruct": 0.5550608592629199,
+  "Qwen3.5-9B": 0.565599582444001,
+  "baseline:all-one": 0.008359955230412974,
+  "baseline:all-zero": 0.008359955230412974,
+  "baseline:gt-prior": 0.008359955230412974,
+  "baseline:per-emotion-mean": 0.008359955230412974,
+  "baseline:random": 0.003540871928612144,
+  "gemma-3-12b-it": 0.5267657865190349,
+  "gemma-3-4b-it": 0.5207971580885642,
+  "gemma-4-12B-it": 0.5591460389759441
+ },
+ "kappa_all40": {
+  "GLM-4.6V-Flash": 0.2916635480434223,
+  "InternVL3_5-8B-HF": 0.2901047631561934,
+  "MiMo-VL-7B-RL-2508": 0.25708047634929404,
+  "MiniCPM-V-4.6": 0.24432276375404466,
+  "Ministral-3-14B-Instruct-2512": 0.23561531237609734,
+  "Qwen2.5-VL-3B-Instruct": 0.229967118841033,
+  "Qwen3-VL-8B-Instruct": 0.2633623713386674,
+  "Qwen3.5-9B": 0.27493101111107865,
+  "gemma-3-12b-it": 0.24476569408206764,
+  "gemma-3-4b-it": 0.23883678117362525,
+  "gemma-4-12B-it": 0.25866842336157536
+ },
+ "leakage": {
+  "GLM-4.6V-Flash": 0.002159765349280973,
+  "InternVL3_5-8B-HF": 0.001585480068682421,
+  "MiMo-VL-7B-RL-2508": 0.0001895371228737286,
+  "MiniCPM-V-4.6": 0.02331901116059165,
+  "Ministral-3-14B-Instruct-2512": 0.0025798468272704156,
+  "Qwen2.5-VL-3B-Instruct": 0.0010373416745916852,
+  "Qwen3-VL-8B-Instruct": 0.0018817852043389038,
+  "Qwen3.5-9B": 0.001976272388676703,
+  "baseline:all-one": 0.00835995523041304,
+  "baseline:all-zero": 0.00835995523041304,
+  "baseline:gt-prior": 0.00835995523041304,
+  "baseline:per-emotion-mean": 0.00835995523041304,
+  "baseline:random": -8.301694129999584e-05,
+  "gemma-3-12b-it": -0.0007931053907478391,
+  "gemma-3-4b-it": 0.02578348592505636,
+  "gemma-4-12B-it": 0.0008689555698604412
+ }
+}

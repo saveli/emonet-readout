@@ -105,10 +105,10 @@ def main() -> int:
     ap.add_argument("--folds", type=int, default=5)
     ap.add_argument("--C", type=float, default=1.0, help="inverse L2 strength")
     ap.add_argument("--n-boot", type=int, default=2000)
-    ap.add_argument("--out", type=Path, default=Path("analysis/faces_linear_probe.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/faces_linear_probe.json"))
     ap.add_argument("--seed", type=int, default=SEED)
     # Defaults are Empathic-Insight-Face-Large's head-calibrated numbers on the same five
-    # mapped classes (analysis/faces_class_by_group_zscored.json): macro-5 accuracy 0.742,
+    # mapped classes (results/faces_class_by_group_zscored.json): macro-5 accuracy 0.742,
     # age spread 0.090. Override when comparing against a different reference model.
     ap.add_argument("--match-accuracy", type=float, default=0.742)
     ap.add_argument("--match-spread", type=float, default=0.090)

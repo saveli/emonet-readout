@@ -29,6 +29,14 @@
       "width": 0.048963241725256734
     },
     {
+      "arm": "MiniCPM-V-4.6 [ours]",
+      "kappa": 0.2680396116527452,
+      "ci_lo": 0.240903204325581,
+      "ci_hi": 0.29058149635896147,
+      "se": 0.012660864421818649,
+      "width": 0.04967829203338048
+    },
+    {
       "arm": "Ministral-3-14B-Instruct-2512 [paper_once]",
       "kappa": 0.4469203626066003,
       "ci_lo": 0.4256833622087363,
@@ -85,8 +93,8 @@
       "width": 0.043431785009244606
     }
   ],
-  "separated_pairs": 28,
-  "total_pairs": 45,
-  "between_model_sd": 0.05886172378540794,
-  "median_ci_width": 0.04240847797789615
+  "separated_pairs": 37,
+  "total_pairs": 55,
+  "between_model_sd": 0.07308163533551984,
+  "median_ci_width": 0.04311469493436915
 }

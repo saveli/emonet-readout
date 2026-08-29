@@ -103,6 +103,37 @@ def answer_token_ids(tokenizer) -> tuple[list[int], list[int]]:
     return yes_ids, no_ids
 
 
+def _rope_owners(model, max_depth=8):
+    """Yield `model` and its nested wrappers, outermost first, for a rope-helper lookup.
+
+    Walks the `model` / `base_model` submodule chain that PEFT and transformers build up.
+    Breadth-first and id-deduplicated so a wrapper that points back at itself, or exposes
+    the same module under two names, cannot loop.
+
+    The first level is `model.model` then `model`, which is the exact order the previous
+    two-level probe used. Some transformers versions carry a legacy `get_rope_index` on the
+    ForConditionalGeneration class as well as on the inner model, so reordering these two
+    would change which helper an UNADAPTED model resolves to -- and every verification
+    number already in the paper was produced under this preference. Deeper levels are
+    additions, not a reshuffle.
+    """
+    seen, level = set(), [getattr(model, "model", None), model]
+    for _ in range(max_depth):
+        nxt = []
+        for obj in level:
+            if obj is None or id(obj) in seen:
+                continue
+            seen.add(id(obj))
+            yield obj
+            for attr in ("model", "base_model"):
+                # getattr on a delegating wrapper can resolve to a module several levels
+                # down; that is harmless, the dedup drops it as a repeat.
+                nxt.append(getattr(obj, attr, None))
+        if not nxt:
+            return
+        level = nxt
+
+
 def _suffix_position_ids(model, enc_full, plen, attn):
     """position_ids for the suffix, from the model's own rope helper when it has one.
 
@@ -114,10 +145,26 @@ def _suffix_position_ids(model, enc_full, plen, attn):
     The helper's signature moves between versions (transformers 5.14 takes
     `mm_token_type_ids` second positionally, earlier ones took `image_grid_thw`), so the call
     is driven by inspect rather than a hardcoded argument order.
+
+    The owner is searched for by DESCENDING the wrapper chain, not by probing two fixed
+    levels. On a bare Qwen2.5-VL the helper sits on `model.model` (`Qwen2_5_VLModel`), but
+    PEFT inserts `PeftModel` -> `LoraModel` -> `Qwen2_5_VLForConditionalGeneration`, and
+    that class does NOT define `get_rope_index` -- it holds the model that does. Attribute
+    delegation does not paper over this: `LoraModel.__getattr__` forwards to the wrapped
+    module, but `nn.Module.__getattr__` only searches submodules and parameters, so the
+    lookup stops at `Qwen2_5_VLForConditionalGeneration` and returns nothing.
+
+    A two-level probe therefore returns None for every adapted Qwen2.5-VL, transformers
+    derives position_ids for the whole sequence, and the suffix forward dies with
+    `The size of tensor a (14) must match the size of tensor b (1403) at non-singleton
+    dimension 2` -- 1403 being the cached prefix and 14 the suffix. The caller catches that,
+    prints "prefix cache unusable" and falls back, which costs ~2h12m per checkpoint against
+    ~10min cached. That is what killed all four E4 Qwen eval jobs on the wall clock, and it
+    only ever fired with an adapter applied, never on the same model's untrained base.
     """
     import inspect
 
-    for owner in (getattr(model, "model", None), model):
+    for owner in _rope_owners(model):
         fn = getattr(owner, "get_rope_index", None) if owner is not None else None
         if fn is None:
             continue
@@ -368,7 +415,17 @@ def build_model(args):
         from peft import PeftModel
 
         model = PeftModel.from_pretrained(model, args.adapter)
-        print(f"[verify] applied LoRA adapter {args.adapter}", flush=True)
+        # Name the adapter family from its own config rather than calling everything LoRA.
+        # E4 scores OFT adapters through this same path, and a log line that says "LoRA"
+        # over an OFT run is the kind of small lie that survives into a methods section.
+        kind = "adapter"
+        cfg = Path(args.adapter) / "adapter_config.json"
+        if cfg.is_file():
+            try:
+                kind = json.load(open(cfg)).get("peft_type", "adapter")
+            except (json.JSONDecodeError, OSError):
+                pass
+        print(f"[verify] applied {kind} adapter {args.adapter}", flush=True)
         if args.merge_adapter:
             model = model.merge_and_unload()
             print("[verify] merged adapter into base weights", flush=True)
@@ -405,6 +462,12 @@ def write_out(path, args, tag, results, n, started, vram, mass_total, mass_count
             # Absent on files written before 2026-08-11, which all ran v0.
             "prompt_variant": args.prompt_variant,
             "prompt_text": PROMPT_VARIANTS[args.prompt_variant],
+            # Which images. Absent on files written before 2026-08-17, which all ran the
+            # full 2500 or a head slice. Two --limit runs are only comparable when these
+            # three agree, so they travel with the scores rather than with the submitter.
+            "limit": args.limit,
+            "limit_mode": args.limit_mode if args.limit else "all",
+            "subset_seed": args.subset_seed,
             "mean_nonzero_emotions": mean_density,
             "mean_yesno_mass": mean_mass,
             # Raw accumulators, so a resume can continue the average rather than restarting
@@ -432,7 +495,20 @@ def main() -> int:
     ap.add_argument("--tag", default=None, help="output name; defaults to model/adapter base")
     ap.add_argument("--dataset", default="data/emonet-face-hq")
     ap.add_argument("--out-dir", type=Path, default=Path("results_e1"))
-    ap.add_argument("--limit", type=int, default=0, help="smoke-test on N images")
+    ap.add_argument("--limit", type=int, default=0, help="score N images instead of all")
+    # Mirrors e0_prompt_sweep.py's --limit-mode, deliberately including its default. The
+    # head of EmoNet-Face-HQ is not a random sample: the first 250 rows under-sample
+    # ethnicity category 5 (3.6% against 7.7%) and cover 117 of 207 prompt variants. A
+    # --limit run whose scores get kappa-scored and demographically sliced must not inherit
+    # that skew, and two sibling scripts whose --limit means different things is exactly the
+    # trap this codebase keeps paying for. Full runs (--limit 0) are unaffected either way.
+    ap.add_argument("--limit-mode", choices=["random", "head"], default="random",
+                    help="how --limit selects rows. random (default) draws a deterministic "
+                         "subset seeded by --subset-seed; head takes the first N.")
+    ap.add_argument("--subset-seed", type=int, default=0,
+                    help="seed for --limit-mode random. Recorded in batch_info, and a "
+                         "checkpoint written under a different subset is refused, because "
+                         "two runs on different images are not a comparison.")
     ap.add_argument("--batch-size", type=int, default=40,
                     help="(image, emotion) pairs per forward pass")
     ap.add_argument("--max-image-pixels", type=int, default=1024 * 1024)
@@ -487,7 +563,20 @@ def main() -> int:
     from datasets import load_dataset
 
     ds = load_dataset(args.dataset)["train"]
-    n = args.limit if args.limit else len(ds)
+    # Indices stay TRUE dataset indices whichever mode is used, so every downstream join --
+    # the demographic slices, the gold-rating lookup in reliability_vs_performance.py -- keys
+    # on the same integer it always did.
+    if args.limit and args.limit < len(ds):
+        if args.limit_mode == "random":
+            import random as _random
+
+            indices = sorted(_random.Random(args.subset_seed).sample(range(len(ds)), args.limit))
+        else:
+            indices = list(range(args.limit))
+    else:
+        indices = list(range(len(ds)))
+    index_set = set(indices)
+    n = len(indices)
     emotions = emotion_list(ds)
     tag = args.tag or Path(args.adapter or args.model).name
     think = None if args.thinking == "auto" else (args.thinking == "on")
@@ -508,10 +597,11 @@ def main() -> int:
         try:
             prev = json.load(open(ckpt_path))
             for r in prev.get("results", []):
-                # Drop rows outside the current range: resuming a full run under --limit N
-                # would otherwise carry indices >= N into the output and report more images
-                # than were asked for.
-                if 0 <= r["image_index"] < n:
+                # Drop rows outside the current selection: resuming a full run under
+                # --limit N would otherwise carry foreign indices into the output and
+                # report more images than were asked for. Membership, not `< n`, because
+                # under --limit-mode random the selected indices are not 0..n-1.
+                if r["image_index"] in index_set:
                     results[r["image_index"]] = r
             bi = prev.get("batch_info", {})
             mass_total = float(bi.get("yesno_mass_total", 0.0))
@@ -539,6 +629,9 @@ def main() -> int:
 
     prompt_tmpl = PROMPT_VARIANTS[args.prompt_variant]
     print(f"[verify] prompt {args.prompt_variant}: {prompt_tmpl}", flush=True)
+    print(f"[verify] subset: limit={args.limit} mode="
+          f"{args.limit_mode if args.limit else 'all'} seed={args.subset_seed} "
+          f"first indices {indices[:5]}", flush=True)
     # A resumed checkpoint carries no record of which phrasing produced it before this flag
     # existed, so a variant run must not silently continue a v0 partial. Same class of bug
     # as the mixed-arm directory the --prompt-variant help text warns about.
@@ -548,6 +641,18 @@ def main() -> int:
             raise SystemExit(f"[verify] checkpoint {ckpt_path.name} was written with prompt "
                              f"variant {prev!r}, refusing to resume it as "
                              f"{args.prompt_variant!r}")
+    # Same class of guard for the image subset. The index filter above already drops foreign
+    # rows, so a mismatched checkpoint would not corrupt the scores -- it would silently make
+    # the run re-score everything and report a resume that saved nothing. Say so instead.
+    if resumed_from and args.limit:
+        bi = json.load(open(ckpt_path))["batch_info"]
+        prev_mode = bi.get("limit_mode", "head")
+        prev_seed = bi.get("subset_seed", 0)
+        if (prev_mode, prev_seed) != (args.limit_mode, args.subset_seed):
+            raise SystemExit(f"[verify] checkpoint {ckpt_path.name} covers subset "
+                             f"{prev_mode}/seed {prev_seed}, refusing to resume it as "
+                             f"{args.limit_mode}/seed {args.subset_seed} -- these are "
+                             f"different images.")
 
     vram = VramTracker(interval=args.vram_interval)
     vram.start()
@@ -558,7 +663,7 @@ def main() -> int:
     mass_checked = False
 
     with torch.inference_mode():
-        for i in range(n):
+        for done, i in enumerate(indices):
             if i in results:
                 continue
             img = shrink(ds[i]["path"], args.max_image_pixels)
@@ -681,7 +786,11 @@ def main() -> int:
                           f"there; to score anyway pass --min-yesno-mass 0.", flush=True)
                     return 2
 
-            if (i + 1) % 100 == 0:
+            # Progress and checkpointing count POSITION IN THE SELECTION, not the dataset
+            # index: under --limit-mode random the indices are sparse, so `(i+1) % 100`
+            # would fire at arbitrary intervals and the checkpoint cadence would silently
+            # stop being every N images.
+            if (done + 1) % 100 == 0:
                 # Rate is over images scored THIS run, not i+1 -- on a resume those differ,
                 # and using i+1 would report a throughput the run never achieved and an ETA
                 # that never arrives.
@@ -691,7 +800,7 @@ def main() -> int:
                       f"eta {(n - len(results)) / max(rate, 1e-9) / 60:.1f}m  "
                       f"vram_peak {vram.peak_mib / 1024:.1f} GB", flush=True)
 
-            if args.checkpoint_every and (i + 1) % args.checkpoint_every == 0:
+            if args.checkpoint_every and (done + 1) % args.checkpoint_every == 0:
                 write_out(ckpt_path, args, tag, results, n, started, vram,
                           mass_total, mass_count, resumed_from)
 

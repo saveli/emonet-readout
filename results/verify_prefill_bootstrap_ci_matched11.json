@@ -1,5 +1,5 @@
 {
-  "results_dir": "$TMPDIR",
+  "results_dir": "results_verify_prefill",
   "protocol": "verification",
   "replicates": 500,
   "tie_sensitivity": 0,
@@ -27,6 +27,14 @@
       "ci_hi": 0.5660335760110561,
       "se": 0.008865740637315577,
       "width": 0.03451286479168769
+    },
+    {
+      "arm": "MiniCPM-V-4.6",
+      "kappa": 0.5346229835952848,
+      "ci_lo": 0.5178840152716718,
+      "ci_hi": 0.5519165584798815,
+      "se": 0.00865298643270803,
+      "width": 0.0340325432082097
     },
     {
       "arm": "Ministral-3-14B-Instruct-2512",
@@ -85,8 +93,8 @@
       "width": 0.03368370229545026
     }
   ],
-  "separated_pairs": 16,
-  "total_pairs": 45,
-  "between_model_sd": 0.025202367411271263,
-  "median_ci_width": 0.03401335813488904
+  "separated_pairs": 18,
+  "total_pairs": 55,
+  "between_model_sd": 0.024242465043040593,
+  "median_ci_width": 0.0340325432082097
 }

@@ -1,0 +1,118 @@
+{
+  "human_human_kappa": 0.46831394640244495,
+  "n_reliable": 5,
+  "rows": [
+    {
+      "arm": "GLM-4.6V-Flash",
+      "desc": "",
+      "kappa_oracle": 0.5860710956047585,
+      "kappa_heldout": 0.5839113302554775,
+      "leakage": 0.002159765349280973
+    },
+    {
+      "arm": "InternVL3_5-8B-HF",
+      "desc": "",
+      "kappa_oracle": 0.5756251122521341,
+      "kappa_heldout": 0.5740396321834517,
+      "leakage": 0.001585480068682421
+    },
+    {
+      "arm": "MiMo-VL-7B-RL-2508",
+      "desc": "",
+      "kappa_oracle": 0.5476247055213546,
+      "kappa_heldout": 0.5474351683984808,
+      "leakage": 0.0001895371228737286
+    },
+    {
+      "arm": "MiniCPM-V-4.6",
+      "desc": "",
+      "kappa_oracle": 0.5346229835952848,
+      "kappa_heldout": 0.5113039724346932,
+      "leakage": 0.02331901116059165
+    },
+    {
+      "arm": "Ministral-3-14B-Instruct-2512",
+      "desc": "",
+      "kappa_oracle": 0.5352502785143409,
+      "kappa_heldout": 0.5326704316870705,
+      "leakage": 0.0025798468272704156
+    },
+    {
+      "arm": "Qwen2.5-VL-3B-Instruct",
+      "desc": "",
+      "kappa_oracle": 0.5071767373634124,
+      "kappa_heldout": 0.5061393956888207,
+      "leakage": 0.0010373416745916852
+    },
+    {
+      "arm": "Qwen3-VL-8B-Instruct",
+      "desc": "",
+      "kappa_oracle": 0.5550608592629199,
+      "kappa_heldout": 0.553179074058581,
+      "leakage": 0.0018817852043389038
+    },
+    {
+      "arm": "Qwen3.5-9B",
+      "desc": "",
+      "kappa_oracle": 0.565599582444001,
+      "kappa_heldout": 0.5636233100553243,
+      "leakage": 0.001976272388676703
+    },
+    {
+      "arm": "baseline:all-one",
+      "desc": "",
+      "kappa_oracle": 0.008359955230412974,
+      "kappa_heldout": -6.661338147750939e-17,
+      "leakage": 0.00835995523041304
+    },
+    {
+      "arm": "baseline:all-zero",
+      "desc": "",
+      "kappa_oracle": 0.008359955230412974,
+      "kappa_heldout": -6.661338147750939e-17,
+      "leakage": 0.00835995523041304
+    },
+    {
+      "arm": "baseline:gt-prior",
+      "desc": "",
+      "kappa_oracle": 0.008359955230412974,
+      "kappa_heldout": -6.661338147750939e-17,
+      "leakage": 0.00835995523041304
+    },
+    {
+      "arm": "baseline:per-emotion-mean",
+      "desc": "",
+      "kappa_oracle": 0.008359955230412974,
+      "kappa_heldout": -6.661338147750939e-17,
+      "leakage": 0.00835995523041304
+    },
+    {
+      "arm": "baseline:random",
+      "desc": "",
+      "kappa_oracle": 0.003540871928612144,
+      "kappa_heldout": 0.0036238888699121397,
+      "leakage": -8.301694129999584e-05
+    },
+    {
+      "arm": "gemma-3-12b-it",
+      "desc": "",
+      "kappa_oracle": 0.5267657865190349,
+      "kappa_heldout": 0.5275588919097828,
+      "leakage": -0.0007931053907478391
+    },
+    {
+      "arm": "gemma-3-4b-it",
+      "desc": "",
+      "kappa_oracle": 0.5207971580885642,
+      "kappa_heldout": 0.49501367216350783,
+      "leakage": 0.02578348592505636
+    },
+    {
+      "arm": "gemma-4-12B-it",
+      "desc": "",
+      "kappa_oracle": 0.5591460389759441,
+      "kappa_heldout": 0.5582770834060836,
+      "leakage": 0.0008689555698604412
+    }
+  ]
+}

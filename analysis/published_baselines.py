@@ -76,7 +76,7 @@ def main() -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--hq-csv", type=Path, default=Path("data/hq.csv"))
     ap.add_argument("--index-map", type=Path, default=Path("data/hq_image_index_map.json"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/published_baselines.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/published_baselines.json"))
     args = ap.parse_args()
 
     index_map = json.load(open(args.index_map)) if args.index_map.is_file() else None

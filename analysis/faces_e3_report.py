@@ -150,7 +150,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--results-dir", type=Path, default=Path("results_faces"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/faces_e3_report.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/faces_e3_report.json"))
     ap.add_argument("-B", "--replicates", type=int, default=2000)
     ap.add_argument("--churn-dir", type=Path, default=None,
                     help="a second run of the SAME arm under different numerics (e.g. "

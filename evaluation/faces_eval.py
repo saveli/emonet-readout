@@ -61,14 +61,28 @@ from e0_prompt_sweep import VramTracker  # noqa: E402
 # inflate accuracy on the other five.
 EMOTIONS = {"a": "anger", "d": "disgust", "f": "fear",
             "h": "happiness", "n": "a neutral expression", "s": "sadness"}
+# The same classes as the generative prompt names them. `n` differs from EMOTIONS: the verify
+# arm asks "does this face express A NEUTRAL EXPRESSION?", which needs the article, while the
+# option list reads "neutral". Keeping the two maps apart is why the prompts can be generated
+# from one class set without either arm reading oddly.
+GEN_NAMES = {"a": "anger", "d": "disgust", "f": "fear",
+             "h": "happiness", "n": "neutral", "s": "sadness"}
 AGES = {"y": "young", "m": "middle", "o": "old"}
 GENDERS = {"f": "female", "m": "male"}
 
 VERIFY_PROMPT = "Does this face express {emotion}? Answer yes or no."
-GENERATIVE_PROMPT = (
-    "Which emotion does this face express? Answer with exactly one of: "
-    "anger, disgust, fear, happiness, neutral, sadness."
-)
+
+
+def generative_prompt(codes) -> str:
+    """The option list is generated from the live class set, not hard-coded.
+
+    --drop-class has to reach BOTH arms or the comparison it produces is void: dropping a
+    class from the verification queries while the generative prompt still offers it would
+    hand verification a five-way decision and leave generative a six-way one, and the
+    difference between the arms would then include the difference between the tasks.
+    """
+    return ("Which emotion does this face express? Answer with exactly one of: "
+            + ", ".join(GEN_NAMES[c] for c in codes) + ".")
 
 
 def scan_faces(root: Path):
@@ -86,19 +100,28 @@ def scan_faces(root: Path):
     return out
 
 
-def parse_generative(text: str) -> str | None:
-    """Map free text onto one of the six codes, or None if it names no class or several.
+def parse_generative(text: str, codes=None) -> str | None:
+    """Map free text onto one of the live codes, or None if it names no class or several.
 
     Matching is whole-word and the first *distinct* class wins only if no other class is
     also named -- a reply like "not anger but sadness" must not score as anger just because
     the word appears first. Returning None keeps unparseable replies visible in the output
     instead of silently becoming errors attributed to the model's perception.
+
+    `codes` restricts the vocabulary to the classes the prompt actually offered. Under
+    --drop-class the dropped word must NOT map to anything: a model that answers "neutral"
+    when neutral was never on the list has failed to follow the instruction, and that is an
+    unparsed reply, not a prediction of a class the task does not contain. Scoring it as a
+    silent error would hide exactly the behaviour the five-class run exists to measure.
     """
     words = {"anger": "a", "angry": "a", "disgust": "d", "disgusted": "d",
              "fear": "f", "fearful": "f", "afraid": "f", "scared": "f",
              "happiness": "h", "happy": "h", "joy": "h",
              "neutral": "n", "neutrality": "n",
              "sadness": "s", "sad": "s"}
+    if codes is not None:
+        live = set(codes)
+        words = {w: c for w, c in words.items() if c in live}
     low = text.lower()
     found = [(m.start(), code) for word, code in words.items()
              for m in re.finditer(rf"\b{word}\b", low)]
@@ -149,6 +172,13 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--adapter", default=None)
     ap.add_argument("--merge-adapter", action="store_true")
+    ap.add_argument("--drop-class", default="", metavar="CODES",
+                    help="FACES class codes to remove from the task entirely, e.g. 'n' for "
+                         "neutral. Removes them from the generative option list, from the "
+                         "verification query set, from the parser vocabulary, AND drops "
+                         "images whose gold is a removed class (an image whose only correct "
+                         "answer is unavailable is unanswerable, not hard). EmoNet has no "
+                         "neutral category, so 'n' is the five-class run comparable to it.")
     ap.add_argument("--ablate-image", choices=["off", "grey", "shuffle"], default="off",
                     help="perception control. 'grey' replaces every face with a uniform grey "
                          "image of the same size, so the prompt, the token count and the read "
@@ -257,7 +287,21 @@ def main() -> int:
     proc, model = build_model(args)
     tokenizer = getattr(proc, "tokenizer", proc)
     yes_ids, no_ids = answer_token_ids(tokenizer)
-    codes = list(EMOTIONS)
+    dropped = [c for c in args.drop_class if c in EMOTIONS]
+    if args.drop_class and not dropped:
+        raise SystemExit(f"[faces] --drop-class {args.drop_class!r} names no known class; "
+                         f"codes are {''.join(EMOTIONS)}")
+    codes = [c for c in EMOTIONS if c not in dropped]
+    if len(codes) < 2:
+        raise SystemExit("[faces] --drop-class leaves fewer than two classes")
+    args._codes = codes
+    if dropped:
+        # An image whose only correct answer has been removed is unanswerable, not hard, so
+        # it leaves the run entirely rather than scoring as a guaranteed error.
+        before = len(items)
+        items = [it for it in items if it["gold"] not in dropped]
+        print(f"[faces] --drop-class {''.join(dropped)}: {len(codes)} classes, "
+              f"{len(items)} of {before} images answerable", flush=True)
 
     vram = VramTracker(interval=args.vram_interval)
     vram.start()
@@ -290,6 +334,17 @@ def main() -> int:
     if args.resume != "off" and ckpt_path.is_file():
         try:
             prev = json.load(open(ckpt_path))["results"]
+            # A checkpoint from a DIFFERENT class set must not be continued. Resuming a
+            # six-class partial into a five-class run would re-admit the dropped class
+            # through `results.extend(prev)`, and the merged file would carry two tasks
+            # scored as one -- with the neutral rows the run exists to remove sitting inside
+            # the result. Refuse loudly; the fix is a different --out-dir, not a merge.
+            stale = {r["gold"] for r in prev} - set(codes)
+            if stale:
+                raise SystemExit(
+                    f"[faces] ABORT: {ckpt_path.name} was written with class(es) "
+                    f"{''.join(sorted(stale))} that this run drops. Use a different "
+                    f"--out-dir rather than resuming across class sets.")
             done = {Path(r["path"]).name for r in prev}
             results.extend(prev)
             items = [it for it in items if Path(it["path"]).name not in done]
@@ -455,7 +510,7 @@ def _run(args, items, proc, model, tokenizer, yes_ids, no_ids, codes, results,
         else:
             msgs = [[{"role": "user", "content": [
                 {"type": "image", "image": img},
-                {"type": "text", "text": GENERATIVE_PROMPT}]}]]
+                {"type": "text", "text": generative_prompt(codes)}]}]]
             enc = encode(proc, msgs, think, None, add_generation_prompt=True,
                          tokenize=True, return_dict=True,
                          return_tensors="pt", padding=True).to(model.device)
@@ -464,7 +519,7 @@ def _run(args, items, proc, model, tokenizer, yes_ids, no_ids, codes, results,
                                      do_sample=False)
             text = tokenizer.decode(gen[0][enc["input_ids"].shape[1]:],
                                     skip_special_tokens=True)
-            pred = parse_generative(text)
+            pred = parse_generative(text, codes)
             rec = {"raw_response": text}
 
         results.append({**it, "pred": pred, "correct": pred == it["gold"], **rec})
@@ -515,7 +570,8 @@ def write(path, args, tag, items, results, started, vram, mass_total, mass_count
         "model": f"{tag} [faces_{args.arm}]", "model_id": args.model,
         "arm": f"faces_{args.arm}", "dataset": "FACES",
         "total_images": len(items), "scored": len(results),
-        "accuracy": acc, "chance": 1 / len(EMOTIONS),
+        "accuracy": acc, "chance": 1 / len(args._codes),
+        "classes": "".join(args._codes), "dropped_classes": args.drop_class,
         "unparsed": sum(1 for r in results if r["pred"] is None),
         # Both, deliberately. Recording only the CLI string is what hid the inversion above:
         # every affected file says "thinking": "off" and was rendered with thinking on.
@@ -534,7 +590,8 @@ def write(path, args, tag, items, results, started, vram, mass_total, mass_count
         "prefix_cache_used": bool(getattr(args, "_cache_active", False)),
         "answer_prefill": args.answer_prefill,
         "mean_yesno_mass": (mass_total / mass_count) if mass_count else None,
-        "prompt": VERIFY_PROMPT if args.arm == "verify" else GENERATIVE_PROMPT,
+        "prompt": (VERIFY_PROMPT if args.arm == "verify"
+                   else generative_prompt(args._codes)),
         "elapsed_s": time.time() - started, "vram": vram.summary(),
     }, "results": results}, open(path, "w"))
 

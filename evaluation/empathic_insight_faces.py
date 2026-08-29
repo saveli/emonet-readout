@@ -113,7 +113,7 @@ def main() -> int:
     ap.add_argument("--neutral-threshold", type=float, default=NEUTRAL_BY_THRESHOLD)
     ap.add_argument("--batch-size", type=int, default=32)
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--out", type=Path, default=Path("analysis/empathic_faces.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/empathic_faces.json"))
     ap.add_argument("--dump-embeddings", type=Path, default=None,
                     help="save the frozen SigLIP2 features to this .npz, so a probe can be "
                          "trained on the same representation without a second GPU pass")

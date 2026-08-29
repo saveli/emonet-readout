@@ -20,7 +20,7 @@ x 2 sets), so resampling images treats correlated rows as independent and gives 
 interval that is too narrow.
 
 Usage:
-    python analysis/faces_class_by_group.py --in analysis/empathic_faces_core.json
+    python analysis/faces_class_by_group.py --in results/empathic_faces_core.json
 """
 
 from __future__ import annotations
@@ -103,8 +103,8 @@ def bootstrap_spread(recs, axis, groups, classes, n_boot=N_BOOT, seed=SEED):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--in", dest="inp", type=Path, default=Path("analysis/empathic_faces_core.json"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/faces_class_by_group.json"))
+    ap.add_argument("--in", dest="inp", type=Path, default=Path("results/empathic_faces_core.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/faces_class_by_group.json"))
     ap.add_argument("--calibrate-heads", action="store_true",
                     help="re-argmax on per-label z-scores; see zscore_predictions")
     args = ap.parse_args()

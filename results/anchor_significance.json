@@ -1,0 +1,621 @@
+{
+  "results_dir": "results_verify_prefill",
+  "replicates": 500,
+  "seed": 0,
+  "n_images": 2500,
+  "n_emotions": 40,
+  "reliable_threshold": 0.3,
+  "reliable_categories": [
+    "Anger",
+    "Amusement",
+    "Astonishment/Surprise",
+    "Elation",
+    "Thankfulness/Gratitude"
+  ],
+  "anchor": {
+    "reliable_5": {
+      "point": 0.46831394640244495,
+      "paper": 0.468,
+      "matches_paper": true,
+      "ci_lo": 0.4510045191741102,
+      "ci_hi": 0.48432645064289115,
+      "se": 0.009039151785986386
+    },
+    "unreliable_35": {
+      "point": 0.1664829999712868,
+      "paper": 0.166,
+      "matches_paper": true,
+      "ci_lo": 0.15982141249142562,
+      "ci_hi": 0.17285058760965938,
+      "se": 0.00322665437822155
+    },
+    "all_40": {
+      "point": 0.20421186827518154,
+      "paper": 0.204,
+      "matches_paper": true,
+      "ci_lo": 0.19780862976927147,
+      "ci_hi": 0.21055754997007156,
+      "se": 0.003308055312021967
+    }
+  },
+  "summary": {
+    "reliable_5": {
+      "positive": 11,
+      "indistinguishable": 0,
+      "negative": 0
+    },
+    "unreliable_35": {
+      "positive": 11,
+      "indistinguishable": 0,
+      "negative": 0
+    },
+    "all_40": {
+      "positive": 11,
+      "indistinguishable": 0,
+      "negative": 0
+    }
+  },
+  "rows": [
+    {
+      "model": "GLM-4.6V-Flash",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5860710956047585,
+      "model_kappa_ci": [
+        0.5705078927131183,
+        0.6016827752029328
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.1177571492023135,
+      "diff_boot_mean": 0.11746773258959103,
+      "diff_ci_lo": 0.10696930973157864,
+      "diff_ci_hi": 0.12759688105074565,
+      "diff_se": 0.005020706190028883,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5756251122521341,
+      "model_kappa_ci": [
+        0.559092188159467,
+        0.5925264079527679
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.10731116584968914,
+      "diff_boot_mean": 0.10716183627938869,
+      "diff_ci_lo": 0.09663893088758536,
+      "diff_ci_hi": 0.1182245850730376,
+      "diff_se": 0.005477519818261628,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5476247055213546,
+      "model_kappa_ci": [
+        0.5315207112193684,
+        0.5660335760110561
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.07931075911890961,
+      "diff_boot_mean": 0.07965162487765534,
+      "diff_ci_lo": 0.06619757125710107,
+      "diff_ci_hi": 0.0919727549994239,
+      "diff_se": 0.006434659086931319,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5346229835952848,
+      "model_kappa_ci": [
+        0.5178840152716718,
+        0.5519165584798815
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.06630903719283987,
+      "diff_boot_mean": 0.06686399453291168,
+      "diff_ci_lo": 0.053939749277278175,
+      "diff_ci_hi": 0.0787312500199352,
+      "diff_se": 0.006442225888883358,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5352502785143409,
+      "model_kappa_ci": [
+        0.5197203787524152,
+        0.5516371470222959
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.06693633211189598,
+      "diff_boot_mean": 0.06694475715772903,
+      "diff_ci_lo": 0.05357474338121218,
+      "diff_ci_hi": 0.0780352087720884,
+      "diff_se": 0.006281098435021115,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5071767373634124,
+      "model_kappa_ci": [
+        0.49034677076248445,
+        0.5246897847368123
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.03886279096096745,
+      "diff_boot_mean": 0.039172148569128866,
+      "diff_ci_lo": 0.025759155071304794,
+      "diff_ci_hi": 0.05129246062773849,
+      "diff_se": 0.006578212098892686,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5550608592629199,
+      "model_kappa_ci": [
+        0.537341670841812,
+        0.5718916059197263
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.08674691286047498,
+      "diff_boot_mean": 0.08628035165775398,
+      "diff_ci_lo": 0.07445013733221639,
+      "diff_ci_hi": 0.09668964093066335,
+      "diff_se": 0.005726080274778638,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "category_set": "reliable_5",
+      "model_kappa": 0.565599582444001,
+      "model_kappa_ci": [
+        0.5477691707655801,
+        0.5811953093275309
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.09728563604155605,
+      "diff_boot_mean": 0.09585437910015207,
+      "diff_ci_lo": 0.08539020546534067,
+      "diff_ci_hi": 0.10595049828553807,
+      "diff_se": 0.005241837395675554,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5267657865190349,
+      "model_kappa_ci": [
+        0.5088980690600831,
+        0.5447098953085348
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.05845184011658999,
+      "diff_boot_mean": 0.05845303857890543,
+      "diff_ci_lo": 0.04639521054306722,
+      "diff_ci_hi": 0.07030071608424716,
+      "diff_se": 0.0061764443655958285,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5207971580885642,
+      "model_kappa_ci": [
+        0.5026352639771278,
+        0.5387088975998258
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.05248321168611925,
+      "diff_boot_mean": 0.05293933936386395,
+      "diff_ci_lo": 0.040888002330330006,
+      "diff_ci_hi": 0.06431972900668531,
+      "diff_se": 0.006170659286196239,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5591460389759441,
+      "model_kappa_ci": [
+        0.5412112372840324,
+        0.5748949395794827
+      ],
+      "anchor": 0.46831394640244495,
+      "diff": 0.09083209257349911,
+      "diff_boot_mean": 0.08995699580666132,
+      "diff_ci_lo": 0.0781478678801528,
+      "diff_ci_hi": 0.10128559395521744,
+      "diff_se": 0.005727541699852671,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.24960532696323148,
+      "model_kappa_ci": [
+        0.24104136371274676,
+        0.25685939725342216
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.08312232699194469,
+      "diff_boot_mean": 0.08264132337780192,
+      "diff_ci_lo": 0.07721841304706833,
+      "diff_ci_hi": 0.08842258478250827,
+      "diff_se": 0.002925922893909072,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2493161418567732,
+      "model_kappa_ci": [
+        0.24147931943135206,
+        0.2559592775981639
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.0828331418854864,
+      "diff_boot_mean": 0.08246878123335762,
+      "diff_ci_lo": 0.07653797598373754,
+      "diff_ci_hi": 0.08833865215568053,
+      "diff_se": 0.003091588662929873,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21557415789614254,
+      "model_kappa_ci": [
+        0.20717744560413007,
+        0.222914589513115
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.049091157924855744,
+      "diff_boot_mean": 0.049310770030050806,
+      "diff_ci_lo": 0.04233163012370743,
+      "diff_ci_hi": 0.05672258095794028,
+      "diff_se": 0.0034995937122935506,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20285130377672464,
+      "model_kappa_ci": [
+        0.19494392970954444,
+        0.20881926586564561
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.036368303805437846,
+      "diff_boot_mean": 0.03590904928965,
+      "diff_ci_lo": 0.030157286371911413,
+      "diff_ci_hi": 0.041363135590291845,
+      "diff_se": 0.003005283181345362,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.19281031721349112,
+      "model_kappa_ci": [
+        0.18462702196872827,
+        0.1991454497458821
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.02632731724220433,
+      "diff_boot_mean": 0.025933315558681478,
+      "diff_ci_lo": 0.018737028265378142,
+      "diff_ci_hi": 0.0325274760436354,
+      "diff_se": 0.003606505074717845,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.19036574476640739,
+      "model_kappa_ci": [
+        0.18318215385398323,
+        0.19837730341899
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.023882744795120592,
+      "diff_boot_mean": 0.024435573868113413,
+      "diff_ci_lo": 0.017719224942852285,
+      "diff_ci_hi": 0.031130028664054437,
+      "diff_se": 0.003409671382002732,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.22169115877805995,
+      "model_kappa_ci": [
+        0.21401476261899144,
+        0.22824814659095738
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.055208158806773155,
+      "diff_boot_mean": 0.05502905322600315,
+      "diff_ci_lo": 0.04853490683522999,
+      "diff_ci_hi": 0.06151417995621613,
+      "diff_se": 0.0032143515465219135,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2334069294920898,
+      "model_kappa_ci": [
+        0.22550904629607318,
+        0.24016778257205193
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.066923929520803,
+      "diff_boot_mean": 0.0664965008096276,
+      "diff_ci_lo": 0.06051690309191529,
+      "diff_ci_hi": 0.07263719924532798,
+      "diff_se": 0.003077537330555984,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2044799665910723,
+      "model_kappa_ci": [
+        0.19584144708307508,
+        0.2124372795341968
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.037996966619785494,
+      "diff_boot_mean": 0.0381550674954746,
+      "diff_ci_lo": 0.031793355039785365,
+      "diff_ci_hi": 0.044323461567569056,
+      "diff_se": 0.0033689503722464952,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.19855672732863403,
+      "model_kappa_ci": [
+        0.19032976211840658,
+        0.20573519054892261
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.03207372735734723,
+      "diff_boot_mean": 0.03186531175498423,
+      "diff_ci_lo": 0.025155891413225884,
+      "diff_ci_hi": 0.038099914345246226,
+      "diff_se": 0.003430537471422483,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21574304970237987,
+      "model_kappa_ci": [
+        0.2080138033091555,
+        0.2234448636223607
+      ],
+      "anchor": 0.1664829999712868,
+      "diff": 0.049260049731093075,
+      "diff_boot_mean": 0.04942405809577812,
+      "diff_ci_lo": 0.042781591063472874,
+      "diff_ci_hi": 0.05555407302980011,
+      "diff_se": 0.0033475307307014378,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "category_set": "all_40",
+      "model_kappa": 0.2916635480434223,
+      "model_kappa_ci": [
+        0.28334171543838954,
+        0.2991763507920975
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.08745167976824078,
+      "diff_boot_mean": 0.08699462452927556,
+      "diff_ci_lo": 0.08190884530552783,
+      "diff_ci_hi": 0.09216876071563257,
+      "diff_se": 0.0026823394652150494,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "category_set": "all_40",
+      "model_kappa": 0.2901047631561934,
+      "model_kappa_ci": [
+        0.2822179124787931,
+        0.29699101294099833
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.08589289488101184,
+      "diff_boot_mean": 0.08555541311411151,
+      "diff_ci_lo": 0.08011051318970447,
+      "diff_ci_hi": 0.09101305475658492,
+      "diff_se": 0.002885187604332308,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "category_set": "all_40",
+      "model_kappa": 0.2570804763492941,
+      "model_kappa_ci": [
+        0.24912991710052945,
+        0.26535222883675197
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.05286860807411256,
+      "diff_boot_mean": 0.05310337688600136,
+      "diff_ci_lo": 0.04622664549449732,
+      "diff_ci_hi": 0.06001426354603696,
+      "diff_se": 0.0033349827394808817,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "category_set": "all_40",
+      "model_kappa": 0.24432276375404466,
+      "model_kappa_ci": [
+        0.236800920831128,
+        0.25067226763645256
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.04011089547886312,
+      "diff_boot_mean": 0.03977841744505771,
+      "diff_ci_lo": 0.034272880478898045,
+      "diff_ci_hi": 0.04528548915072716,
+      "diff_se": 0.002842298943188242,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "category_set": "all_40",
+      "model_kappa": 0.23561531237609729,
+      "model_kappa_ci": [
+        0.22769340095815227,
+        0.24288692284829674
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.03140344410091575,
+      "diff_boot_mean": 0.031059745758562417,
+      "diff_ci_lo": 0.024060828516814695,
+      "diff_ci_hi": 0.037528547306484375,
+      "diff_se": 0.0034407136326684833,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "category_set": "all_40",
+      "model_kappa": 0.229967118841033,
+      "model_kappa_ci": [
+        0.22277461361962209,
+        0.23794910700563793
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.025755250565851456,
+      "diff_boot_mean": 0.02627764570574034,
+      "diff_ci_lo": 0.01972573893038109,
+      "diff_ci_hi": 0.03257272671358009,
+      "diff_se": 0.0032886742408042356,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "category_set": "all_40",
+      "model_kappa": 0.26336237133866747,
+      "model_kappa_ci": [
+        0.2556300584041981,
+        0.2700412706522422
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.05915050306348593,
+      "diff_boot_mean": 0.05893546552997202,
+      "diff_ci_lo": 0.05308308881532944,
+      "diff_ci_hi": 0.06491670136511095,
+      "diff_se": 0.002993530149839962,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "category_set": "all_40",
+      "model_kappa": 0.27493101111107865,
+      "model_kappa_ci": [
+        0.26688297057844984,
+        0.28158374630237165
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.07071914283589711,
+      "diff_boot_mean": 0.07016623559594316,
+      "diff_ci_lo": 0.06457216426866208,
+      "diff_ci_hi": 0.07577888706269721,
+      "diff_se": 0.0028393363477497544,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "category_set": "all_40",
+      "model_kappa": 0.24476569408206766,
+      "model_kappa_ci": [
+        0.2360787605758258,
+        0.2531994754199473
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.04055382580688613,
+      "diff_boot_mean": 0.04069231388090345,
+      "diff_ci_lo": 0.03469850817991297,
+      "diff_ci_hi": 0.046611132114461704,
+      "diff_se": 0.003194910373606327,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "category_set": "all_40",
+      "model_kappa": 0.23883678117362525,
+      "model_kappa_ci": [
+        0.23083990398956553,
+        0.2460216974655398
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.034624912898443716,
+      "diff_boot_mean": 0.034499565206094186,
+      "diff_ci_lo": 0.02817816373040942,
+      "diff_ci_hi": 0.04049327039427772,
+      "diff_se": 0.0031915658696062992,
+      "excludes_zero": true,
+      "verdict": "positive"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "category_set": "all_40",
+      "model_kappa": 0.25866842336157536,
+      "model_kappa_ci": [
+        0.2507236648326223,
+        0.2665615134996217
+      ],
+      "anchor": 0.20421186827518154,
+      "diff": 0.054456555086393826,
+      "diff_boot_mean": 0.05449067530963852,
+      "diff_ci_lo": 0.04824571609299273,
+      "diff_ci_hi": 0.060188813395973546,
+      "diff_se": 0.003117591246982146,
+      "excludes_zero": true,
+      "verdict": "positive"
+    }
+  ]
+}

@@ -97,7 +97,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--results-dir", type=Path, default=Path("results_faces"))
-    ap.add_argument("--out", type=Path, default=Path("analysis/faces_macro_f1.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/faces_macro_f1.json"))
     ap.add_argument("-B", "--replicates", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=0)
     args = ap.parse_args()

@@ -1,0 +1,32 @@
+{
+ "anchor": 0.46831394640244495,
+ "n_reliable": 5,
+ "replicates": 500,
+ "seed": 0,
+ "rows": [
+  {
+   "annotator": "Gemini 2.0 Flash ZS",
+   "kappa_w": 0.4988018837393608,
+   "delta_vs_anchor": 0.03048793733691585,
+   "ci_lo": 0.016944783448666387,
+   "ci_hi": 0.043082556170501066,
+   "separated": true
+  },
+  {
+   "annotator": "Hume Face*",
+   "kappa_w": 0.46590441581146075,
+   "delta_vs_anchor": -0.002409530590984199,
+   "ci_lo": -0.026132443367830657,
+   "ci_hi": 0.006529010599519782,
+   "separated": false
+  },
+  {
+   "annotator": "Empathic Insight Face Small",
+   "kappa_w": 0.5506499449815777,
+   "delta_vs_anchor": 0.08233599857913276,
+   "ci_lo": 0.07227352824847118,
+   "ci_hi": 0.09349659055051689,
+   "separated": true
+  }
+ ]
+}

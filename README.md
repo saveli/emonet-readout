@@ -6,7 +6,7 @@ this repository on **CPU alone**, without GPU access and without re-running any 
 The claim being reproduced: a fine-grained emotion benchmark reports that vision–language
 models fail on a 40-category taxonomy. That result is substantially an artifact of how the
 models are queried. Reading `P(yes)` from the logits instead of parsing generated text takes
-the same checkpoints from 0/10 to 10/10 clearing the human–human agreement anchor, while the
+the same checkpoints from 0/11 to 11/11 clearing the human–human agreement anchor, while the
 between-model spread collapses inside the measurement precision.
 
 ## Quick start
@@ -29,6 +29,13 @@ python analysis/generative_validity_check.py --results-dir results/faces
 python analysis/faces_e3_report.py --results-dir results/faces
 ```
 
+Every analysis script asserts that it reproduces a number the paper already prints before it
+writes anything: `per_category_kappa.py` refuses to run unless the per-category values average
+to the reported 0.468 and 0.204, `anchor_significance.py` and `published_anchor_significance.py`
+refuse unless the anchor reproduces, and `eif_significance.py` refuses unless every published
+point estimate does. A drift in the scoring path therefore fails loudly here rather than
+producing a plausible different number.
+
 ## What is here
 
 | path | contents |
@@ -43,6 +50,13 @@ python analysis/faces_e3_report.py --results-dir results/faces
 | `analysis/readout_bootstrap.py` | intervals on the binarisation drop and on the spread collapse |
 | `analysis/published_baselines.py` | the benchmark's own 14 published baselines, rescored through this path |
 | `analysis/make_paper_figures.py` | regenerates the paper's figures from the JSONs below |
+| `analysis/reliability_vs_performance.py` | the scoring core the scripts above import: per-category agreement, calibration, weighted kappa |
+| `analysis/e1_report.py`, `analysis/e0_report.py` | per-model kappa and mAP for the verification and generative arms |
+| `analysis/anchor_significance.py` | the paired test behind "significantly above the anchor": both sides recomputed per replicate |
+| `analysis/eif_significance.py` | the comparison against the benchmark's own trained model, as a paired difference |
+| `analysis/published_anchor_significance.py` | the same test for the benchmark's own published baselines |
+| `analysis/per_category_kappa.py` | agreement per category beside performance per category |
+| `analysis/size_vs_score.py` | parameter count against score, on both estimators |
 | `data/verify_predictions.npz` | 46 matrices of `(2500 × 40)` `P(yes)`, every EmoNet arm |
 | `analysis/noimg_control.py` | the perception floor: both arms with every face replaced by grey |
 | `results/faces/` | per-image FACES predictions, 22 arms |

@@ -28,9 +28,18 @@
 # most expensive arm directly makes the table reproduce every measured peak by construction,
 # and vram_map.py's ARM_FACTOR scales the cheaper arms down from there.
 #
-# MiniCPM-V-4.6 is the one row that is NOT measured -- it has never completed a run. Its two
-# numbers are back-solved from the old shard request of 28 GB and should be replaced the
-# first time it profiles.
+# MiniCPM-V-4.6's two numbers are back-solved from an old 28 GB shard request, not measured,
+# and they are WRONG IN BOTH DIRECTIONS. Measured 2026-08-18: resting VRAM after load is
+# 3.1 GB, not 18.00 -- so the sizing is wildly conservative -- yet the `paper_once` arm still
+# OOM'd at bs=28 (job 41427, one 41.82 GiB allocation on a 44.42 GiB card). The reason is that
+# `act_gb_per_sample` is a single number per model while the arms differ enormously in prompt
+# length: the benchmark's phrasing plus a 151k-vocab fp32 logit tensor dominates, and the
+# `ours` arm at bs=24 fits fine (job 41426, 2385/2500 parsed in 53 min). Until this row is
+# profiled per arm, run paper_once with BATCH_OVERRIDE=8.
+#
+# The reason it went unmeasured for two weeks is NOT that it failed: it passed its smoke on
+# 2026-08-04 at 17:03, and collect_smoke.sh wrote the survivor list at 17:14 gating on a
+# result file that landed at 17:15. See the note in that script.
 #
 # Measured at --max-image-pixels 262144, which beat 1048576 on every single model while using
 # 5-7 GB less VRAM. A larger pixel cap raises the slope (GLM 0.78 -> ~1.15), so these numbers

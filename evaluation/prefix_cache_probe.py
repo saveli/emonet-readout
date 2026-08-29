@@ -213,7 +213,7 @@ def main() -> int:
     ap.add_argument("--answer-prefill", default="Answer:")
     ap.add_argument("--thinking", choices=["off", "on", "auto"], default="off")
     ap.add_argument("--rows", type=int, default=8)
-    ap.add_argument("--out", type=Path, default=Path("analysis/prefix_cache_probe.json"))
+    ap.add_argument("--out", type=Path, default=Path("results/prefix_cache_probe.json"))
     args = ap.parse_args()
 
     results = []
