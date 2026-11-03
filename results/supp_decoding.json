@@ -1,0 +1,182 @@
+{
+  "reported_policy": {
+    "GLM-4.6V-Flash": "card",
+    "InternVL3_5-8B-HF": "greedy",
+    "MiMo-VL-7B-RL-2508": "card",
+    "MiniCPM-V-4.6": "card",
+    "Ministral-3-14B-Instruct-2512": "greedy",
+    "Qwen2.5-VL-3B-Instruct": "greedy",
+    "Qwen3-VL-8B-Instruct": "greedy",
+    "Qwen3.5-9B": "card",
+    "gemma-3-12b-it": "greedy",
+    "gemma-3-4b-it": "greedy",
+    "gemma-4-12B-it": "greedy"
+  },
+  "policies": {
+    "greedy": {
+      "text": 0.4249069730972584,
+      "delta": 0.12815922492377899,
+      "delta_ci": [
+        0.1214062854194006,
+        0.13349426406561204
+      ],
+      "pyes_wins_ci": 11,
+      "text_above_point": 4,
+      "text_above_ci": 2,
+      "per_model": {
+        "GLM-4.6V-Flash": 0.4712065233094716,
+        "InternVL3_5-8B-HF": 0.423153927127281,
+        "MiMo-VL-7B-RL-2508": 0.40829365513502636,
+        "MiniCPM-V-4.6": 0.28518084778348307,
+        "Ministral-3-14B-Instruct-2512": 0.46720527491136404,
+        "Qwen2.5-VL-3B-Instruct": 0.29587784861120264,
+        "Qwen3-VL-8B-Instruct": 0.4962172298048488,
+        "Qwen3.5-9B": 0.47423676930575737,
+        "gemma-3-12b-it": 0.4465672107140726,
+        "gemma-3-4b-it": 0.4030255185465162,
+        "gemma-4-12B-it": 0.5030118988208182
+      }
+    },
+    "card": {
+      "text": 0.42795560443505276,
+      "delta": 0.12511059358598461,
+      "delta_ci": [
+        0.11942443303116985,
+        0.13065470697496093
+      ],
+      "pyes_wins_ci": 11,
+      "text_above_point": 4,
+      "text_above_ci": 3,
+      "per_model": {
+        "GLM-4.6V-Flash": 0.4818119038596859,
+        "InternVL3_5-8B-HF": 0.411463427711371,
+        "MiMo-VL-7B-RL-2508": 0.4116650216337054,
+        "MiniCPM-V-4.6": 0.287967735877205,
+        "Ministral-3-14B-Instruct-2512": 0.48521769465604825,
+        "Qwen2.5-VL-3B-Instruct": 0.30978883423173115,
+        "Qwen3-VL-8B-Instruct": 0.5000690053262299,
+        "Qwen3.5-9B": 0.4633650026419807,
+        "gemma-3-12b-it": 0.4403640188241593,
+        "gemma-3-4b-it": 0.4188234435329409,
+        "gemma-4-12B-it": 0.4969755604905224
+      }
+    }
+  },
+  "card_minus_greedy": {
+    "GLM-4.6V-Flash": {
+      "d": 0.010605380550214316,
+      "ci": [
+        0.0009851592323260258,
+        0.018777633319120822
+      ]
+    },
+    "InternVL3_5-8B-HF": {
+      "d": -0.011690499415909994,
+      "ci": [
+        -0.029230904612069442,
+        0.004160258792240001
+      ]
+    },
+    "MiMo-VL-7B-RL-2508": {
+      "d": 0.0033713664986790293,
+      "ci": [
+        -0.01131628211555543,
+        0.016563561453899166
+      ]
+    },
+    "MiniCPM-V-4.6": {
+      "d": 0.0027868880937219065,
+      "ci": [
+        -0.016823838243975736,
+        0.025946158067410064
+      ]
+    },
+    "Ministral-3-14B-Instruct-2512": {
+      "d": 0.018012419744684205,
+      "ci": [
+        0.005460206141254297,
+        0.029615439196162288
+      ]
+    },
+    "Qwen2.5-VL-3B-Instruct": {
+      "d": 0.013910985620528504,
+      "ci": [
+        0.00045071995237046133,
+        0.026628495109559096
+      ]
+    },
+    "Qwen3-VL-8B-Instruct": {
+      "d": 0.0038517755213811067,
+      "ci": [
+        -0.006388443806974456,
+        0.01536112660232133
+      ]
+    },
+    "Qwen3.5-9B": {
+      "d": -0.01087176666377665,
+      "ci": [
+        -0.025149292846121538,
+        0.0029414849881978867
+      ]
+    },
+    "gemma-3-12b-it": {
+      "d": -0.0062031918899133065,
+      "ci": [
+        -0.016376581166759656,
+        0.0029698985891883968
+      ]
+    },
+    "gemma-3-4b-it": {
+      "d": 0.015797924986424683,
+      "ci": [
+        0.0021886008795629856,
+        0.027811198010042466
+      ]
+    },
+    "gemma-4-12B-it": {
+      "d": -0.006036338330295821,
+      "ci": [
+        -0.013609608183579465,
+        0.0019178202007051589
+      ]
+    }
+  },
+  "max_abs_card_minus_greedy": 0.018012419744684205,
+  "mean_card_minus_greedy": 0.003048631337794362,
+  "mean_card_minus_greedy_ci": [
+    -0.0011544428507374853,
+    0.0068773554778372315
+  ],
+  "as_reported_delta": 0.12762360051661184,
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "supplementary_tables.py decoding",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_e0_decode": "c865b1e071232d85",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

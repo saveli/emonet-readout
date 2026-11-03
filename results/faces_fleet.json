@@ -1,0 +1,263 @@
+{
+  "rows": [
+    {
+      "model": "GLM-4.6V-Flash",
+      "acc_pyes": 0.7110136452241715,
+      "acc_text": 0.7046783625730995,
+      "delta": 0.006335282651072083,
+      "ci": [
+        -0.007797270955165692,
+        0.020467836257309968
+      ],
+      "verdict": "indistinguishable",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.0007095009679385367,
+      "delta_macro_f1_ci": [
+        -0.015204650500825154,
+        0.0170512195527869
+      ]
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "acc_pyes": 0.8401559454191033,
+      "acc_text": 0.8001949317738791,
+      "delta": 0.0399610136452242,
+      "ci": [
+        0.025341130604288553,
+        0.05409356725146208
+      ],
+      "verdict": "above",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.049849133602711815,
+      "delta_macro_f1_ci": [
+        0.03383745166210204,
+        0.06501525549717017
+      ]
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "acc_pyes": 0.6232943469785575,
+      "acc_text": 0.6437621832358674,
+      "delta": -0.020467836257309968,
+      "ci": [
+        -0.03411306042884987,
+        -0.006822612085769952
+      ],
+      "verdict": "below",
+      "single_answer_gap": 0.1736765088622252,
+      "single_answer_check": "INVALID",
+      "delta_macro_f1": -0.03287817376132374,
+      "delta_macro_f1_ci": [
+        -0.04945886031414565,
+        -0.016576816832401857
+      ]
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "acc_pyes": 0.6686159844054581,
+      "acc_text": 0.6588693957115009,
+      "delta": 0.00974658869395717,
+      "ci": [
+        -0.008284600389863561,
+        0.02777777777777779
+      ],
+      "verdict": "indistinguishable",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": -0.017234414065664172,
+      "delta_macro_f1_ci": [
+        -0.03792232276082611,
+        0.0036260869792517133
+      ]
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "acc_pyes": 0.6842105263157895,
+      "acc_text": 0.5696881091617934,
+      "delta": 0.11452241715399614,
+      "ci": [
+        0.09844054580896688,
+        0.1306042884990254
+      ],
+      "verdict": "above",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.13738780234103876,
+      "delta_macro_f1_ci": [
+        0.11975401494357779,
+        0.15471313932341002
+      ]
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "acc_pyes": 0.577485380116959,
+      "acc_text": 0.5263157894736842,
+      "delta": 0.051169590643274865,
+      "ci": [
+        0.03410087719298243,
+        0.06968810916179335
+      ],
+      "verdict": "above",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.019880917673650966,
+      "delta_macro_f1_ci": [
+        0.0007255927129499686,
+        0.04045262444674247
+      ]
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "acc_pyes": 0.7621832358674464,
+      "acc_text": 0.7519493177387915,
+      "delta": 0.010233918128654929,
+      "ci": [
+        -0.0019493177387914784,
+        0.022916666666666693
+      ],
+      "verdict": "indistinguishable",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": -0.012115201307919987,
+      "delta_macro_f1_ci": [
+        -0.027411714275578456,
+        0.003563220780674104
+      ]
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "acc_pyes": 0.8148148148148148,
+      "acc_text": 0.7514619883040936,
+      "delta": 0.06335282651072116,
+      "ci": [
+        0.049220272904483386,
+        0.0779848927875244
+      ],
+      "verdict": "above",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.10139877907454531,
+      "delta_macro_f1_ci": [
+        0.0840933468715939,
+        0.11910269317910756
+      ]
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "acc_pyes": 0.6749512670565302,
+      "acc_text": 0.7383040935672515,
+      "delta": -0.06335282651072127,
+      "ci": [
+        -0.07797270955165692,
+        -0.04873294346978563
+      ],
+      "verdict": "below",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": -0.05147066191342298,
+      "delta_macro_f1_ci": [
+        -0.07050310322662577,
+        -0.033578659860316384
+      ]
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "acc_pyes": 0.7368421052631579,
+      "acc_text": 0.6876218323586745,
+      "delta": 0.049220272904483386,
+      "ci": [
+        0.031676413255360636,
+        0.06773879142300199
+      ],
+      "verdict": "above",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.05608258383014553,
+      "delta_macro_f1_ci": [
+        0.03687301723755077,
+        0.07556764390522026
+      ]
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "acc_pyes": 0.7821637426900585,
+      "acc_text": 0.7168615984405458,
+      "delta": 0.06530214424951275,
+      "ci": [
+        0.04873294346978552,
+        0.08188352826510714
+      ],
+      "verdict": "above",
+      "single_answer_gap": 0.0,
+      "single_answer_check": "CLEAN",
+      "delta_macro_f1": 0.060380278689387445,
+      "delta_macro_f1_ci": [
+        0.04294035043509965,
+        0.07757346126276973
+      ]
+    }
+  ],
+  "fleet": {
+    "all_11": {
+      "models": [
+        "GLM-4.6V-Flash",
+        "InternVL3_5-8B-HF",
+        "MiMo-VL-7B-RL-2508",
+        "MiniCPM-V-4.6",
+        "Ministral-3-14B-Instruct-2512",
+        "Qwen2.5-VL-3B-Instruct",
+        "Qwen3-VL-8B-Instruct",
+        "Qwen3.5-9B",
+        "gemma-3-12b-it",
+        "gemma-3-4b-it",
+        "gemma-4-12B-it"
+      ],
+      "mean_delta": 0.02963849016480595,
+      "ci": [
+        0.023391812865497085,
+        0.0361952861952862
+      ],
+      "gains_ci": 6,
+      "null_ci": 3,
+      "reversals_ci": 2,
+      "mean_delta_macro_f1": 0.02836277683009886
+    },
+    "check_passing_10": {
+      "models": [
+        "GLM-4.6V-Flash",
+        "InternVL3_5-8B-HF",
+        "MiniCPM-V-4.6",
+        "Ministral-3-14B-Instruct-2512",
+        "Qwen2.5-VL-3B-Instruct",
+        "Qwen3-VL-8B-Instruct",
+        "Qwen3.5-9B",
+        "gemma-3-12b-it",
+        "gemma-3-4b-it",
+        "gemma-4-12B-it"
+      ],
+      "mean_delta": 0.03464912280701754,
+      "ci": [
+        0.028068957115009743,
+        0.04161793372319687
+      ],
+      "gains_ci": 6,
+      "null_ci": 3,
+      "reversals_ci": 1,
+      "mean_delta_macro_f1": 0.03448687188924112
+    }
+  },
+  "n_persons": 171,
+  "provenance": {
+    "B": 2000,
+    "seed": 0,
+    "resampling": "persons, shared across models",
+    "metric": "six-way accuracy (argmax); no mapping",
+    "exclusion": "none; single-answer gap reported as a diagnostic",
+    "script": "faces_fleet.py",
+    "sources": {
+      "results/faces": "8e47f0867b021e3f"
+    }
+  }
+}

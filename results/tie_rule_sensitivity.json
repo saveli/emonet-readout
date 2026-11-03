@@ -1,0 +1,486 @@
+{
+  "settings": {
+    "fractional/rater_pooled": {
+      "text": 0.4254425975044256,
+      "pyes": 0.5530661980210373,
+      "delta": 0.12762360051661184,
+      "delta_ci": [
+        0.12134641566699939,
+        0.13331002231199757
+      ],
+      "anchor": 0.46816129648522525,
+      "panel": 0.5625566535481871,
+      "pyes_above_point": 11,
+      "pyes_above_ci": 11,
+      "pyes_below_ci": 0,
+      "text_above_point": 3,
+      "text_above_ci": 2,
+      "text_below_ci": 6,
+      "panel_above_point": 2,
+      "panel_above_ci": 1,
+      "panel_below_ci": 6,
+      "matched": 0.47759681983527325,
+      "share": 0.4038648818201411,
+      "share_ci": [
+        0.37284800354341907,
+        0.42263065420551327
+      ],
+      "det_text": 0.28126020581335326,
+      "det_pyes": 0.45653522895205717,
+      "tv_text": 7.660247120965348e-15,
+      "tv_pyes": 2.800237945562016e-16,
+      "text_arms": {
+        "GLM-4.6V-Flash": "paper_once",
+        "InternVL3_5-8B-HF": "paper_once",
+        "MiMo-VL-7B-RL-2508": "ours",
+        "MiniCPM-V-4.6": "ours",
+        "Ministral-3-14B-Instruct-2512": "paper_once",
+        "Qwen2.5-VL-3B-Instruct": "paper_once",
+        "Qwen3-VL-8B-Instruct": "paper_once",
+        "Qwen3.5-9B": "paper_once",
+        "gemma-3-12b-it": "paper_once",
+        "gemma-3-4b-it": "ours",
+        "gemma-4-12B-it": "paper_once"
+      },
+      "arm_switches": {},
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "text": 0.4818119038596859,
+          "pyes": 0.5919338049991342
+        },
+        "InternVL3_5-8B-HF": {
+          "text": 0.423153927127281,
+          "pyes": 0.5800875768116744
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "text": 0.4116650216337054,
+          "pyes": 0.5568267649987035
+        },
+        "MiniCPM-V-4.6": {
+          "text": 0.287967735877205,
+          "pyes": 0.5417636058868847
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "text": 0.46720527491136404,
+          "pyes": 0.5383808623876252
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "text": 0.29587784861120264,
+          "pyes": 0.5133485533773599
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "text": 0.4962172298048488,
+          "pyes": 0.5626768820329203
+        },
+        "Qwen3.5-9B": {
+          "text": 0.4633650026419807,
+          "pyes": 0.5697733465132844
+        },
+        "gemma-3-12b-it": {
+          "text": 0.4465672107140726,
+          "pyes": 0.5319503874735549
+        },
+        "gemma-3-4b-it": {
+          "text": 0.4030255185465162,
+          "pyes": 0.5317970178574662
+        },
+        "gemma-4-12B-it": {
+          "text": 0.5030118988208182,
+          "pyes": 0.5651893758928029
+        }
+      },
+      "frozen_reproduced": true
+    },
+    "midpoint/mean_halfup": {
+      "text": 0.4334229081164929,
+      "pyes": 0.5533243531033906,
+      "delta": 0.11990144498689782,
+      "delta_ci": [
+        0.11365051201026853,
+        0.1255823625562246
+      ],
+      "anchor": 0.46816129648522525,
+      "panel": 0.5632151589750639,
+      "pyes_above_point": 11,
+      "pyes_above_ci": 11,
+      "pyes_below_ci": 0,
+      "text_above_point": 4,
+      "text_above_ci": 3,
+      "text_below_ci": 7,
+      "panel_above_point": 2,
+      "panel_above_ci": 1,
+      "panel_below_ci": 8,
+      "matched": 0.4905159736747801,
+      "share": 0.4704713209700938,
+      "share_ci": [
+        0.4354294107510587,
+        0.4902323646129341
+      ],
+      "det_text": 0.3163954058984605,
+      "det_pyes": 0.41315176069406795,
+      "tv_text": 0.19249619928560682,
+      "tv_pyes": 0.01098909090909091,
+      "text_arms": {
+        "GLM-4.6V-Flash": "paper_once",
+        "InternVL3_5-8B-HF": "paper_once",
+        "MiMo-VL-7B-RL-2508": "ours",
+        "MiniCPM-V-4.6": "ours",
+        "Ministral-3-14B-Instruct-2512": "paper_once",
+        "Qwen2.5-VL-3B-Instruct": "paper_once",
+        "Qwen3-VL-8B-Instruct": "paper_once",
+        "Qwen3.5-9B": "paper_once",
+        "gemma-3-12b-it": "paper_once",
+        "gemma-3-4b-it": "ours",
+        "gemma-4-12B-it": "paper_once"
+      },
+      "arm_switches": {},
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "text": 0.49672176971059157,
+          "pyes": 0.5909548195196995
+        },
+        "InternVL3_5-8B-HF": {
+          "text": 0.4442479643217244,
+          "pyes": 0.5810490219658042
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "text": 0.4299960690051539,
+          "pyes": 0.5528121851511081
+        },
+        "MiniCPM-V-4.6": {
+          "text": 0.27820050024156495,
+          "pyes": 0.5466853853352256
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "text": 0.4825762387765603,
+          "pyes": 0.5399839977571821
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "text": 0.31309278191491163,
+          "pyes": 0.5129624272268462
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "text": 0.496982199529329,
+          "pyes": 0.5601867347570704
+        },
+        "Qwen3.5-9B": {
+          "text": 0.45627690902728696,
+          "pyes": 0.569740346927325
+        },
+        "gemma-3-12b-it": {
+          "text": 0.4477287966225501,
+          "pyes": 0.5341685708832704
+        },
+        "gemma-3-4b-it": {
+          "text": 0.410849213096392,
+          "pyes": 0.5341614267494696
+        },
+        "gemma-4-12B-it": {
+          "text": 0.5109795470353562,
+          "pyes": 0.5638629678642958
+        }
+      },
+      "frozen_reproduced": true
+    },
+    "fractional/mean_halfup": {
+      "text": 0.4026781914117064,
+      "pyes": 0.5513568850699282,
+      "delta": 0.14867869365822187,
+      "delta_ci": [
+        0.1420268846051311,
+        0.15406645118451345
+      ],
+      "anchor": 0.46816129648522525,
+      "panel": 0.5632151589750639,
+      "pyes_above_point": 11,
+      "pyes_above_ci": 11,
+      "pyes_below_ci": 0,
+      "text_above_point": 1,
+      "text_above_ci": 0,
+      "text_below_ci": 8,
+      "panel_above_point": 2,
+      "panel_above_ci": 1,
+      "panel_below_ci": 8,
+      "matched": 0.4557076580038126,
+      "share": 0.35336594633518964,
+      "share_ci": [
+        0.3265107426775268,
+        0.3711949645818017
+      ],
+      "det_text": 0.21651366591296445,
+      "det_pyes": 0.40721316008674147,
+      "tv_text": 9.18745380830926e-15,
+      "tv_pyes": 5.797288154580309e-16,
+      "text_arms": {
+        "GLM-4.6V-Flash": "paper_once",
+        "InternVL3_5-8B-HF": "paper_once",
+        "MiMo-VL-7B-RL-2508": "ours",
+        "MiniCPM-V-4.6": "ours",
+        "Ministral-3-14B-Instruct-2512": "paper_once",
+        "Qwen2.5-VL-3B-Instruct": "paper_once",
+        "Qwen3-VL-8B-Instruct": "paper_once",
+        "Qwen3.5-9B": "paper_once",
+        "gemma-3-12b-it": "paper_once",
+        "gemma-3-4b-it": "ours",
+        "gemma-4-12B-it": "paper_once"
+      },
+      "arm_switches": {},
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "text": 0.4675531041358106,
+          "pyes": 0.5906736743542756
+        },
+        "InternVL3_5-8B-HF": {
+          "text": 0.3952175572126053,
+          "pyes": 0.580950705994315
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "text": 0.38853771834784767,
+          "pyes": 0.5527958430108441
+        },
+        "MiniCPM-V-4.6": {
+          "text": 0.26269929694051186,
+          "pyes": 0.5357143341645207
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "text": 0.4411585430820816,
+          "pyes": 0.5399176842289686
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "text": 0.27823237187807004,
+          "pyes": 0.512888458268468
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "text": 0.48472661030585745,
+          "pyes": 0.5600969915315186
+        },
+        "Qwen3.5-9B": {
+          "text": 0.4364321516125753,
+          "pyes": 0.5695984483653265
+        },
+        "gemma-3-12b-it": {
+          "text": 0.42878657532697434,
+          "pyes": 0.5337741761424016
+        },
+        "gemma-3-4b-it": {
+          "text": 0.3789395801541238,
+          "pyes": 0.5246655775622919
+        },
+        "gemma-4-12B-it": {
+          "text": 0.46717659653231236,
+          "pyes": 0.5638498421462803
+        }
+      }
+    },
+    "midpoint/rater_pooled": {
+      "text": 0.44810657633651746,
+      "pyes": 0.5547869048487104,
+      "delta": 0.10668032851219289,
+      "delta_ci": [
+        0.10006611384042237,
+        0.11182988907287465
+      ],
+      "anchor": 0.46816129648522525,
+      "panel": 0.5626256938712907,
+      "pyes_above_point": 11,
+      "pyes_above_ci": 11,
+      "pyes_below_ci": 0,
+      "text_above_point": 5,
+      "text_above_ci": 4,
+      "text_below_ci": 4,
+      "panel_above_point": 2,
+      "panel_above_ci": 1,
+      "panel_below_ci": 6,
+      "matched": 0.5026826496332881,
+      "share": 0.5045187180757794,
+      "share_ci": [
+        0.468109450772767,
+        0.5257118611152278
+      ],
+      "det_text": 0.3294341821794942,
+      "det_pyes": 0.4576201818257545,
+      "tv_text": 0.11843723911719986,
+      "tv_pyes": 0.007516363636363633,
+      "text_arms": {
+        "GLM-4.6V-Flash": "paper_once",
+        "InternVL3_5-8B-HF": "paper_once",
+        "MiMo-VL-7B-RL-2508": "ours",
+        "MiniCPM-V-4.6": "ours",
+        "Ministral-3-14B-Instruct-2512": "paper_once",
+        "Qwen2.5-VL-3B-Instruct": "paper_once",
+        "Qwen3-VL-8B-Instruct": "paper_once",
+        "Qwen3.5-9B": "paper_once",
+        "gemma-3-12b-it": "paper_once",
+        "gemma-3-4b-it": "ours",
+        "gemma-4-12B-it": "paper_once"
+      },
+      "arm_switches": {},
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "text": 0.49679031575936533,
+          "pyes": 0.5918777303896976
+        },
+        "InternVL3_5-8B-HF": {
+          "text": 0.4655614086643314,
+          "pyes": 0.5800910051179649
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "text": 0.4466495185932322,
+          "pyes": 0.5567826562246498
+        },
+        "MiniCPM-V-4.6": {
+          "text": 0.29997330025124386,
+          "pyes": 0.5493254110165349
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "text": 0.484898408482192,
+          "pyes": 0.5383239659560605
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "text": 0.3217926979128209,
+          "pyes": 0.51327163110789
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "text": 0.5137290208976467,
+          "pyes": 0.5626510119570782
+        },
+        "Qwen3.5-9B": {
+          "text": 0.4767432292187791,
+          "pyes": 0.5697913992096869
+        },
+        "gemma-3-12b-it": {
+          "text": 0.4644546299535639,
+          "pyes": 0.5321853530195962
+        },
+        "gemma-3-4b-it": {
+          "text": 0.43249005843702293,
+          "pyes": 0.5432014056445512
+        },
+        "gemma-4-12B-it": {
+          "text": 0.5260897515314937,
+          "pyes": 0.5651543836921037
+        }
+      }
+    },
+    "midpoint/mean_halfeven": {
+      "text": 0.43073705082269154,
+      "pyes": 0.5500807143338947,
+      "delta": 0.11934366351120315,
+      "delta_ci": [
+        0.11260007485328101,
+        0.12480515235746804
+      ],
+      "anchor": 0.46816129648522525,
+      "panel": 0.5632151589750639,
+      "pyes_above_point": 11,
+      "pyes_above_ci": 11,
+      "pyes_below_ci": 0,
+      "text_above_point": 4,
+      "text_above_ci": 3,
+      "text_below_ci": 7,
+      "panel_above_point": 2,
+      "panel_above_ci": 1,
+      "panel_below_ci": 8,
+      "matched": 0.4853382658889985,
+      "share": 0.45200831646511014,
+      "share_ci": [
+        0.4222537313119516,
+        0.47566449899490515
+      ],
+      "det_text": 0.3266392189540873,
+      "det_pyes": 0.44460483068010714,
+      "tv_text": 0.14345929045565298,
+      "tv_pyes": 0.00845818181818182,
+      "text_arms": {
+        "GLM-4.6V-Flash": "paper_once",
+        "InternVL3_5-8B-HF": "paper_once",
+        "MiMo-VL-7B-RL-2508": "ours",
+        "MiniCPM-V-4.6": "ours",
+        "Ministral-3-14B-Instruct-2512": "paper_once",
+        "Qwen2.5-VL-3B-Instruct": "paper_once",
+        "Qwen3-VL-8B-Instruct": "paper_once",
+        "Qwen3.5-9B": "paper_once",
+        "gemma-3-12b-it": "paper_once",
+        "gemma-3-4b-it": "ours",
+        "gemma-4-12B-it": "paper_once"
+      },
+      "arm_switches": {},
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "text": 0.4927647240126687,
+          "pyes": 0.5870651338454602
+        },
+        "InternVL3_5-8B-HF": {
+          "text": 0.4425575961185353,
+          "pyes": 0.577397794399866
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "text": 0.42764516148344356,
+          "pyes": 0.5495179322372671
+        },
+        "MiniCPM-V-4.6": {
+          "text": 0.27547257427841976,
+          "pyes": 0.5433934587847622
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "text": 0.4710229930867663,
+          "pyes": 0.537079662253422
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "text": 0.3101251334418385,
+          "pyes": 0.5100313692318971
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "text": 0.5014355730453057,
+          "pyes": 0.5563966138169613
+        },
+        "Qwen3.5-9B": {
+          "text": 0.4551558311934635,
+          "pyes": 0.5659463096018998
+        },
+        "gemma-3-12b-it": {
+          "text": 0.44755621206030793,
+          "pyes": 0.5287946058402611
+        },
+        "gemma-3-4b-it": {
+          "text": 0.41034397994608884,
+          "pyes": 0.5342638147432937
+        },
+        "gemma-4-12B-it": {
+          "text": 0.5040277803827692,
+          "pyes": 0.5610011629177516
+        }
+      }
+    }
+  },
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "varies (see settings)",
+    "target": "varies (see settings)",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "tie_rule_sensitivity.py",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

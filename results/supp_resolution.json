@@ -1,0 +1,165 @@
+{
+  "text_512_minus_1024": 0.0013767057510525567,
+  "text_512_minus_1024_ci": [
+    -0.002595961033456216,
+    0.004734074787820029
+  ],
+  "text_512_minus_1024_per_model": {
+    "GLM-4.6V-Flash": {
+      "d": -0.0042313708901383085,
+      "ci": [
+        -0.014700765643550856,
+        0.006142267672455087
+      ]
+    },
+    "InternVL3_5-8B-HF": {
+      "d": 0.005115417481706519,
+      "ci": [
+        -0.007875013851998491,
+        0.01822997279612396
+      ]
+    },
+    "MiMo-VL-7B-RL-2508": {
+      "d": 0.013444932744180682,
+      "ci": [
+        -0.004843459292064532,
+        0.0308380875661454
+      ]
+    },
+    "MiniCPM-V-4.6": {
+      "d": 0.008725648508520922,
+      "ci": [
+        -0.012810348619772585,
+        0.02732388673039398
+      ]
+    },
+    "Ministral-3-14B-Instruct-2512": {
+      "d": -0.009460079765697682,
+      "ci": [
+        -0.015919292559811626,
+        -0.003947920028047878
+      ]
+    },
+    "Qwen2.5-VL-3B-Instruct": {
+      "d": -0.003272977410862632,
+      "ci": [
+        -0.009188342777828724,
+        0.0013003294660723062
+      ]
+    },
+    "Qwen3-VL-8B-Instruct": {
+      "d": -0.0037603464578145895,
+      "ci": [
+        -0.012281310535987564,
+        0.0037482629130709834
+      ]
+    },
+    "Qwen3.5-9B": {
+      "d": 0.0001753302323735939,
+      "ci": [
+        -0.013819146382934274,
+        0.013489447863768572
+      ]
+    },
+    "gemma-3-12b-it": {
+      "d": 0.0037567692919937556,
+      "ci": [
+        -0.006180567878462233,
+        0.013692776212907445
+      ]
+    },
+    "gemma-3-4b-it": {
+      "d": -0.006317670911083539,
+      "ci": [
+        -0.014490684324027479,
+        0.0034017871044147866
+      ]
+    },
+    "gemma-4-12B-it": {
+      "d": 0.010968110438399403,
+      "ci": [
+        0.0035748661224214427,
+        0.018084219738035007
+      ]
+    }
+  },
+  "text_cap_sig": 2,
+  "contrast_at_512": 0.12273157690489697,
+  "contrast_at_512_ci": [
+    0.11605143591918468,
+    0.12821357725499832
+  ],
+  "n_models_512": 10,
+  "models_512": [
+    "GLM-4.6V-Flash",
+    "InternVL3_5-8B-HF",
+    "MiMo-VL-7B-RL-2508",
+    "Ministral-3-14B-Instruct-2512",
+    "Qwen2.5-VL-3B-Instruct",
+    "Qwen3-VL-8B-Instruct",
+    "Qwen3.5-9B",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
+    "gemma-4-12B-it"
+  ],
+  "contrast_at_1024": 0.1290003062676644,
+  "contrast_at_1024_ci": [
+    0.12188256759343666,
+    0.1345753016692625
+  ],
+  "contrast_as_reported": 0.12762360051661184,
+  "contrast_as_reported_ci": [
+    0.12134641566699939,
+    0.13331002231199757
+  ],
+  "pyes_512_minus_1024": 0.007725203337591924,
+  "pyes_512_minus_1024_ci": [
+    0.00504172483365724,
+    0.009771867108303413
+  ],
+  "text_arm_fixed": {
+    "GLM-4.6V-Flash": "paper_once",
+    "InternVL3_5-8B-HF": "paper_once",
+    "MiMo-VL-7B-RL-2508": "ours",
+    "MiniCPM-V-4.6": "ours",
+    "Ministral-3-14B-Instruct-2512": "paper_once",
+    "Qwen2.5-VL-3B-Instruct": "paper_once",
+    "Qwen3-VL-8B-Instruct": "paper_once",
+    "Qwen3.5-9B": "paper_once",
+    "gemma-3-12b-it": "paper_once",
+    "gemma-3-4b-it": "ours",
+    "gemma-4-12B-it": "paper_once"
+  },
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "supplementary_tables.py resolution",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_e0_px1024": "56dc87f9df725d64",
+      "results_verify_px512": "505824a6a6e404ce",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

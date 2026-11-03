@@ -1,0 +1,530 @@
+{
+  "anchor": 0.46816129648522525,
+  "anchor_ci": [
+    0.4508462323785607,
+    0.48425667352216284
+  ],
+  "rows": [
+    {
+      "annotator": "Empathic Insight Face Small",
+      "mean_nonzero": 17.172206647977575,
+      "sd_nonzero": 2.602788863582662,
+      "n_scored": 2497,
+      "kappa_raw_no_mapping": 0.4853890965926951,
+      "heldout": {
+        "kappa_w": 0.5553523007890819,
+        "ci": [
+          0.5381820535237427,
+          0.5708056540051155
+        ],
+        "minus_anchor": 0.08719100430385668,
+        "minus_anchor_ci": [
+          0.07387528239204974,
+          0.09788173477770722
+        ],
+        "verdict": "above"
+      },
+      "oracle": {
+        "kappa_w": 0.5562088472547738,
+        "ci": [
+          0.5403434222700995,
+          0.5728578666316169
+        ],
+        "minus_anchor": 0.08804755076954857,
+        "minus_anchor_ci": [
+          0.07642908864454608,
+          0.0999994974318615
+        ],
+        "verdict": "above"
+      },
+      "mapping_gain": 0.06996320419638685
+    },
+    {
+      "annotator": "Empathic Insight Face Large",
+      "mean_nonzero": 18.710130718954247,
+      "sd_nonzero": 2.9180465054123377,
+      "n_scored": 2499,
+      "kappa_raw_no_mapping": 0.40136990940427253,
+      "heldout": {
+        "kappa_w": 0.5390068341732082,
+        "ci": [
+          0.5221691368207327,
+          0.5547056017189763
+        ],
+        "minus_anchor": 0.0708455376879829,
+        "minus_anchor_ci": [
+          0.05658671277475135,
+          0.08299422424228238
+        ],
+        "verdict": "above"
+      },
+      "oracle": {
+        "kappa_w": 0.5398170695442412,
+        "ci": [
+          0.5235111676119537,
+          0.5559725097929336
+        ],
+        "minus_anchor": 0.07165577305901599,
+        "minus_anchor_ci": [
+          0.058375134157212905,
+          0.08500608092755359
+        ],
+        "verdict": "above"
+      },
+      "mapping_gain": 0.13763692476893563
+    },
+    {
+      "annotator": "Gemini 2.0 Flash ZS",
+      "mean_nonzero": 19.498,
+      "sd_nonzero": 8.507337773945501,
+      "n_scored": 2500,
+      "kappa_raw_no_mapping": 0.48480446088218454,
+      "heldout": {
+        "kappa_w": 0.5265636149246057,
+        "ci": [
+          0.5077270528379777,
+          0.5440477744839446
+        ],
+        "minus_anchor": 0.05840231843938043,
+        "minus_anchor_ci": [
+          0.04421178564010997,
+          0.0707872578253907
+        ],
+        "verdict": "above"
+      },
+      "oracle": {
+        "kappa_w": 0.5271708028471763,
+        "ci": [
+          0.5093897794296017,
+          0.5454799277380712
+        ],
+        "minus_anchor": 0.05900950636195107,
+        "minus_anchor_ci": [
+          0.04550069242533695,
+          0.07207723288550469
+        ],
+        "verdict": "above"
+      },
+      "mapping_gain": 0.04175915404242114
+    },
+    {
+      "annotator": "Hume Face*",
+      "mean_nonzero": 31,
+      "sd_nonzero": 0.0,
+      "n_scored": 2435,
+      "kappa_raw_no_mapping": 0.10223163646873434,
+      "heldout": {
+        "kappa_w": 0.4633249283359865,
+        "ci": [
+          0.4458910518027493,
+          0.47798039552851784
+        ],
+        "minus_anchor": -0.004836368149238768,
+        "minus_anchor_ci": [
+          -0.023030673806765933,
+          0.009953935975489655
+        ],
+        "verdict": "indistinguishable"
+      },
+      "oracle": {
+        "kappa_w": 0.46507823466738574,
+        "ci": [
+          0.44801196957006273,
+          0.4800483576708279
+        ],
+        "minus_anchor": -0.0030830618178395164,
+        "minus_anchor_ci": [
+          -0.021685444342029236,
+          0.011502097661539127
+        ],
+        "verdict": "indistinguishable"
+      },
+      "mapping_gain": 0.36109329186725214
+    },
+    {
+      "annotator": "Gemini 2.5 Pro 03-25 ZS",
+      "mean_nonzero": 4.837588267246062,
+      "sd_nonzero": 0.5097841678895471,
+      "n_scored": 1841,
+      "kappa_raw_no_mapping": 0.45178510361261603,
+      "heldout": {
+        "kappa_w": 0.4435308938686866,
+        "ci": [
+          0.42079307765845625,
+          0.4662560076294744
+        ],
+        "minus_anchor": -0.02463040261653865,
+        "minus_anchor_ci": [
+          -0.04492518459390449,
+          -0.007489353360906161
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.4446572629409379,
+        "ci": [
+          0.4225102723460917,
+          0.4681811061968407
+        ],
+        "minus_anchor": -0.023504033544287373,
+        "minus_anchor_ci": [
+          -0.04301241848366094,
+          -0.00568221155562441
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": -0.00825420974392943
+    },
+    {
+      "annotator": "Gemini 2.5 Flash MS",
+      "mean_nonzero": 4.925570228091236,
+      "sd_nonzero": 0.3442525655700312,
+      "n_scored": 2499,
+      "kappa_raw_no_mapping": 0.4254266241954986,
+      "heldout": {
+        "kappa_w": 0.4319214597838649,
+        "ci": [
+          0.41385506988234405,
+          0.44932417144739745
+        ],
+        "minus_anchor": -0.03623983670136033,
+        "minus_anchor_ci": [
+          -0.052671503497429946,
+          -0.02406516310714592
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.43249786349577235,
+        "ci": [
+          0.4152943848240994,
+          0.45068007190454856
+        ],
+        "minus_anchor": -0.0356634329894529,
+        "minus_anchor_ci": [
+          -0.05119257562988899,
+          -0.022935010731506604
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": 0.006494835588366332
+    },
+    {
+      "annotator": "Gemini 2.0 Flash MS",
+      "mean_nonzero": 4.176282051282051,
+      "sd_nonzero": 0.654874442799297,
+      "n_scored": 2496,
+      "kappa_raw_no_mapping": 0.3906405009522538,
+      "heldout": {
+        "kappa_w": 0.3853229926413625,
+        "ci": [
+          0.36567698603680654,
+          0.40310289744155875
+        ],
+        "minus_anchor": -0.08283830384386276,
+        "minus_anchor_ci": [
+          -0.10195441867362132,
+          -0.0687841056099458
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.385888318485481,
+        "ci": [
+          0.36725898022094,
+          0.4044932941469508
+        ],
+        "minus_anchor": -0.08227297799974426,
+        "minus_anchor_ci": [
+          -0.10013919775050706,
+          -0.067537978468999
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": -0.0053175083108912835
+    },
+    {
+      "annotator": "GPT-4o ZS",
+      "mean_nonzero": 24.9968,
+      "sd_nonzero": 0.15996799679935983,
+      "n_scored": 2500,
+      "kappa_raw_no_mapping": 0.008382893281386621,
+      "heldout": {
+        "kappa_w": 0.007987045449754988,
+        "ci": [
+          -0.007682178007971588,
+          0.02530010724566653
+        ],
+        "minus_anchor": -0.46017425103547027,
+        "minus_anchor_ci": [
+          -0.48331618564610734,
+          -0.43540159413421536
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.008299083901267896,
+        "ci": [
+          -0.007333569710299047,
+          0.025777639671563886
+        ],
+        "minus_anchor": -0.4598622125839574,
+        "minus_anchor_ci": [
+          -0.4830987607512367,
+          -0.43496175580269664
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": -0.00039584783163163287
+    },
+    {
+      "annotator": "Random Baseline",
+      "mean_nonzero": 40,
+      "sd_nonzero": 0.0,
+      "n_scored": 2435,
+      "kappa_raw_no_mapping": 0.0019039104378785088,
+      "heldout": {
+        "kappa_w": 0.007713598665105735,
+        "ci": [
+          -0.005454921610619119,
+          0.02243811796885863
+        ],
+        "minus_anchor": -0.4604476978201195,
+        "minus_anchor_ci": [
+          -0.48298725129590797,
+          -0.4377528427831974
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.008544567666438496,
+        "ci": [
+          -0.004714030783433081,
+          0.023336397904998356
+        ],
+        "minus_anchor": -0.45961672881878674,
+        "minus_anchor_ci": [
+          -0.4824010898391754,
+          -0.43672632669061984
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": 0.005809688227227226
+    },
+    {
+      "annotator": "Nova Pro ZS",
+      "mean_nonzero": 25,
+      "sd_nonzero": 0.0,
+      "n_scored": 2500,
+      "kappa_raw_no_mapping": -0.0026282672732166113,
+      "heldout": {
+        "kappa_w": 0.004921109897901546,
+        "ci": [
+          -0.011631539063873266,
+          0.02046204169761108
+        ],
+        "minus_anchor": -0.4632401865873237,
+        "minus_anchor_ci": [
+          -0.4868844400601183,
+          -0.4418211452106736
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.0053280717460532255,
+        "ci": [
+          -0.01118340722076016,
+          0.02125056752394793
+        ],
+        "minus_anchor": -0.46283322473917204,
+        "minus_anchor_ci": [
+          -0.4866349749787467,
+          -0.44127787225511017
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": 0.007549377171118157
+    },
+    {
+      "annotator": "Qwen Plus ZS",
+      "mean_nonzero": 25,
+      "sd_nonzero": 0.0,
+      "n_scored": 2500,
+      "kappa_raw_no_mapping": 0.003415715770605554,
+      "heldout": {
+        "kappa_w": 0.004245939399188272,
+        "ci": [
+          -0.00043086858671110743,
+          0.009678307966834141
+        ],
+        "minus_anchor": -0.463915357086037,
+        "minus_anchor_ci": [
+          -0.4809087146488549,
+          -0.446824933834004
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.0045088911690076006,
+        "ci": [
+          -6.869714386297838e-05,
+          0.010135009542781457
+        ],
+        "minus_anchor": -0.46365240531621765,
+        "minus_anchor_ci": [
+          -0.4804551100615171,
+          -0.4463283834215467
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": 0.0008302236285827177
+    },
+    {
+      "annotator": "Pixtral Large ZS",
+      "mean_nonzero": 24.9924,
+      "sd_nonzero": 0.3799239923984796,
+      "n_scored": 2499,
+      "kappa_raw_no_mapping": 0.002305291692675032,
+      "heldout": {
+        "kappa_w": 0.003680246119892157,
+        "ci": [
+          -0.006002408843714348,
+          0.012775964585849321
+        ],
+        "minus_anchor": -0.4644810503653331,
+        "minus_anchor_ci": [
+          -0.48293397833617535,
+          -0.44578445251580784
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.0040264296645579345,
+        "ci": [
+          -0.005546989141766143,
+          0.013550841036628689
+        ],
+        "minus_anchor": -0.4641348668206673,
+        "minus_anchor_ci": [
+          -0.48232513655150283,
+          -0.44532039397388024
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": 0.0013749544272171248
+    },
+    {
+      "annotator": "Claude 3.7 MS",
+      "mean_nonzero": 4.6712,
+      "sd_nonzero": 0.7698639879874886,
+      "n_scored": 2500,
+      "kappa_raw_no_mapping": 0.0015899621200179404,
+      "heldout": {
+        "kappa_w": 8.604244417694527e-06,
+        "ci": [
+          -0.011814847066064756,
+          0.013019978631969333
+        ],
+        "minus_anchor": -0.4681526922408076,
+        "minus_anchor_ci": [
+          -0.48804420540255805,
+          -0.447396154534014
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": 0.00017014399016979098,
+        "ci": [
+          -0.011635161927313366,
+          0.013199761765808726
+        ],
+        "minus_anchor": -0.46799115249505546,
+        "minus_anchor_ci": [
+          -0.4875181795676905,
+          -0.44670263034868557
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": -0.0015813578756002458
+    },
+    {
+      "annotator": "Gemini 2.5 Flash ZS",
+      "mean_nonzero": 25,
+      "sd_nonzero": 0.0,
+      "n_scored": 2500,
+      "kappa_raw_no_mapping": -0.0027095745328994613,
+      "heldout": {
+        "kappa_w": -0.0010076621042088524,
+        "ci": [
+          -0.015164195287765424,
+          0.014307495914429709
+        ],
+        "minus_anchor": -0.4691689585894341,
+        "minus_anchor_ci": [
+          -0.492729937854222,
+          -0.4467432398415449
+        ],
+        "verdict": "below"
+      },
+      "oracle": {
+        "kappa_w": -0.0006806441743711922,
+        "ci": [
+          -0.014931585730933153,
+          0.015071013875609262
+        ],
+        "minus_anchor": -0.46884194065959645,
+        "minus_anchor_ci": [
+          -0.4924429381320826,
+          -0.44630954437518483
+        ],
+        "verdict": "below"
+      },
+      "mapping_gain": 0.001701912428690609
+    }
+  ],
+  "mapping_gain": {
+    "mean_all": 0.04419033161315324,
+    "n_all": 14,
+    "largest_two": {
+      "Hume Face*": 0.36109329186725214,
+      "Empathic Insight Face Large": 0.13763692476893563
+    },
+    "mean_without_largest_two": 0.009994535495663131,
+    "n_without": 12,
+    "definition": "held-out kappa minus kappa of clip(round(x), 0, 7), no mapping",
+    "constant_prediction_kappa": {
+      "heldout": -0.00030990016722735045,
+      "oracle": -3.3306690738754695e-17
+    }
+  },
+  "human_nonzero_mean": 8.1368,
+  "human_nonzero_sd": 4.000610673384752,
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "published_baselines.py",
+    "sources": {
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

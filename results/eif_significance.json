@@ -1,0 +1,2173 @@
+{
+  "references": {
+    "eif_small/heldout": {
+      "reliable_5": {
+        "point": 0.5553523007890819,
+        "ci": [
+          0.5381820535237427,
+          0.5708056540051155
+        ]
+      },
+      "unreliable_35": {
+        "point": 0.1932904272593257,
+        "ci": [
+          0.18501941342920886,
+          0.19976130444900242
+        ]
+      },
+      "all_40": {
+        "point": 0.23854816145054522,
+        "ci": [
+          0.2299594121144176,
+          0.24459028265372104
+        ]
+      }
+    },
+    "eif_large/heldout": {
+      "reliable_5": {
+        "point": 0.5390068341732082,
+        "ci": [
+          0.5221691368207327,
+          0.5547056017189763
+        ]
+      },
+      "unreliable_35": {
+        "point": 0.22832983264413614,
+        "ci": [
+          0.21982172095661554,
+          0.23493608833792418
+        ]
+      },
+      "all_40": {
+        "point": 0.26716445783527015,
+        "ci": [
+          0.2585515059388193,
+          0.27418056786445993
+        ]
+      }
+    },
+    "eif_small/oracle": {
+      "reliable_5": {
+        "point": 0.5562088472547738,
+        "ci": [
+          0.5403434222700995,
+          0.5728578666316169
+        ]
+      },
+      "unreliable_35": {
+        "point": 0.19410297223280315,
+        "ci": [
+          0.1861163577354132,
+          0.20120111728736056
+        ]
+      },
+      "all_40": {
+        "point": 0.23936620661054944,
+        "ci": [
+          0.2313638676569933,
+          0.24611512184917111
+        ]
+      }
+    },
+    "eif_large/oracle": {
+      "reliable_5": {
+        "point": 0.5398170695442412,
+        "ci": [
+          0.5235111676119537,
+          0.5559725097929336
+        ]
+      },
+      "unreliable_35": {
+        "point": 0.22914166211721698,
+        "ci": [
+          0.22090042471313767,
+          0.23617017950940994
+        ]
+      },
+      "all_40": {
+        "point": 0.26797608804559503,
+        "ci": [
+          0.25971785906864864,
+          0.27534173759216324
+        ]
+      }
+    }
+  },
+  "summary": {
+    "eif_small/heldout/reliable_5": {
+      "above": 3,
+      "indistinguishable": 3,
+      "below": 5
+    },
+    "eif_small/heldout/unreliable_35": {
+      "above": 8,
+      "indistinguishable": 2,
+      "below": 1
+    },
+    "eif_small/heldout/all_40": {
+      "above": 7,
+      "indistinguishable": 2,
+      "below": 2
+    },
+    "eif_large/heldout/reliable_5": {
+      "above": 6,
+      "indistinguishable": 4,
+      "below": 1
+    },
+    "eif_large/heldout/unreliable_35": {
+      "above": 2,
+      "indistinguishable": 1,
+      "below": 8
+    },
+    "eif_large/heldout/all_40": {
+      "above": 2,
+      "indistinguishable": 2,
+      "below": 7
+    },
+    "eif_small/oracle/reliable_5": {
+      "above": 3,
+      "indistinguishable": 3,
+      "below": 5
+    },
+    "eif_small/oracle/unreliable_35": {
+      "above": 8,
+      "indistinguishable": 2,
+      "below": 1
+    },
+    "eif_small/oracle/all_40": {
+      "above": 7,
+      "indistinguishable": 2,
+      "below": 2
+    },
+    "eif_large/oracle/reliable_5": {
+      "above": 6,
+      "indistinguishable": 4,
+      "below": 1
+    },
+    "eif_large/oracle/unreliable_35": {
+      "above": 2,
+      "indistinguishable": 1,
+      "below": 8
+    },
+    "eif_large/oracle/all_40": {
+      "above": 2,
+      "indistinguishable": 2,
+      "below": 7
+    }
+  },
+  "rows": [
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5919338049991342,
+      "reference_kappa": 0.5553523007890819,
+      "diff": 0.03658150421005224,
+      "diff_ci": [
+        0.027538786552297544,
+        0.046199102730461086
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5800875768116744,
+      "reference_kappa": 0.5553523007890819,
+      "diff": 0.02473527602259251,
+      "diff_ci": [
+        0.015294428036835221,
+        0.033858452308733376
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5568267649987035,
+      "reference_kappa": 0.5553523007890819,
+      "diff": 0.0014744642096216065,
+      "diff_ci": [
+        -0.009475640745692812,
+        0.013979428654912737
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5417636058868847,
+      "reference_kappa": 0.5553523007890819,
+      "diff": -0.013588694902197274,
+      "diff_ci": [
+        -0.02463430447819758,
+        -0.0036033495208526952
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5383808623876252,
+      "reference_kappa": 0.5553523007890819,
+      "diff": -0.016971438401456762,
+      "diff_ci": [
+        -0.02936428236469077,
+        -0.004089661511349491
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5133485533773599,
+      "reference_kappa": 0.5553523007890819,
+      "diff": -0.04200374741172208,
+      "diff_ci": [
+        -0.05448103027051684,
+        -0.028219366139384156
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5626768820329203,
+      "reference_kappa": 0.5553523007890819,
+      "diff": 0.007324581243838391,
+      "diff_ci": [
+        -0.0027483685079603025,
+        0.016405435048893507
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5697733465132844,
+      "reference_kappa": 0.5553523007890819,
+      "diff": 0.014421045724202441,
+      "diff_ci": [
+        0.005147648981027186,
+        0.02354302031122165
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5319503874735549,
+      "reference_kappa": 0.5553523007890819,
+      "diff": -0.02340191331552699,
+      "diff_ci": [
+        -0.03514943492485085,
+        -0.011520659296777674
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5317970178574662,
+      "reference_kappa": 0.5553523007890819,
+      "diff": -0.023555282931615684,
+      "diff_ci": [
+        -0.035159164214022535,
+        -0.013105515285293851
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5651893758928029,
+      "reference_kappa": 0.5553523007890819,
+      "diff": 0.009837075103721005,
+      "diff_ci": [
+        -0.00017845994814709134,
+        0.0187756202345817
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.24421564209007096,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.050925214830745275,
+      "diff_ci": [
+        0.04454750230316165,
+        0.05661558187182331
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2455375560971176,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.05224712883779192,
+      "diff_ci": [
+        0.04525580251751674,
+        0.058623100062516496
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21353618252476744,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.020245755265441756,
+      "diff_ci": [
+        0.01198950518558134,
+        0.028267912419653925
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20530458811077604,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.01201416085145035,
+      "diff_ci": [
+        0.005420516255366438,
+        0.018496273211247704
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.18542812359119687,
+      "reference_kappa": 0.1932904272593257,
+      "diff": -0.007862303668128817,
+      "diff_ci": [
+        -0.014960741718068769,
+        -0.0005651809757649846
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.18545463058761466,
+      "reference_kappa": 0.1932904272593257,
+      "diff": -0.007835796671711026,
+      "diff_ci": [
+        -0.015594771052257612,
+        0.00020262603951280066
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2193439771815743,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.02605354992224862,
+      "diff_ci": [
+        0.01923426540295381,
+        0.03276630102027174
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.23001595682473847,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.03672552956541278,
+      "diff_ci": [
+        0.029689478401604335,
+        0.043443811325619676
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20354427427092697,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.010253847011601286,
+      "diff_ci": [
+        0.002851383296785755,
+        0.017650961754851178
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.19395086173970755,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.0006604344803818607,
+      "diff_ci": [
+        -0.006199420788895245,
+        0.008539940470936067
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20864791882203057,
+      "reference_kappa": 0.1932904272593257,
+      "diff": 0.015357491562704884,
+      "diff_ci": [
+        0.008376076378474094,
+        0.02299068914504181
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2876804124537039,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.04913225100315868,
+      "diff_ci": [
+        0.0430622110596295,
+        0.05459720159685357
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.28735630868643725,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.048808147235892024,
+      "diff_ci": [
+        0.04186702478749037,
+        0.054716617925240005
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2564475053340094,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.017899343883464175,
+      "diff_ci": [
+        0.010284141180699532,
+        0.024915529268576948
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2473619653327896,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.00881380388224437,
+      "diff_ci": [
+        0.0028095737923241187,
+        0.01449008558590544
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.22954721594075042,
+      "reference_kappa": 0.23854816145054522,
+      "diff": -0.0090009455097948,
+      "diff_ci": [
+        -0.01578591508200475,
+        -0.0020415266544808477
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2264413709363328,
+      "reference_kappa": 0.23854816145054522,
+      "diff": -0.012106790514212429,
+      "diff_ci": [
+        -0.01908344004598003,
+        -0.00488005617769694
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.26226059028799253,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.023712428837447314,
+      "diff_ci": [
+        0.017675155721294477,
+        0.03007253368345517
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.27248563053580677,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.033937469085261546,
+      "diff_ci": [
+        0.027469593048224196,
+        0.03968877596588479
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.24459503842125546,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.006046876970710241,
+      "diff_ci": [
+        -0.0008622983543895672,
+        0.01301202079791387
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.23618163125442737,
+      "reference_kappa": 0.23854816145054522,
+      "diff": -0.0023665301961178498,
+      "diff_ci": [
+        -0.008891466939843393,
+        0.004566392784251769
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2532156009558771,
+      "reference_kappa": 0.23854816145054522,
+      "diff": 0.014667439505331864,
+      "diff_ci": [
+        0.008241214244828307,
+        0.021627037858456603
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5919338049991342,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.05292697082592601,
+      "diff_ci": [
+        0.04253862784042504,
+        0.06365660542857439
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5800875768116744,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.04108074263846628,
+      "diff_ci": [
+        0.02979497033145589,
+        0.05164842073206698
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5568267649987035,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.017819930825495378,
+      "diff_ci": [
+        0.004602858894541301,
+        0.031154162154944882
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5417636058868847,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.002756771713676498,
+      "diff_ci": [
+        -0.008784272497874604,
+        0.013126080979638221
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5383808623876252,
+      "reference_kappa": 0.5390068341732082,
+      "diff": -0.0006259717855829905,
+      "diff_ci": [
+        -0.012804361251032542,
+        0.012391958575254264
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5133485533773599,
+      "reference_kappa": 0.5390068341732082,
+      "diff": -0.02565828079584831,
+      "diff_ci": [
+        -0.038220584459017784,
+        -0.01164695020700544
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5626768820329203,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.023670047859712162,
+      "diff_ci": [
+        0.01139594619236924,
+        0.03492564325543535
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5697733465132844,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.030766512340076213,
+      "diff_ci": [
+        0.01969800840103569,
+        0.04178215696407991
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5319503874735549,
+      "reference_kappa": 0.5390068341732082,
+      "diff": -0.007056446699653218,
+      "diff_ci": [
+        -0.019513851730328626,
+        0.006172744270502264
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5317970178574662,
+      "reference_kappa": 0.5390068341732082,
+      "diff": -0.007209816315741913,
+      "diff_ci": [
+        -0.018074578513705412,
+        0.003653573215276989
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5651893758928029,
+      "reference_kappa": 0.5390068341732082,
+      "diff": 0.026182541719594776,
+      "diff_ci": [
+        0.014051659650999446,
+        0.035925922255922615
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.24421564209007096,
+      "reference_kappa": 0.22832983264413614,
+      "diff": 0.015885809445934818,
+      "diff_ci": [
+        0.009851806348265395,
+        0.020507390666852574
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2455375560971176,
+      "reference_kappa": 0.22832983264413614,
+      "diff": 0.017207723452981466,
+      "diff_ci": [
+        0.010588254811096947,
+        0.021888726789974583
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21353618252476744,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.014793650119368701,
+      "diff_ci": [
+        -0.02260077731108533,
+        -0.007836348028468923
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20530458811077604,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.023025244533360106,
+      "diff_ci": [
+        -0.029648521944191205,
+        -0.01784793075938665
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.18542812359119687,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.042901709052939274,
+      "diff_ci": [
+        -0.05017746333868329,
+        -0.03629007125754011
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.18545463058761466,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.04287520205652148,
+      "diff_ci": [
+        -0.05080509982126756,
+        -0.035862129524334985
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2193439771815743,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.008985855462561837,
+      "diff_ci": [
+        -0.015203405112937192,
+        -0.0031983975222789206
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.23001595682473847,
+      "reference_kappa": 0.22832983264413614,
+      "diff": 0.001686124180602322,
+      "diff_ci": [
+        -0.005140038442523732,
+        0.007316028248303846
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20354427427092697,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.02478555837320917,
+      "diff_ci": [
+        -0.032284589111940175,
+        -0.018042809880021986
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.19395086173970755,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.034378970904428596,
+      "diff_ci": [
+        -0.04124164394880241,
+        -0.02765328756627701
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.20864791882203057,
+      "reference_kappa": 0.22832983264413614,
+      "diff": -0.019681913822105573,
+      "diff_ci": [
+        -0.025884211388650026,
+        -0.012847102872391188
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2876804124537039,
+      "reference_kappa": 0.26716445783527015,
+      "diff": 0.02051595461843375,
+      "diff_ci": [
+        0.01490667134492554,
+        0.024883946457961603
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.28735630868643725,
+      "reference_kappa": 0.26716445783527015,
+      "diff": 0.020191850851167092,
+      "diff_ci": [
+        0.013707393312985676,
+        0.02455282889241106
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2564475053340094,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.010716952501260757,
+      "diff_ci": [
+        -0.01767756633986638,
+        -0.00424784545696965
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2473619653327896,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.019802492502480562,
+      "diff_ci": [
+        -0.025690016070506225,
+        -0.015066124965286887
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.22954721594075042,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.03761724189451973,
+      "diff_ci": [
+        -0.04459254704450009,
+        -0.031306228794135325
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2264413709363328,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.04072308689893736,
+      "diff_ci": [
+        -0.048331765817974395,
+        -0.03411181259627712
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.26226059028799253,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.004903867547277618,
+      "diff_ci": [
+        -0.010987459325488646,
+        7.928884777413158e-05
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.27248563053580677,
+      "reference_kappa": 0.26716445783527015,
+      "diff": 0.005321172700536614,
+      "diff_ci": [
+        -0.0009646500834076241,
+        0.010603625803303826
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.24459503842125546,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.02256941941401469,
+      "diff_ci": [
+        -0.02942824910108553,
+        -0.016458856454986057
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.23618163125442737,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.03098282658084278,
+      "diff_ci": [
+        -0.03727497741698408,
+        -0.024389544735495077
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "heldout",
+      "category_set": "all_40",
+      "model_kappa": 0.2532156009558771,
+      "reference_kappa": 0.26716445783527015,
+      "diff": -0.013948856879393068,
+      "diff_ci": [
+        -0.020224808293538305,
+        -0.007699077014480362
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5931476954664221,
+      "reference_kappa": 0.5562088472547738,
+      "diff": 0.03693884821164828,
+      "diff_ci": [
+        0.02765214215660978,
+        0.0462638746976669
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.580646736764906,
+      "reference_kappa": 0.5562088472547738,
+      "diff": 0.02443788951013215,
+      "diff_ci": [
+        0.014459500848501464,
+        0.033199583862732446
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5578308459535718,
+      "reference_kappa": 0.5562088472547738,
+      "diff": 0.0016219986987979773,
+      "diff_ci": [
+        -0.009527845841839633,
+        0.015093252270911524
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5425438573927415,
+      "reference_kappa": 0.5562088472547738,
+      "diff": -0.01366498986203235,
+      "diff_ci": [
+        -0.024218235425643195,
+        -0.002974330913119986
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5394958038618829,
+      "reference_kappa": 0.5562088472547738,
+      "diff": -0.016713043392890925,
+      "diff_ci": [
+        -0.029366878336537984,
+        -0.004478137490744567
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5143172991111845,
+      "reference_kappa": 0.5562088472547738,
+      "diff": -0.04189154814358931,
+      "diff_ci": [
+        -0.054381773129557026,
+        -0.027398776767917736
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5637895577255218,
+      "reference_kappa": 0.5562088472547738,
+      "diff": 0.007580710470747931,
+      "diff_ci": [
+        -0.0029868777315085137,
+        0.017052160816954265
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5712910625637604,
+      "reference_kappa": 0.5562088472547738,
+      "diff": 0.015082215308986568,
+      "diff_ci": [
+        0.004596092957969928,
+        0.023727775571928914
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5323066452261972,
+      "reference_kappa": 0.5562088472547738,
+      "diff": -0.023902202028576625,
+      "diff_ci": [
+        -0.035727070878720055,
+        -0.011799932121398375
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5327761353160552,
+      "reference_kappa": 0.5562088472547738,
+      "diff": -0.023432711938718653,
+      "diff_ci": [
+        -0.034318202368412196,
+        -0.014123281421294544
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5669420244627835,
+      "reference_kappa": 0.5562088472547738,
+      "diff": 0.010733177208009703,
+      "diff_ci": [
+        -8.146216559060653e-05,
+        0.020125783324626032
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2446855680362645,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.05058259580346136,
+      "diff_ci": [
+        0.04415835522044945,
+        0.05683601951404999
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.24642268513286816,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.05231971290006501,
+      "diff_ci": [
+        0.045269279792965335,
+        0.059070132440858236
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21439125544450718,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.020288283211704033,
+      "diff_ci": [
+        0.012787631204293225,
+        0.028190639785407395
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2062558550812054,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.012152882848402241,
+      "diff_ci": [
+        0.00542642249055607,
+        0.018636673912574227
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.18632413994881683,
+      "reference_kappa": 0.19410297223280315,
+      "diff": -0.00777883228398632,
+      "diff_ci": [
+        -0.015022018252805669,
+        -0.00012129565663514086
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.1861598963000888,
+      "reference_kappa": 0.19410297223280315,
+      "diff": -0.007943075932714344,
+      "diff_ci": [
+        -0.015568890070377728,
+        0.00025084883005629276
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21958770752610055,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.025484735293297395,
+      "diff_ci": [
+        0.01890257544226582,
+        0.03265008421380646
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.23042580409418056,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.036322831861377414,
+      "diff_ci": [
+        0.029622809723074857,
+        0.04349292426540419
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2040080253847431,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.009905053151939958,
+      "diff_ci": [
+        0.0027159885795160136,
+        0.01772847909720461
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.1945506168352969,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.0004476446024937464,
+      "diff_ci": [
+        -0.006549676859191447,
+        0.007873867351298162
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2091421916335528,
+      "reference_kappa": 0.19410297223280315,
+      "diff": 0.015039219400749648,
+      "diff_ci": [
+        0.008097769539768821,
+        0.022877058243302904
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2882433339650342,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.04887712735448477,
+      "diff_ci": [
+        0.04295937812857189,
+        0.0546340772913617
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2882006915868729,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.04883448497632345,
+      "diff_ci": [
+        0.04209024143975349,
+        0.054853052027087325
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.25732120425814026,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.017954997647590815,
+      "diff_ci": [
+        0.010486016415278776,
+        0.02502518472555888
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.24829185537014736,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.00892564875959792,
+      "diff_ci": [
+        0.0027978076087673033,
+        0.014781824401707808
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.23047059793795008,
+      "reference_kappa": 0.23936620661054944,
+      "diff": -0.008895608672599364,
+      "diff_ci": [
+        -0.015710948161142203,
+        -0.0017129728474081498
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2271795716514758,
+      "reference_kappa": 0.23936620661054944,
+      "diff": -0.012186634959073656,
+      "diff_ci": [
+        -0.01926783463403111,
+        -0.004675947913387172
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2626129388010282,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.023246732190478764,
+      "diff_ci": [
+        0.017467668355725035,
+        0.03008697416372539
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.27303396140287806,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.033667754792328614,
+      "diff_ci": [
+        0.027622942531285295,
+        0.0401461217082053
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.24504535286492485,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.005679146254375406,
+      "diff_ci": [
+        -0.0008447799296441002,
+        0.012800554931729565
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2368288066453917,
+      "reference_kappa": 0.23936620661054944,
+      "diff": -0.002537399965157755,
+      "diff_ci": [
+        -0.009133049728881428,
+        0.004246713598628634
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Small",
+      "reference_key": "eif_small",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.25386717073720666,
+      "reference_kappa": 0.23936620661054944,
+      "diff": 0.014500964126657218,
+      "diff_ci": [
+        0.008143801093768832,
+        0.021686723249778047
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5931476954664221,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.05333062592218085,
+      "diff_ci": [
+        0.041880500380463426,
+        0.0640142135470378
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.580646736764906,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.04082966722066472,
+      "diff_ci": [
+        0.02960731452438836,
+        0.05098130695397816
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5578308459535718,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.01801377640933055,
+      "diff_ci": [
+        0.003694885040818017,
+        0.0310809192007312
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5425438573927415,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.002726787848500223,
+      "diff_ci": [
+        -0.008708424932943637,
+        0.013126311246906792
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5394958038618829,
+      "reference_kappa": 0.5398170695442412,
+      "diff": -0.0003212656823583515,
+      "diff_ci": [
+        -0.013219337609321008,
+        0.01278084452174975
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5143172991111845,
+      "reference_kappa": 0.5398170695442412,
+      "diff": -0.025499770433056734,
+      "diff_ci": [
+        -0.037923807032444336,
+        -0.010466151931700949
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5637895577255218,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.023972488181280505,
+      "diff_ci": [
+        0.012154735010488969,
+        0.0354346231156079
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5712910625637604,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.03147399301951914,
+      "diff_ci": [
+        0.01936358053526235,
+        0.04265312439630773
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5323066452261972,
+      "reference_kappa": 0.5398170695442412,
+      "diff": -0.007510424318044051,
+      "diff_ci": [
+        -0.019803085288212147,
+        0.006298132730558181
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5327761353160552,
+      "reference_kappa": 0.5398170695442412,
+      "diff": -0.00704093422818608,
+      "diff_ci": [
+        -0.018704787394259452,
+        0.0035936434312293718
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "reliable_5",
+      "model_kappa": 0.5669420244627835,
+      "reference_kappa": 0.5398170695442412,
+      "diff": 0.027124954918542277,
+      "diff_ci": [
+        0.01347125177904352,
+        0.03631048195907222
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2446855680362645,
+      "reference_kappa": 0.22914166211721698,
+      "diff": 0.01554390591904753,
+      "diff_ci": [
+        0.00969195708143405,
+        0.020778066263499775
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.24642268513286816,
+      "reference_kappa": 0.22914166211721698,
+      "diff": 0.01728102301565118,
+      "diff_ci": [
+        0.010756041364155011,
+        0.022218705212365394
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21439125544450718,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.014750406672709798,
+      "diff_ci": [
+        -0.022430959983636756,
+        -0.007633961609469884
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2062558550812054,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.02288580703601159,
+      "diff_ci": [
+        -0.02929128862083325,
+        -0.017537680489784213
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.18632413994881683,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.04281752216840015,
+      "diff_ci": [
+        -0.04986764278215841,
+        -0.036240532781600256
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.1861598963000888,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.042981765817128176,
+      "diff_ci": [
+        -0.050788086808641254,
+        -0.03531668198633539
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.21958770752610055,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.009553954591116437,
+      "diff_ci": [
+        -0.0154014119611468,
+        -0.0033886375178850065
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.23042580409418056,
+      "reference_kappa": 0.22914166211721698,
+      "diff": 0.001284141976963582,
+      "diff_ci": [
+        -0.005048372508904618,
+        0.007323139570588256
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2040080253847431,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.025133636732473874,
+      "diff_ci": [
+        -0.03218515430941653,
+        -0.01797594011986857
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.1945506168352969,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.034591045281920085,
+      "diff_ci": [
+        -0.04149635652516192,
+        -0.02779693348906713
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "unreliable_35",
+      "model_kappa": 0.2091421916335528,
+      "reference_kappa": 0.22914166211721698,
+      "diff": -0.019999470483664183,
+      "diff_ci": [
+        -0.026167004910464524,
+        -0.012995215326906019
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "GLM-4.6V-Flash",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2882433339650342,
+      "reference_kappa": 0.26797608804559503,
+      "diff": 0.02026724591943918,
+      "diff_ci": [
+        0.014872528989641696,
+        0.024956821864629997
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2882006915868729,
+      "reference_kappa": 0.26797608804559503,
+      "diff": 0.020224603541277864,
+      "diff_ci": [
+        0.013967821207973763,
+        0.02493678211245094
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.25732120425814026,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.010654883787454772,
+      "diff_ci": [
+        -0.017622391803861364,
+        -0.004212528711619301
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "MiniCPM-V-4.6",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.24829185537014736,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.019684232675447666,
+      "diff_ci": [
+        -0.025718616061062436,
+        -0.014895651585201381
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.23047059793795008,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.03750549010764495,
+      "diff_ci": [
+        -0.044599608771106435,
+        -0.03111424937678531
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2271795716514758,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.04079651639411924,
+      "diff_ci": [
+        -0.04829591570675762,
+        -0.033987196206420614
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2626129388010282,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.005363149244566823,
+      "diff_ci": [
+        -0.01079955919755881,
+        0.0002512742018357678
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.27303396140287806,
+      "reference_kappa": 0.26797608804559503,
+      "diff": 0.005057873357283027,
+      "diff_ci": [
+        -0.0007962420253993421,
+        0.01049308899073505
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.24504535286492485,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.02293073518067018,
+      "diff_ci": [
+        -0.029572777953935165,
+        -0.016535112124502076
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.2368288066453917,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.03114728140020334,
+      "diff_ci": [
+        -0.03784956155741528,
+        -0.024812188356049175
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "reference": "Empathic Insight Face Large",
+      "reference_key": "eif_large",
+      "estimator": "oracle",
+      "category_set": "all_40",
+      "model_kappa": 0.25386717073720666,
+      "reference_kappa": 0.26797608804559503,
+      "diff": -0.014108917308388369,
+      "diff_ci": [
+        -0.020453777036412674,
+        -0.008070010693045127
+      ],
+      "verdict": "below"
+    }
+  ],
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "eif_significance.py",
+    "sources": {
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    },
+    "secondary_sets": [
+      "unreliable_35",
+      "all_40"
+    ]
+  }
+}

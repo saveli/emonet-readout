@@ -1,0 +1,1323 @@
+{
+  "rows": [
+    {
+      "control": "as_reported",
+      "label": "As reported",
+      "n_models": 11,
+      "note": "",
+      "in_table": true,
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "heldout": [
+            0.4818119038596859,
+            0.5919338049991342
+          ],
+          "oracle": [
+            0.48253683709278344,
+            0.5931476954664221
+          ]
+        },
+        "InternVL3_5-8B-HF": {
+          "heldout": [
+            0.423153927127281,
+            0.5800875768116744
+          ],
+          "oracle": [
+            0.423790098516075,
+            0.580646736764906
+          ]
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "heldout": [
+            0.4116650216337054,
+            0.5568267649987035
+          ],
+          "oracle": [
+            0.41272968771452545,
+            0.5578308459535718
+          ]
+        },
+        "MiniCPM-V-4.6": {
+          "heldout": [
+            0.287967735877205,
+            0.5417636058868847
+          ],
+          "oracle": [
+            0.28854441474201414,
+            0.5425438573927415
+          ]
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "heldout": [
+            0.46720527491136404,
+            0.5383808623876252
+          ],
+          "oracle": [
+            0.4676982158676332,
+            0.5394958038618829
+          ]
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "heldout": [
+            0.29587784861120264,
+            0.5133485533773599
+          ],
+          "oracle": [
+            0.29644130975026,
+            0.5143172991111845
+          ]
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "heldout": [
+            0.4962172298048488,
+            0.5626768820329203
+          ],
+          "oracle": [
+            0.49723647168911544,
+            0.5637895577255218
+          ]
+        },
+        "Qwen3.5-9B": {
+          "heldout": [
+            0.4633650026419807,
+            0.5697733465132844
+          ],
+          "oracle": [
+            0.4645112899373148,
+            0.5712910625637604
+          ]
+        },
+        "gemma-3-12b-it": {
+          "heldout": [
+            0.4465672107140726,
+            0.5319503874735549
+          ],
+          "oracle": [
+            0.4473710127580747,
+            0.5323066452261972
+          ]
+        },
+        "gemma-3-4b-it": {
+          "heldout": [
+            0.4030255185465162,
+            0.5317970178574662
+          ],
+          "oracle": [
+            0.40360197250291563,
+            0.5327761353160552
+          ]
+        },
+        "gemma-4-12B-it": {
+          "heldout": [
+            0.5030118988208182,
+            0.5651893758928029
+          ],
+          "oracle": [
+            0.5035483115467441,
+            0.5669420244627835
+          ]
+        }
+      },
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5"
+      },
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.4254425975044256,
+        "pyes": 0.5530661980210373,
+        "delta": 0.12762360051661184,
+        "delta_ci": [
+          0.12134641566699939,
+          0.13331002231199757
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      },
+      "oracle": {
+        "anchor": 0.46816129648522525,
+        "text": 0.42618269291976874,
+        "pyes": 0.5540988785313661,
+        "delta": 0.12791618561159737,
+        "delta_ci": [
+          0.12191310915902136,
+          0.13380672144761202
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      }
+    },
+    {
+      "control": "no_prefix",
+      "label": "No answer prefix",
+      "n_models": 8,
+      "note": "8 models; GLM, MiMo, Qwen3.5 give no readable answer without it",
+      "in_table": true,
+      "per_model": {
+        "InternVL3_5-8B-HF": {
+          "heldout": [
+            0.423153927127281,
+            0.581793846172017
+          ],
+          "oracle": [
+            0.423790098516075,
+            0.5816391373262613
+          ]
+        },
+        "MiniCPM-V-4.6": {
+          "heldout": [
+            0.287967735877205,
+            0.536060875925392
+          ],
+          "oracle": [
+            0.28854441474201414,
+            0.53717533743184
+          ]
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "heldout": [
+            0.46720527491136404,
+            0.5379097873365982
+          ],
+          "oracle": [
+            0.4676982158676332,
+            0.5386975518601884
+          ]
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "heldout": [
+            0.29587784861120264,
+            0.5149270227843761
+          ],
+          "oracle": [
+            0.29644130975026,
+            0.5156561576988175
+          ]
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "heldout": [
+            0.4962172298048488,
+            0.5637974152469722
+          ],
+          "oracle": [
+            0.49723647168911544,
+            0.56470895856202
+          ]
+        },
+        "gemma-3-12b-it": {
+          "heldout": [
+            0.4465672107140726,
+            0.5234460831153459
+          ],
+          "oracle": [
+            0.4473710127580747,
+            0.5243311485734188
+          ]
+        },
+        "gemma-3-4b-it": {
+          "heldout": [
+            0.4030255185465162,
+            0.3931917263035048
+          ],
+          "oracle": [
+            0.40360197250291563,
+            0.3937062296009242
+          ]
+        },
+        "gemma-4-12B-it": {
+          "heldout": [
+            0.5030118988208182,
+            0.5611158861021079
+          ],
+          "oracle": [
+            0.5035483115467441,
+            0.561990570943858
+          ]
+        }
+      },
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5"
+      },
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.41537833055166357,
+        "pyes": 0.5265303303732893,
+        "delta": 0.11115199982162571,
+        "delta_ci": [
+          0.1039122259286087,
+          0.11783954107767029
+        ],
+        "pyes_above": 7,
+        "pyes_above_ci": 7,
+        "text_above": 2,
+        "text_above_ci": 2
+      },
+      "oracle": {
+        "anchor": 0.46816129648522525,
+        "text": 0.41602897592160404,
+        "pyes": 0.527238136499666,
+        "delta": 0.11120916057806197,
+        "delta_ci": [
+          0.1044524759883979,
+          0.11822875855257832
+        ],
+        "pyes_above": 7,
+        "pyes_above_ci": 7,
+        "text_above": 2,
+        "text_above_ci": 2
+      }
+    },
+    {
+      "control": "coverage",
+      "label": "Coverage-matched images",
+      "n_models": 11,
+      "note": "both conditions and the expert reference on each model's parsed images",
+      "in_table": true,
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "heldout": [
+            0.4818119038596859,
+            0.5919338049991342
+          ],
+          "oracle": [
+            0.48253683709278344,
+            0.5931476954664221
+          ]
+        },
+        "InternVL3_5-8B-HF": {
+          "heldout": [
+            0.42308393993877746,
+            0.5808441483216867
+          ],
+          "oracle": [
+            0.423790098516075,
+            0.5813789787606161
+          ]
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "heldout": [
+            0.41161163317121907,
+            0.568643587862497
+          ],
+          "oracle": [
+            0.41272968771452545,
+            0.569853258228442
+          ]
+        },
+        "MiniCPM-V-4.6": {
+          "heldout": [
+            0.2878548285395739,
+            0.5431948097779774
+          ],
+          "oracle": [
+            0.28854441474201414,
+            0.5436268902107223
+          ]
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "heldout": [
+            0.46726368304775834,
+            0.5375675472987522
+          ],
+          "oracle": [
+            0.4676982158676332,
+            0.5389219310871369
+          ]
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "heldout": [
+            0.29587784861120264,
+            0.5133485533773599
+          ],
+          "oracle": [
+            0.29644130975026,
+            0.5143172991111845
+          ]
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "heldout": [
+            0.49617571051411746,
+            0.5655977119361377
+          ],
+          "oracle": [
+            0.49723647168911544,
+            0.5668338852533727
+          ]
+        },
+        "Qwen3.5-9B": {
+          "heldout": [
+            0.4633776267148405,
+            0.5694562322982448
+          ],
+          "oracle": [
+            0.4645112899373148,
+            0.5712285160983657
+          ]
+        },
+        "gemma-3-12b-it": {
+          "heldout": [
+            0.4465672107140726,
+            0.5319503874735549
+          ],
+          "oracle": [
+            0.4473710127580747,
+            0.5323066452261972
+          ]
+        },
+        "gemma-3-4b-it": {
+          "heldout": [
+            0.4030255185465162,
+            0.5317970178574662
+          ],
+          "oracle": [
+            0.40360197250291563,
+            0.5327761353160552
+          ]
+        },
+        "gemma-4-12B-it": {
+          "heldout": [
+            0.5030118988208182,
+            0.5651893758928029
+          ],
+          "oracle": [
+            0.5035483115467441,
+            0.5669420244627835
+          ]
+        }
+      },
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5"
+      },
+      "heldout": {
+        "anchor": 0.4693202473867111,
+        "text": 0.42542380022532567,
+        "pyes": 0.5545021070086922,
+        "delta": 0.12907830678336654,
+        "delta_ci": [
+          0.1231831004444924,
+          0.13470982405581505
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      },
+      "oracle": {
+        "anchor": 0.4693202473867111,
+        "text": 0.42618269291976874,
+        "pyes": 0.5555757508382999,
+        "delta": 0.12939305791853115,
+        "delta_ci": [
+          0.12379988371952036,
+          0.1350835028136611
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 4,
+        "text_above_ci": 2
+      }
+    },
+    {
+      "control": "own_prompt",
+      "label": "Benchmark's own prompt only",
+      "n_models": 11,
+      "note": "text = paper_once for every model; the reported text is the better of two prompts per model (a text-favourable upper envelope)",
+      "in_table": true,
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "heldout": [
+            0.4818119038596859,
+            0.5919338049991342
+          ],
+          "oracle": [
+            0.48253683709278344,
+            0.5931476954664221
+          ]
+        },
+        "InternVL3_5-8B-HF": {
+          "heldout": [
+            0.423153927127281,
+            0.5800875768116744
+          ],
+          "oracle": [
+            0.423790098516075,
+            0.580646736764906
+          ]
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "heldout": [
+            0.32356401901199877,
+            0.5568267649987035
+          ],
+          "oracle": [
+            0.3260432761719062,
+            0.5578308459535718
+          ]
+        },
+        "MiniCPM-V-4.6": {
+          "heldout": [
+            0.034298552796875006,
+            0.5417636058868847
+          ],
+          "oracle": [
+            0.03460461668905129,
+            0.5425438573927415
+          ]
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "heldout": [
+            0.46720527491136404,
+            0.5383808623876252
+          ],
+          "oracle": [
+            0.4676982158676332,
+            0.5394958038618829
+          ]
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "heldout": [
+            0.29587784861120264,
+            0.5133485533773599
+          ],
+          "oracle": [
+            0.29644130975026,
+            0.5143172991111845
+          ]
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "heldout": [
+            0.4962172298048488,
+            0.5626768820329203
+          ],
+          "oracle": [
+            0.49723647168911544,
+            0.5637895577255218
+          ]
+        },
+        "Qwen3.5-9B": {
+          "heldout": [
+            0.4633650026419807,
+            0.5697733465132844
+          ],
+          "oracle": [
+            0.4645112899373148,
+            0.5712910625637604
+          ]
+        },
+        "gemma-3-12b-it": {
+          "heldout": [
+            0.4465672107140726,
+            0.5319503874735549
+          ],
+          "oracle": [
+            0.4473710127580747,
+            0.5323066452261972
+          ]
+        },
+        "gemma-3-4b-it": {
+          "heldout": [
+            0.39425611802723,
+            0.5317970178574662
+          ],
+          "oracle": [
+            0.39467144132691956,
+            0.5327761353160552
+          ]
+        },
+        "gemma-4-12B-it": {
+          "heldout": [
+            0.5030118988208182,
+            0.5651893758928029
+          ],
+          "oracle": [
+            0.5035483115467441,
+            0.5669420244627835
+          ]
+        }
+      },
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5"
+      },
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.39357536239339624,
+        "pyes": 0.5530661980210373,
+        "delta": 0.1594908356276412,
+        "delta_ci": [
+          0.15245627214932733,
+          0.16632933196408858
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      },
+      "oracle": {
+        "anchor": 0.46816129648522525,
+        "text": 0.39440480739507977,
+        "pyes": 0.5540988785313661,
+        "delta": 0.1596940711362863,
+        "delta_ci": [
+          0.15280727893720816,
+          0.16653190814892332
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      }
+    },
+    {
+      "control": "retry",
+      "label": "Retry loop included",
+      "n_models": 11,
+      "note": "text = best of paper_once/ours/paper_retry; retry chosen for 1 models",
+      "in_table": true,
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "heldout": [
+            0.4818119038596859,
+            0.5919338049991342
+          ],
+          "oracle": [
+            0.48253683709278344,
+            0.5931476954664221
+          ]
+        },
+        "InternVL3_5-8B-HF": {
+          "heldout": [
+            0.423153927127281,
+            0.5800875768116744
+          ],
+          "oracle": [
+            0.423790098516075,
+            0.580646736764906
+          ]
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "heldout": [
+            0.4116650216337054,
+            0.5568267649987035
+          ],
+          "oracle": [
+            0.41272968771452545,
+            0.5578308459535718
+          ]
+        },
+        "MiniCPM-V-4.6": {
+          "heldout": [
+            0.287967735877205,
+            0.5417636058868847
+          ],
+          "oracle": [
+            0.28854441474201414,
+            0.5425438573927415
+          ]
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "heldout": [
+            0.46720527491136404,
+            0.5383808623876252
+          ],
+          "oracle": [
+            0.4676982158676332,
+            0.5394958038618829
+          ]
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "heldout": [
+            0.29587784861120264,
+            0.5133485533773599
+          ],
+          "oracle": [
+            0.29644130975026,
+            0.5143172991111845
+          ]
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "heldout": [
+            0.4962172298048488,
+            0.5626768820329203
+          ],
+          "oracle": [
+            0.49723647168911544,
+            0.5637895577255218
+          ]
+        },
+        "Qwen3.5-9B": {
+          "heldout": [
+            0.4633650026419807,
+            0.5697733465132844
+          ],
+          "oracle": [
+            0.4645112899373148,
+            0.5712910625637604
+          ]
+        },
+        "gemma-3-12b-it": {
+          "heldout": [
+            0.4911658751637959,
+            0.5319503874735549
+          ],
+          "oracle": [
+            0.49223473200236956,
+            0.5323066452261972
+          ]
+        },
+        "gemma-3-4b-it": {
+          "heldout": [
+            0.4030255185465162,
+            0.5317970178574662
+          ],
+          "oracle": [
+            0.40360197250291563,
+            0.5327761353160552
+          ]
+        },
+        "gemma-4-12B-it": {
+          "heldout": [
+            0.5030118988208182,
+            0.5651893758928029
+          ],
+          "oracle": [
+            0.5035483115467441,
+            0.5669420244627835
+          ]
+        }
+      },
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5"
+      },
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.42949702154530944,
+        "pyes": 0.5530661980210373,
+        "delta": 0.12356917647572789,
+        "delta_ci": [
+          0.1176244705011584,
+          0.1289999927684562
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 4,
+        "text_above_ci": 3
+      },
+      "oracle": {
+        "anchor": 0.46816129648522525,
+        "text": 0.4302612128510683,
+        "pyes": 0.5540988785313661,
+        "delta": 0.1238376656802978,
+        "delta_ci": [
+          0.1179217983430155,
+          0.12943471265763493
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 4,
+        "text_above_ci": 3
+      }
+    },
+    {
+      "control": "threshold",
+      "label": "P(yes) thresholded at 0.5 (first column: continuous P(yes))",
+      "n_models": 11,
+      "note": "supplementary readout figure only; 'text' fields hold continuous P(yes)",
+      "in_table": false,
+      "per_model": {
+        "GLM-4.6V-Flash": {
+          "heldout": [
+            0.5919338049991342,
+            0.3718646322967514
+          ],
+          "oracle": [
+            0.5931476954664221,
+            0.3722006507160887
+          ]
+        },
+        "InternVL3_5-8B-HF": {
+          "heldout": [
+            0.5800875768116744,
+            0.4445477908162584
+          ],
+          "oracle": [
+            0.580646736764906,
+            0.444640300749686
+          ]
+        },
+        "MiMo-VL-7B-RL-2508": {
+          "heldout": [
+            0.5568267649987035,
+            0.3340979098392699
+          ],
+          "oracle": [
+            0.5578308459535718,
+            0.33429554224925145
+          ]
+        },
+        "MiniCPM-V-4.6": {
+          "heldout": [
+            0.5417636058868847,
+            0.3934159659799665
+          ],
+          "oracle": [
+            0.5425438573927415,
+            0.39366600196249885
+          ]
+        },
+        "Ministral-3-14B-Instruct-2512": {
+          "heldout": [
+            0.5383808623876252,
+            0.37360976550292857
+          ],
+          "oracle": [
+            0.5394958038618829,
+            0.3738652143928234
+          ]
+        },
+        "Qwen2.5-VL-3B-Instruct": {
+          "heldout": [
+            0.5133485533773599,
+            0.3189907473257211
+          ],
+          "oracle": [
+            0.5143172991111845,
+            0.31962667367210307
+          ]
+        },
+        "Qwen3-VL-8B-Instruct": {
+          "heldout": [
+            0.5626768820329203,
+            0.41978053621928557
+          ],
+          "oracle": [
+            0.5637895577255218,
+            0.42020047355103224
+          ]
+        },
+        "Qwen3.5-9B": {
+          "heldout": [
+            0.5697733465132844,
+            0.414375339254065
+          ],
+          "oracle": [
+            0.5712910625637604,
+            0.4149295870482149
+          ]
+        },
+        "gemma-3-12b-it": {
+          "heldout": [
+            0.5319503874735549,
+            0.2985984788928538
+          ],
+          "oracle": [
+            0.5323066452261972,
+            0.2988970702973954
+          ]
+        },
+        "gemma-3-4b-it": {
+          "heldout": [
+            0.5317970178574662,
+            0.24483654667430638
+          ],
+          "oracle": [
+            0.5327761353160552,
+            0.24521646814685946
+          ]
+        },
+        "gemma-4-12B-it": {
+          "heldout": [
+            0.5651893758928029,
+            0.3646631697146388
+          ],
+          "oracle": [
+            0.5669420244627835,
+            0.36528619452716937
+          ]
+        }
+      },
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5"
+      },
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.5530661980210373,
+        "pyes": 0.36170735295600415,
+        "delta": -0.19135884506503323,
+        "delta_ci": [
+          -0.19727995589084574,
+          -0.18460317030390813
+        ],
+        "pyes_above": 0,
+        "pyes_above_ci": 0,
+        "text_above": 11,
+        "text_above_ci": 11
+      },
+      "oracle": {
+        "anchor": 0.46816129648522525,
+        "text": 0.5540988785313661,
+        "pyes": 0.3620749252102839,
+        "delta": -0.19202395332108219,
+        "delta_ci": [
+          -0.19825344601776929,
+          -0.1854838430606108
+        ],
+        "pyes_above": 0,
+        "pyes_above_ci": 0,
+        "text_above": 11,
+        "text_above_ci": 11
+      }
+    },
+    {
+      "control": "oracle_mapping",
+      "label": "In-sample mapping (upper bound)",
+      "n_models": 11,
+      "note": "map fit on the scored images; uses their gold marginal",
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.42618269291976874,
+        "pyes": 0.5540988785313661,
+        "delta": 0.12791618561159737,
+        "delta_ci": [
+          0.12191310915902136,
+          0.13380672144761202
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      },
+      "oracle": null,
+      "in_table": true,
+      "provenance": {
+        "source": "computed by analysis/controls_table.py",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "matched_resolution",
+      "label": "Matched resolution",
+      "n_models": 11,
+      "note": "P(yes) column = P(yes) order with the text histogram (tie-aware); ordering share 0.40 [0.37, 0.42]",
+      "heldout": {
+        "anchor": 0.4693202473867111,
+        "text": 0.4254425975044256,
+        "pyes": 0.47759681983527325,
+        "delta": 0.05215422233084774,
+        "delta_ci": [
+          0.046426417243861366,
+          0.05576454127302558
+        ],
+        "pyes_above": 6,
+        "pyes_above_ci": 6,
+        "text_above": null,
+        "text_above_ci": null
+      },
+      "oracle": {
+        "anchor": 0.4693202473867111,
+        "text": 0.42618269291976874,
+        "pyes": 0.4783005664552014,
+        "delta": 0.05211787353543263,
+        "delta_ci": [
+          0.0464659092279306,
+          0.055908092954510685
+        ],
+        "pyes_above": 6,
+        "pyes_above_ci": 6,
+        "text_above": null,
+        "text_above_ci": null
+      },
+      "in_table": true,
+      "provenance": {
+        "source": "results/matched_resolution.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "raw_scale",
+      "label": "No mapping, raw scale",
+      "n_models": 11,
+      "note": "text as emitted; P(yes) as round(7 P(yes)); no label information",
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.3943441292268537,
+        "pyes": 0.41485638462795377,
+        "delta": 0.020512255401100077,
+        "delta_ci": [
+          0.014006199450170512,
+          0.026682551861407847
+        ],
+        "pyes_above": 4,
+        "pyes_above_ci": 2,
+        "text_above": 1,
+        "text_above_ci": 1
+      },
+      "oracle": null,
+      "in_table": true,
+      "provenance": {
+        "source": "results/calibration_both_arms.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "single_mapped",
+      "label": "One expert through the mapping",
+      "n_models": 11,
+      "note": "reference = one expert's ratings mapped like the models, vs the other three",
+      "heldout": {
+        "anchor": 0.4757522802330721,
+        "text": 0.4254425975044256,
+        "pyes": 0.5530661980210373,
+        "delta": 0.12762360051661184,
+        "delta_ci": [
+          0.12134641566699939,
+          0.13331002231199757
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      },
+      "oracle": {
+        "anchor": 0.4763469290913135,
+        "text": 0.42618269291976874,
+        "pyes": 0.5540988785313661,
+        "delta": 0.12791618561159737,
+        "delta_ci": [
+          0.12191310915902137,
+          0.13380672144761205
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 2
+      },
+      "in_table": true,
+      "provenance": {
+        "source": "results/anchor_three_rater.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "three_expert_panel",
+      "label": "Three-expert panel, held-out expert",
+      "n_models": 11,
+      "note": "reference = mean of three experts vs the fourth; models mapped to the same marginal",
+      "heldout": {
+        "anchor": 0.5625566535481871,
+        "text": 0.41838756470104443,
+        "pyes": 0.5431570808662843,
+        "delta": 0.12476951616524,
+        "delta_ci": [
+          0.11880466286723344,
+          0.13032010843827646
+        ],
+        "pyes_above": 2,
+        "pyes_above_ci": 1,
+        "text_above": 0,
+        "text_above_ci": 0
+      },
+      "oracle": {
+        "anchor": 0.5627633529976158,
+        "text": 0.4189691151253221,
+        "pyes": 0.5438194472404025,
+        "delta": 0.12485033211508033,
+        "delta_ci": [
+          0.11892400939233203,
+          0.13069061777475405
+        ],
+        "pyes_above": 2,
+        "pyes_above_ci": 1,
+        "text_above": 0,
+        "text_above_ci": 0
+      },
+      "in_table": true,
+      "provenance": {
+        "source": "results/anchor_three_rater.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "detection_native",
+      "label": "Binary detection, no mapping",
+      "n_models": 11,
+      "note": "Cohen kappa on present; text > 0, P(yes) > 0.5; reference = expert pairs",
+      "heldout": {
+        "anchor": 0.3880710410665279,
+        "text": 0.21509692115073628,
+        "pyes": 0.37955870097976574,
+        "delta": 0.16446177982902946,
+        "delta_ci": [
+          0.15817946966955407,
+          0.17123705282006996
+        ],
+        "pyes_above": 4,
+        "pyes_above_ci": 4,
+        "text_above": 1,
+        "text_above_ci": 1
+      },
+      "oracle": null,
+      "in_table": true,
+      "provenance": {
+        "source": "results/detection_intensity.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "detection_native_prev_heldout",
+      "label": "Binary detection, prevalence-matched",
+      "n_models": 11,
+      "note": "P(yes) threshold at the experts' present rate, fit held-out",
+      "heldout": {
+        "anchor": 0.3880710410665279,
+        "text": 0.21509692115073628,
+        "pyes": 0.45764327149504036,
+        "delta": 0.24254635034430408,
+        "delta_ci": [
+          0.23333416210310418,
+          0.24926903766606281
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 1,
+        "text_above_ci": 1
+      },
+      "oracle": null,
+      "in_table": true,
+      "provenance": {
+        "source": "results/detection_intensity.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5"
+      }
+    },
+    {
+      "control": "multi_sample",
+      "label": "Mean of 16 sampled answers",
+      "n_models": 11,
+      "note": "2500 images, full-set reference; mean16 - 1 sample +0.086 [+0.082, +0.090]",
+      "heldout": {
+        "anchor": 0.46816129648522525,
+        "text": 0.4239827213227858,
+        "pyes": 0.5530661980210373,
+        "delta": 0.12908347669825157,
+        "delta_ci": [
+          0.12178683019526568,
+          0.13693326047043994
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 3,
+        "text_above_ci": 3
+      },
+      "oracle": {
+        "anchor": 0.46816129648522525,
+        "text": 0.42496620102410926,
+        "pyes": 0.5540988785313661,
+        "delta": 0.1291326775072568,
+        "delta_ci": [
+          0.12171740019420152,
+          0.1367800932191284
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 4,
+        "text_above_ci": 3
+      },
+      "in_table": true,
+      "provenance": {
+        "source": "results/multi_sample_control_full.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5",
+        "n_images": 2500
+      }
+    },
+    {
+      "control": "rate_argmax",
+      "label": "Graded digit, argmax (500)",
+      "n_models": 11,
+      "note": "one 0-7 digit query per category; 500 images, reference on those images; text column = argmax digit",
+      "heldout": {
+        "anchor": 0.4542153233615741,
+        "text": 0.4724581804573915,
+        "pyes": 0.5269755674185922,
+        "delta": 0.054517386961200696,
+        "delta_ci": [
+          0.043643566792805163,
+          0.06352800776646507
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 7,
+        "text_above_ci": 5
+      },
+      "oracle": {
+        "anchor": 0.4542153233615741,
+        "text": 0.4773061797207211,
+        "pyes": 0.5316775659218433,
+        "delta": 0.05437138620112225,
+        "delta_ci": [
+          0.044227986997582396,
+          0.0631220490358948
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 8,
+        "text_above_ci": 7
+      },
+      "in_table": true,
+      "provenance": {
+        "source": "results/rate_control.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5",
+        "n_images": 500
+      }
+    },
+    {
+      "control": "rate_expected",
+      "label": "Graded digit, expected (500)",
+      "n_models": 11,
+      "note": "one 0-7 digit query per category; 500 images, reference on those images; text column = expected digit",
+      "heldout": {
+        "anchor": 0.4542153233615741,
+        "text": 0.5208336803911785,
+        "pyes": 0.5269755674185922,
+        "delta": 0.006141887027413725,
+        "delta_ci": [
+          -0.002335939299964457,
+          0.012749414248071684
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 11,
+        "text_above_ci": 8
+      },
+      "oracle": {
+        "anchor": 0.4542153233615741,
+        "text": 0.5252438061988584,
+        "pyes": 0.5316775659218433,
+        "delta": 0.006433759722985069,
+        "delta_ci": [
+          -0.0018486490814905404,
+          0.014081853272633471
+        ],
+        "pyes_above": 11,
+        "pyes_above_ci": 11,
+        "text_above": 11,
+        "text_above_ci": 10
+      },
+      "in_table": true,
+      "provenance": {
+        "source": "results/rate_control.json",
+        "B": 500,
+        "seed": 0,
+        "S": 20,
+        "category_set": "reliable_5",
+        "module_sha": "2ebf1ea302ccd8b5",
+        "n_images": 500
+      }
+    }
+  ],
+  "retry_arms": {
+    "GLM-4.6V-Flash": "paper_once",
+    "InternVL3_5-8B-HF": "paper_once",
+    "MiMo-VL-7B-RL-2508": "ours",
+    "MiniCPM-V-4.6": "ours",
+    "Ministral-3-14B-Instruct-2512": "paper_once",
+    "Qwen2.5-VL-3B-Instruct": "paper_once",
+    "Qwen3-VL-8B-Instruct": "paper_once",
+    "Qwen3.5-9B": "paper_once",
+    "gemma-3-12b-it": "paper_retry",
+    "gemma-3-4b-it": "ours",
+    "gemma-4-12B-it": "paper_once"
+  },
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "controls_table.py",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_verify_prefill": "333dc0120441f863",
+      "results_verify": "b4d20388cc1fe22b",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

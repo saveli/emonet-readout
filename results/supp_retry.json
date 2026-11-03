@@ -1,0 +1,178 @@
+{
+  "rows": [
+    {
+      "model": "GLM-4.6V-Flash",
+      "paired_images": 2500,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.48301645002500593,
+      "kappa_final": 0.4603544226717295,
+      "final_minus_first": -0.022662027353276437,
+      "ci": [
+        -0.03268096076963018,
+        -0.012501258267877683
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "InternVL3_5-8B-HF",
+      "paired_images": 2500,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.3866842242345917,
+      "kappa_final": 0.3865392915895064,
+      "final_minus_first": -0.000144932645085305,
+      "ci": [
+        -0.02027045548850432,
+        0.018747708428336056
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "MiMo-VL-7B-RL-2508",
+      "paired_images": 604,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.35722102175539505,
+      "kappa_final": 0.35722102175539505,
+      "final_minus_first": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Ministral-3-14B-Instruct-2512",
+      "paired_images": 2463,
+      "rounds": 3,
+      "partial": true,
+      "kappa_first": 0.4461113659618473,
+      "kappa_final": 0.4616393583757706,
+      "final_minus_first": 0.015527992413923275,
+      "ci": [
+        0.0006324399707831788,
+        0.031047671341301524
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "Qwen2.5-VL-3B-Instruct",
+      "paired_images": 1936,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.17232533685451382,
+      "kappa_final": 0.15096736450650744,
+      "final_minus_first": -0.021357972348006377,
+      "ci": [
+        -0.05733678987138286,
+        0.010672461407925686
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3-VL-8B-Instruct",
+      "paired_images": 2365,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.5019070064347861,
+      "kappa_final": 0.49369481100198775,
+      "final_minus_first": -0.008212195432798386,
+      "ci": [
+        -0.0202213534076677,
+        0.002755164228650174
+      ],
+      "verdict": "indistinguishable"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "paired_images": 2462,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.35069480050510327,
+      "kappa_final": 0.311093204366402,
+      "final_minus_first": -0.03960159613870129,
+      "ci": [
+        -0.06978201499793892,
+        -0.00955109801844412
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-3-12b-it",
+      "paired_images": 2500,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.43587216691622155,
+      "kappa_final": 0.4911658751637959,
+      "final_minus_first": 0.05529370824757435,
+      "ci": [
+        0.04321899457558151,
+        0.06548496543734554
+      ],
+      "verdict": "above"
+    },
+    {
+      "model": "gemma-3-4b-it",
+      "paired_images": 2500,
+      "rounds": 5,
+      "partial": false,
+      "kappa_first": 0.3862999956242215,
+      "kappa_final": 0.22475682999475138,
+      "final_minus_first": -0.16154316562947013,
+      "ci": [
+        -0.18234573620475075,
+        -0.140818748437988
+      ],
+      "verdict": "below"
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "paired_images": 2500,
+      "rounds": 3,
+      "partial": true,
+      "kappa_first": 0.49434302363409427,
+      "kappa_final": 0.5241560552919702,
+      "final_minus_first": 0.02981303165787591,
+      "ci": [
+        0.02037293896026423,
+        0.03973634040931258
+      ],
+      "verdict": "above"
+    }
+  ],
+  "mean_final_minus_first": -0.015288715722796439,
+  "mean_ci": [
+    -0.021368308354806565,
+    -0.00940285592972836
+  ],
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "supplementary_tables.py retry",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

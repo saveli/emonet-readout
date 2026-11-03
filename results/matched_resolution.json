@@ -1,0 +1,588 @@
+{
+  "models": [
+    "GLM-4.6V-Flash",
+    "InternVL3_5-8B-HF",
+    "MiMo-VL-7B-RL-2508",
+    "MiniCPM-V-4.6",
+    "Ministral-3-14B-Instruct-2512",
+    "Qwen2.5-VL-3B-Instruct",
+    "Qwen3-VL-8B-Instruct",
+    "Qwen3.5-9B",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
+    "gemma-4-12B-it"
+  ],
+  "text_arm": {
+    "GLM-4.6V-Flash": "paper_once",
+    "InternVL3_5-8B-HF": "paper_once",
+    "MiMo-VL-7B-RL-2508": "ours",
+    "MiniCPM-V-4.6": "ours",
+    "Ministral-3-14B-Instruct-2512": "paper_once",
+    "Qwen2.5-VL-3B-Instruct": "paper_once",
+    "Qwen3-VL-8B-Instruct": "paper_once",
+    "Qwen3.5-9B": "paper_once",
+    "gemma-3-12b-it": "paper_once",
+    "gemma-3-4b-it": "ours",
+    "gemma-4-12B-it": "paper_once"
+  },
+  "histogram_tv_mean": 0.004373763361431398,
+  "histogram_tv_max": 0.0624,
+  "estimators": {
+    "heldout": {
+      "rows": [
+        {
+          "model": "GLM-4.6V-Flash",
+          "kappa_text": 0.4818119038596859,
+          "kappa_matched": 0.5502085126038541,
+          "kappa_pyes_same_images": 0.5919338049991342,
+          "kappa_pyes_all_images": 0.5919338049991342,
+          "matched_minus_text": 0.06839660874416814,
+          "matched_minus_text_ci": [
+            0.05663247950842778,
+            0.08121396247296928
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            0.06680428839628053,
+            0.0938047129825473
+          ],
+          "levels_per_category": 7.6
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "kappa_text": 0.423153927127281,
+          "kappa_matched": 0.45514443450324327,
+          "kappa_pyes_same_images": 0.5807328074607464,
+          "kappa_pyes_all_images": 0.5800875768116744,
+          "matched_minus_text": 0.03199050737596226,
+          "matched_minus_text_ci": [
+            0.015991193191874385,
+            0.04424449687766499
+          ],
+          "anchor_same_images": 0.46880991940630423,
+          "matched_minus_anchor_ci": [
+            -0.03187094681590928,
+            0.0015247617754156472
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "kappa_text": 0.4116650216337054,
+          "kappa_matched": 0.4180261632130494,
+          "kappa_pyes_same_images": 0.5690465752311697,
+          "kappa_pyes_all_images": 0.5568267649987035,
+          "matched_minus_text": 0.006361141579344032,
+          "matched_minus_text_ci": [
+            -0.005045013166474544,
+            0.017475515266344853
+          ],
+          "anchor_same_images": 0.47750676015663424,
+          "matched_minus_anchor_ci": [
+            -0.07947034816633926,
+            -0.046297587220755
+          ],
+          "levels_per_category": 6.6
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "kappa_text": 0.287967735877205,
+          "kappa_matched": 0.4963077979239333,
+          "kappa_pyes_same_images": 0.5434106589688125,
+          "kappa_pyes_all_images": 0.5417636058868847,
+          "matched_minus_text": 0.20834006204672834,
+          "matched_minus_text_ci": [
+            0.18677311223189116,
+            0.22574461990444725
+          ],
+          "anchor_same_images": 0.46812471598694305,
+          "matched_minus_anchor_ci": [
+            0.008095133059474539,
+            0.040097157756719286
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "kappa_text": 0.46720527491136404,
+          "kappa_matched": 0.4894623087574853,
+          "kappa_pyes_same_images": 0.5376285762925906,
+          "kappa_pyes_all_images": 0.5383808623876252,
+          "matched_minus_text": 0.022257033846121266,
+          "matched_minus_text_ci": [
+            0.009888640084599484,
+            0.032366876554383466
+          ],
+          "anchor_same_images": 0.46753337401620126,
+          "matched_minus_anchor_ci": [
+            0.005018653159470248,
+            0.03404088009971075
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "kappa_text": 0.29587784861120264,
+          "kappa_matched": 0.42213053242931925,
+          "kappa_pyes_same_images": 0.5133485533773599,
+          "kappa_pyes_all_images": 0.5133485533773599,
+          "matched_minus_text": 0.1262526838181166,
+          "matched_minus_text_ci": [
+            0.10724076630504221,
+            0.14230233771434736
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            -0.06336029547654184,
+            -0.03142834132382037
+          ],
+          "levels_per_category": 5.4
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "kappa_text": 0.4962172298048488,
+          "kappa_matched": 0.5209180315070984,
+          "kappa_pyes_same_images": 0.5656168662405935,
+          "kappa_pyes_all_images": 0.5626768820329203,
+          "matched_minus_text": 0.024700801702249586,
+          "matched_minus_text_ci": [
+            0.012754584843705775,
+            0.03629551947802338
+          ],
+          "anchor_same_images": 0.471601401557123,
+          "matched_minus_anchor_ci": [
+            0.03396206612760457,
+            0.060837205870115034
+          ],
+          "levels_per_category": 8.0
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "kappa_text": 0.4633650026419807,
+          "kappa_matched": 0.5467979065838807,
+          "kappa_pyes_same_images": 0.5697297486273822,
+          "kappa_pyes_all_images": 0.5697733465132844,
+          "matched_minus_text": 0.0834329039419,
+          "matched_minus_text_ci": [
+            0.07204364714014014,
+            0.0971795993914227
+          ],
+          "anchor_same_images": 0.4681400677044906,
+          "matched_minus_anchor_ci": [
+            0.06618073750801214,
+            0.08959288827104633
+          ],
+          "levels_per_category": 8.0
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "kappa_text": 0.4465672107140726,
+          "kappa_matched": 0.4364025623489378,
+          "kappa_pyes_same_images": 0.5319503874735549,
+          "kappa_pyes_all_images": 0.5319503874735549,
+          "matched_minus_text": -0.01016464836513481,
+          "matched_minus_text_ci": [
+            -0.01956220644701208,
+            0.0005317258844567264
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            -0.04729491912750008,
+            -0.020577341903659917
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "kappa_text": 0.4030255185465162,
+          "kappa_matched": 0.40534675411287646,
+          "kappa_pyes_same_images": 0.5317970178574662,
+          "kappa_pyes_all_images": 0.5317970178574662,
+          "matched_minus_text": 0.002321235566360269,
+          "matched_minus_text_ci": [
+            -0.009677044447398272,
+            0.014007230301121621
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            -0.07906487005598829,
+            -0.050077507785097675
+          ],
+          "levels_per_category": 7.0
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "kappa_text": 0.5030118988208182,
+          "kappa_matched": 0.5128200142043275,
+          "kappa_pyes_same_images": 0.5651893758928029,
+          "kappa_pyes_all_images": 0.5651893758928029,
+          "matched_minus_text": 0.009808115383509342,
+          "matched_minus_text_ci": [
+            -0.0004304827104758157,
+            0.017807593820805726
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            0.0276056853621086,
+            0.055556393049032995
+          ],
+          "levels_per_category": 7.4
+        }
+      ],
+      "fleet": {
+        "kappa_text": 0.4254425975044256,
+        "kappa_matched": 0.47759681983527325,
+        "kappa_pyes_same_images": 0.5545803974928739,
+        "kappa_pyes_all_images": 0.5530661980210373,
+        "matched_minus_text": 0.05215422233084774,
+        "matched_minus_text_ci": [
+          0.046426417243861366,
+          0.05576454127302558
+        ],
+        "pyes_minus_matched_ci": [
+          0.07384654735623959,
+          0.08108416684168736
+        ],
+        "ordering_share": 0.4038648818201411,
+        "ordering_share_ci": [
+          0.37284800354341907,
+          0.42263065420551327
+        ],
+        "ordering_share_vs_reported_delta": 0.40865656602486466,
+        "ordering_share_vs_reported_delta_ci": [
+          0.3764366907123193,
+          0.4287154556820894
+        ],
+        "matched_sig_positive": 7,
+        "matched_sig_negative": 0,
+        "matched_point_above_anchor": 6,
+        "matched_ci_above_anchor": 6,
+        "matched_ci_below_anchor": 4
+      }
+    },
+    "oracle": {
+      "rows": [
+        {
+          "model": "GLM-4.6V-Flash",
+          "kappa_text": 0.48253683709278344,
+          "kappa_matched": 0.5508148553303481,
+          "kappa_pyes_same_images": 0.5931476954664221,
+          "kappa_pyes_all_images": 0.5931476954664221,
+          "matched_minus_text": 0.06827801823756469,
+          "matched_minus_text_ci": [
+            0.05641729481775253,
+            0.08090155145972892
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            0.06843816220616444,
+            0.09502192859824787
+          ],
+          "levels_per_category": 7.6
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "kappa_text": 0.423790098516075,
+          "kappa_matched": 0.45513100708559157,
+          "kappa_pyes_same_images": 0.5813789787606161,
+          "kappa_pyes_all_images": 0.580646736764906,
+          "matched_minus_text": 0.031340908569516546,
+          "matched_minus_text_ci": [
+            0.017152065346421577,
+            0.044677560973127736
+          ],
+          "anchor_same_images": 0.46880991940630423,
+          "matched_minus_anchor_ci": [
+            -0.030153616066728204,
+            0.002807076755425572
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "kappa_text": 0.41272968771452545,
+          "kappa_matched": 0.41934340955422744,
+          "kappa_pyes_same_images": 0.569853258228442,
+          "kappa_pyes_all_images": 0.5578308459535718,
+          "matched_minus_text": 0.0066137218397019915,
+          "matched_minus_text_ci": [
+            -0.004355014796715409,
+            0.01781061205599984
+          ],
+          "anchor_same_images": 0.47750676015663424,
+          "matched_minus_anchor_ci": [
+            -0.07716205129078646,
+            -0.044106203536853815
+          ],
+          "levels_per_category": 6.6
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "kappa_text": 0.28854441474201414,
+          "kappa_matched": 0.49692760312704765,
+          "kappa_pyes_same_images": 0.5436268902107223,
+          "kappa_pyes_all_images": 0.5425438573927415,
+          "matched_minus_text": 0.2083831883850335,
+          "matched_minus_text_ci": [
+            0.1865230407379671,
+            0.22568669430616659
+          ],
+          "anchor_same_images": 0.46812471598694305,
+          "matched_minus_anchor_ci": [
+            0.009955607671091847,
+            0.041968130733535794
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "kappa_text": 0.4676982158676332,
+          "kappa_matched": 0.49006492187068984,
+          "kappa_pyes_same_images": 0.5389219310871369,
+          "kappa_pyes_all_images": 0.5394958038618829,
+          "matched_minus_text": 0.022366706003056624,
+          "matched_minus_text_ci": [
+            0.01011735274898415,
+            0.03244187701033821
+          ],
+          "anchor_same_images": 0.46753337401620126,
+          "matched_minus_anchor_ci": [
+            0.006189002251459662,
+            0.03554393095529507
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "kappa_text": 0.29644130975026,
+          "kappa_matched": 0.42295907470979976,
+          "kappa_pyes_same_images": 0.5143172991111845,
+          "kappa_pyes_all_images": 0.5143172991111845,
+          "matched_minus_text": 0.12651776495953976,
+          "matched_minus_text_ci": [
+            0.10783561578623825,
+            0.14278408573971002
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            -0.06136739620297047,
+            -0.030105617785889813
+          ],
+          "levels_per_category": 5.4
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "kappa_text": 0.49723647168911544,
+          "kappa_matched": 0.5219366220653499,
+          "kappa_pyes_same_images": 0.5668338852533727,
+          "kappa_pyes_all_images": 0.5637895577255218,
+          "matched_minus_text": 0.02470015037623441,
+          "matched_minus_text_ci": [
+            0.012781488621799756,
+            0.036112329930998145
+          ],
+          "anchor_same_images": 0.471601401557123,
+          "matched_minus_anchor_ci": [
+            0.03582710662710997,
+            0.06232012234759659
+          ],
+          "levels_per_category": 8.0
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "kappa_text": 0.4645112899373148,
+          "kappa_matched": 0.5477231229069985,
+          "kappa_pyes_same_images": 0.5712285160983657,
+          "kappa_pyes_all_images": 0.5712910625637604,
+          "matched_minus_text": 0.08321183296968376,
+          "matched_minus_text_ci": [
+            0.07180608240203025,
+            0.09720738111003518
+          ],
+          "anchor_same_images": 0.4681400677044906,
+          "matched_minus_anchor_ci": [
+            0.06768060432203112,
+            0.09108900181140907
+          ],
+          "levels_per_category": 8.0
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "kappa_text": 0.4473710127580747,
+          "kappa_matched": 0.43703890811055357,
+          "kappa_pyes_same_images": 0.5323066452261972,
+          "kappa_pyes_all_images": 0.5323066452261972,
+          "matched_minus_text": -0.010332104647521156,
+          "matched_minus_text_ci": [
+            -0.019721220694800427,
+            0.000418367151235313
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            -0.04537741414460729,
+            -0.018763041058167403
+          ],
+          "levels_per_category": 7.4
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "kappa_text": 0.40360197250291563,
+          "kappa_matched": 0.4060314688715865,
+          "kappa_pyes_same_images": 0.5327761353160552,
+          "kappa_pyes_all_images": 0.5327761353160552,
+          "matched_minus_text": 0.002429496368670847,
+          "matched_minus_text_ci": [
+            -0.009617205114095093,
+            0.013651623341388815
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            -0.07783847806767155,
+            -0.048845342069907566
+          ],
+          "levels_per_category": 7.0
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "kappa_text": 0.5035483115467441,
+          "kappa_matched": 0.5133352373750221,
+          "kappa_pyes_same_images": 0.5669420244627835,
+          "kappa_pyes_all_images": 0.5669420244627835,
+          "matched_minus_text": 0.009786925828278004,
+          "matched_minus_text_ci": [
+            -0.00024917152497156255,
+            0.01788011462165301
+          ],
+          "anchor_same_images": 0.46816129648522525,
+          "matched_minus_anchor_ci": [
+            0.028985379963658475,
+            0.056991328539371104
+          ],
+          "levels_per_category": 7.4
+        }
+      ],
+      "fleet": {
+        "kappa_text": 0.42618269291976874,
+        "kappa_matched": 0.4783005664552014,
+        "kappa_pyes_same_images": 0.5555757508382999,
+        "kappa_pyes_all_images": 0.5540988785313661,
+        "matched_minus_text": 0.05211787353543263,
+        "matched_minus_text_ci": [
+          0.0464659092279306,
+          0.055908092954510685
+        ],
+        "pyes_minus_matched_ci": [
+          0.07425456034382343,
+          0.08147408226845353
+        ],
+        "ordering_share": 0.4027872466562097,
+        "ordering_share_ci": [
+          0.37210479899068405,
+          0.42202929823584584
+        ],
+        "ordering_share_vs_reported_delta": 0.40743767714964935,
+        "ordering_share_vs_reported_delta_ci": [
+          0.3757996994989512,
+          0.4280326056574464
+        ],
+        "matched_sig_positive": 7,
+        "matched_sig_negative": 0,
+        "matched_point_above_anchor": 6,
+        "matched_ci_above_anchor": 6,
+        "matched_ci_below_anchor": 4
+      }
+    }
+  },
+  "map": {
+    "GLM-4.6V-Flash": {
+      "text": 0.6044746015759348,
+      "matched": 0.6334549065762543,
+      "pyes": 0.8169737427531547
+    },
+    "InternVL3_5-8B-HF": {
+      "text": 0.5309079229684295,
+      "matched": 0.5401762265563329,
+      "pyes": 0.8133388724636677
+    },
+    "MiMo-VL-7B-RL-2508": {
+      "text": 0.5219150788104058,
+      "matched": 0.5246257911533778,
+      "pyes": 0.7754457689173098
+    },
+    "MiniCPM-V-4.6": {
+      "text": 0.4851754850959913,
+      "matched": 0.5876414405306805,
+      "pyes": 0.711286327667216
+    },
+    "Ministral-3-14B-Instruct-2512": {
+      "text": 0.5802904473014403,
+      "matched": 0.5865938496555284,
+      "pyes": 0.7635306460305278
+    },
+    "Qwen2.5-VL-3B-Instruct": {
+      "text": 0.48783551590783275,
+      "matched": 0.5125331837266713,
+      "pyes": 0.7433297995944786
+    },
+    "Qwen3-VL-8B-Instruct": {
+      "text": 0.6730018709928742,
+      "matched": 0.7224947194945304,
+      "pyes": 0.7892743096606222
+    },
+    "Qwen3.5-9B": {
+      "text": 0.5929943777014024,
+      "matched": 0.6531704692121725,
+      "pyes": 0.8025843765142527
+    },
+    "gemma-3-12b-it": {
+      "text": 0.5938465171011053,
+      "matched": 0.6119671000981429,
+      "pyes": 0.7774769998744333
+    },
+    "gemma-3-4b-it": {
+      "text": 0.5297504068974352,
+      "matched": 0.5449821308860134,
+      "pyes": 0.7173512550930194
+    },
+    "gemma-4-12B-it": {
+      "text": 0.5653765621954576,
+      "matched": 0.5737947131301132,
+      "pyes": 0.7957066484971709
+    }
+  },
+  "map_fleet": {
+    "text": 0.5605062533225735,
+    "matched": 0.5901304119108925,
+    "pyes": 0.7732998860968956
+  },
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "matched_resolution.py",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

@@ -1,0 +1,1118 @@
+{
+  "models": [
+    "GLM-4.6V-Flash",
+    "InternVL3_5-8B-HF",
+    "MiMo-VL-7B-RL-2508",
+    "MiniCPM-V-4.6",
+    "Ministral-3-14B-Instruct-2512",
+    "Qwen2.5-VL-3B-Instruct",
+    "Qwen3-VL-8B-Instruct",
+    "Qwen3.5-9B",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
+    "gemma-4-12B-it"
+  ],
+  "category_set": "reliable_5",
+  "human": {
+    "detection": 0.3880710410665279,
+    "detection_ci": [
+      0.3737804905432853,
+      0.4034009716029163
+    ],
+    "intensity": 0.25578720535151495,
+    "intensity_ci": [
+      0.22535888043051924,
+      0.2836537431161447
+    ],
+    "prevalence": 0.19848
+  },
+  "readouts": {
+    "cal_heldout": {
+      "text": {
+        "detection": 0.28126020581335326,
+        "detection_ci": [
+          0.26998092799785234,
+          0.2935373213192281
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.1999475362842909,
+        "detection_above_human_point": 1,
+        "detection_above_human_ci": 1,
+        "detection_below_human_ci": 10,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": 0.3563485778213709,
+            "intensity": NaN,
+            "prevalence": 0.1984158887120669,
+            "detection_ci": [
+              0.33916413185196365,
+              0.37104022786167906
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.2565754115865306,
+            "intensity": NaN,
+            "prevalence": 0.19913312712858516,
+            "detection_ci": [
+              0.24250482298190482,
+              0.2709205997102456
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.23115254767899787,
+            "intensity": NaN,
+            "prevalence": 0.20414787145177193,
+            "detection_ci": [
+              0.2149199498169427,
+              0.2491090897720435
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.11905798740941247,
+            "intensity": NaN,
+            "prevalence": 0.19871812069827455,
+            "detection_ci": [
+              0.10430321073853496,
+              0.13620009643453848
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.355531472019275,
+            "intensity": NaN,
+            "prevalence": 0.19832509416707605,
+            "detection_ci": [
+              0.339196417589398,
+              0.3752052097393624
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.16569180374814468,
+            "intensity": NaN,
+            "prevalence": 0.19844507492382027,
+            "detection_ci": [
+              0.14849636014036532,
+              0.18443751142224096
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.4113883079294093,
+            "intensity": NaN,
+            "prevalence": 0.2078173365132545,
+            "detection_ci": [
+              0.3948177214975316,
+              0.4288086615242842
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.32747593967520455,
+            "intensity": NaN,
+            "prevalence": 0.1986997848165116,
+            "detection_ci": [
+              0.31057129137560036,
+              0.34242652173691657
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.3118465413536498,
+            "intensity": NaN,
+            "prevalence": 0.1986561958308321,
+            "detection_ci": [
+              0.2979455135282031,
+              0.3261154392122849
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.22009663672307617,
+            "intensity": NaN,
+            "prevalence": 0.19851541760682484,
+            "detection_ci": [
+              0.20696820576824956,
+              0.23450918735816323
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.33869703800181383,
+            "intensity": NaN,
+            "prevalence": 0.19854898727818218,
+            "detection_ci": [
+              0.32121744498028665,
+              0.3543895166026089
+            ]
+          }
+        }
+      },
+      "pyes": {
+        "detection": 0.45653522895205717,
+        "detection_ci": [
+          0.44296445616228713,
+          0.47134667295132426
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.19863060130845944,
+        "detection_above_human_point": 11,
+        "detection_above_human_ci": 11,
+        "detection_below_human_ci": 0,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": 0.4903219764407257,
+            "intensity": NaN,
+            "prevalence": 0.19855616666666667,
+            "detection_ci": [
+              0.4762945264586084,
+              0.5054414774094149
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.48460704364940915,
+            "intensity": NaN,
+            "prevalence": 0.19862473333333336,
+            "detection_ci": [
+              0.46942694450606803,
+              0.49973223028763175
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.45838724974806233,
+            "intensity": NaN,
+            "prevalence": 0.19844691666666664,
+            "detection_ci": [
+              0.44305134912597927,
+              0.4728245412152296
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.4595374826240561,
+            "intensity": NaN,
+            "prevalence": 0.19860109795024564,
+            "detection_ci": [
+              0.4429606627184855,
+              0.47531063975040044
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.43871335931420974,
+            "intensity": NaN,
+            "prevalence": 0.19856,
+            "detection_ci": [
+              0.42261666924931623,
+              0.45528748483781384
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.41755799277569244,
+            "intensity": NaN,
+            "prevalence": 0.1986149166666667,
+            "detection_ci": [
+              0.4016840333516963,
+              0.4320671908670208
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.4666936941993396,
+            "intensity": NaN,
+            "prevalence": 0.19836816666666665,
+            "detection_ci": [
+              0.4496340612358433,
+              0.48166815085696274
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.46650273846378487,
+            "intensity": NaN,
+            "prevalence": 0.19888808333333335,
+            "detection_ci": [
+              0.45176660014765346,
+              0.4843703643591668
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.43938873369589715,
+            "intensity": NaN,
+            "prevalence": 0.1987869166666667,
+            "detection_ci": [
+              0.42405641965145857,
+              0.4554225026346248
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.4354774489172087,
+            "intensity": NaN,
+            "prevalence": 0.19858528310947499,
+            "detection_ci": [
+              0.4187679627654519,
+              0.4515830153994611
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.4646997986442427,
+            "intensity": NaN,
+            "prevalence": 0.19890433333333332,
+            "detection_ci": [
+              0.4498815681484933,
+              0.4784390592053038
+            ]
+          }
+        }
+      },
+      "delta_detection": 0.1752750231387039,
+      "delta_detection_ci": [
+        0.16746314006608043,
+        0.18115086560126017
+      ]
+    },
+    "cal_oracle": {
+      "text": {
+        "detection": 0.2814329504577216,
+        "detection_ci": [
+          0.2704660280701545,
+          0.29404953065903483
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.19991555683361525,
+        "detection_above_human_point": 1,
+        "detection_above_human_ci": 1,
+        "detection_below_human_ci": 10,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": 0.35657055946199445,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.34006300897241726,
+              0.3726763118482963
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.2566850113515977,
+            "intensity": NaN,
+            "prevalence": 0.19909274193548385,
+            "detection_ci": [
+              0.24253242020843524,
+              0.27110525448433215
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.23140162817511817,
+            "intensity": NaN,
+            "prevalence": 0.204324184360435,
+            "detection_ci": [
+              0.21544837917148052,
+              0.2497984220689203
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.1188360483616437,
+            "intensity": NaN,
+            "prevalence": 0.19859538784067085,
+            "detection_ci": [
+              0.104258351843035,
+              0.13604236034400527
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.355751566845604,
+            "intensity": NaN,
+            "prevalence": 0.1983179815778935,
+            "detection_ci": [
+              0.3399094415280756,
+              0.3758044279844638
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.1659210110108086,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.1488226892728207,
+              0.1846823868718374
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.4117106518616963,
+            "intensity": NaN,
+            "prevalence": 0.20776196636481242,
+            "detection_ci": [
+              0.39546283060873477,
+              0.4291250474488666
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.3276398974406839,
+            "intensity": NaN,
+            "prevalence": 0.1985788630904724,
+            "detection_ci": [
+              0.3110847028841956,
+              0.3428418125720102
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.3121180032419388,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.2982999213696311,
+              0.32670268026450494
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.22024942994414837,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.20714558821802875,
+              0.23477618326940736
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.33887864733970396,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.322153436937943,
+              0.3550417029958689
+            ]
+          }
+        }
+      },
+      "pyes": {
+        "detection": 0.45687858409056137,
+        "detection_ci": [
+          0.44399137999914046,
+          0.4718329291704385
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.19848,
+        "detection_above_human_point": 11,
+        "detection_above_human_ci": 11,
+        "detection_below_human_ci": 0,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": 0.49009833203514364,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4755284812698292,
+              0.5065256722909771
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.48564894831616334,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4700416722885189,
+              0.5010653144830254
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.4589147151358676,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.44437670414264596,
+              0.47548443078250385
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.45968478819692377,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4433020781535072,
+              0.47554176962868383
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.43885563538967515,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.42287251882946914,
+              0.45628477306882465
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.4185569679092918,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4023833859429494,
+              0.4339511215491435
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.46728541804014834,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4507595292149081,
+              0.4831142093452253
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.4657198796564564,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.45189623657858,
+              0.4842493718586507
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.43970810497652674,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.42497384952191286,
+              0.4567888571564531
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.4361231781918522,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4189816032169589,
+              0.45299019142682306
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.4650684571481272,
+            "intensity": NaN,
+            "prevalence": 0.19848,
+            "detection_ci": [
+              0.4506083536152441,
+              0.48018816818015847
+            ]
+          }
+        }
+      },
+      "delta_detection": 0.17544563363283977,
+      "delta_detection_ci": [
+        0.16784225216149118,
+        0.18174579235205132
+      ]
+    },
+    "native": {
+      "text": {
+        "detection": 0.21509692115073628,
+        "detection_ci": [
+          0.20634297785579456,
+          0.22498587121006428
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.34575272945851676,
+        "detection_above_human_point": 1,
+        "detection_above_human_ci": 1,
+        "detection_below_human_ci": 10,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": -0.0023940528346466246,
+            "intensity": NaN,
+            "prevalence": 0.9196799999999999,
+            "detection_ci": [
+              -0.00564270488905034,
+              0.0011029059633908761
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.3292463820192455,
+            "intensity": NaN,
+            "prevalence": 0.12387096774193548,
+            "detection_ci": [
+              0.3128078227764792,
+              0.3479579717605448
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.3080502403198953,
+            "intensity": NaN,
+            "prevalence": 0.07757638529259453,
+            "detection_ci": [
+              0.29065904957080446,
+              0.3279350413938114
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.11123521564691188,
+            "intensity": NaN,
+            "prevalence": 0.16872117400419287,
+            "detection_ci": [
+              0.09305510965198373,
+              0.12932135029130437
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.0035460038028258117,
+            "intensity": NaN,
+            "prevalence": 0.9806968362034441,
+            "detection_ci": [
+              0.001706225700478619,
+              0.0055574955688170455
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.23790145485876626,
+            "intensity": NaN,
+            "prevalence": 0.08832,
+            "detection_ci": [
+              0.22026155008163406,
+              0.257736912475448
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.26457324268717036,
+            "intensity": NaN,
+            "prevalence": 0.427511858559724,
+            "detection_ci": [
+              0.2502749608130281,
+              0.2787919559829386
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.31334047247381236,
+            "intensity": NaN,
+            "prevalence": 0.22850280224179348,
+            "detection_ci": [
+              0.2954065166360298,
+              0.32891429478087525
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.13237158902856958,
+            "intensity": NaN,
+            "prevalence": 0.5311999999999999,
+            "detection_ci": [
+              0.12437923381242443,
+              0.14081043796647563
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.2617174164223114,
+            "intensity": NaN,
+            "prevalence": 0.12295999999999999,
+            "detection_ci": [
+              0.24551016811288942,
+              0.2790136608685253
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.40647816823323746,
+            "intensity": NaN,
+            "prevalence": 0.13424,
+            "detection_ci": [
+              0.3897105525790962,
+              0.4225901040493404
+            ]
+          }
+        }
+      },
+      "pyes": {
+        "detection": 0.37955870097976574,
+        "detection_ci": [
+          0.36784472536565155,
+          0.3933414662742585
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.1702690909090909,
+        "detection_above_human_point": 4,
+        "detection_above_human_ci": 4,
+        "detection_below_human_ci": 4,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": 0.4671973486841291,
+            "intensity": NaN,
+            "prevalence": 0.22552,
+            "detection_ci": [
+              0.4513200164969018,
+              0.4834628404121345
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.4049253190317529,
+            "intensity": NaN,
+            "prevalence": 0.11743999999999999,
+            "detection_ci": [
+              0.3872634980198572,
+              0.4229638170403838
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.30177894550333934,
+            "intensity": NaN,
+            "prevalence": 0.07872,
+            "detection_ci": [
+              0.2878537279765048,
+              0.3181241830085653
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.420249552735602,
+            "intensity": NaN,
+            "prevalence": 0.15952000000000002,
+            "detection_ci": [
+              0.40379291788459554,
+              0.4369657269176717
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.3857307597382286,
+            "intensity": NaN,
+            "prevalence": 0.14184000000000002,
+            "detection_ci": [
+              0.3706727547888853,
+              0.40378528547387704
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.3765290164686948,
+            "intensity": NaN,
+            "prevalence": 0.18528,
+            "detection_ci": [
+              0.36121097377189354,
+              0.39252076861036955
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.42024870256740626,
+            "intensity": NaN,
+            "prevalence": 0.1312,
+            "detection_ci": [
+              0.40338192996716854,
+              0.4369334481041648
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.3872977351487184,
+            "intensity": NaN,
+            "prevalence": 0.13232,
+            "detection_ci": [
+              0.3713501434864341,
+              0.4042098110431712
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.36356940677225213,
+            "intensity": NaN,
+            "prevalence": 0.26248,
+            "detection_ci": [
+              0.34888812707301686,
+              0.3782476598528208
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.31915729028587414,
+            "intensity": NaN,
+            "prevalence": 0.3372,
+            "detection_ci": [
+              0.3042775944362641,
+              0.3345371706427754
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.3284616338414255,
+            "intensity": NaN,
+            "prevalence": 0.10144,
+            "detection_ci": [
+              0.31422836087190675,
+              0.34440612136950566
+            ]
+          }
+        }
+      },
+      "delta_detection": 0.16446177982902946,
+      "delta_detection_ci": [
+        0.15817946966955407,
+        0.17123705282006996
+      ]
+    },
+    "native_prev_heldout": {
+      "text": {
+        "detection": 0.21509692115073628,
+        "detection_ci": [
+          0.20634297785579456,
+          0.22498587121006428
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.34575272945851676,
+        "detection_above_human_point": 1,
+        "detection_above_human_ci": 1,
+        "detection_below_human_ci": 10,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": -0.0023940528346466246,
+            "intensity": NaN,
+            "prevalence": 0.9196799999999999,
+            "detection_ci": [
+              -0.00564270488905034,
+              0.0011029059633908761
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.3292463820192455,
+            "intensity": NaN,
+            "prevalence": 0.12387096774193548,
+            "detection_ci": [
+              0.3128078227764792,
+              0.3479579717605448
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.3080502403198953,
+            "intensity": NaN,
+            "prevalence": 0.07757638529259453,
+            "detection_ci": [
+              0.29065904957080446,
+              0.3279350413938114
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.11123521564691188,
+            "intensity": NaN,
+            "prevalence": 0.16872117400419287,
+            "detection_ci": [
+              0.09305510965198373,
+              0.12932135029130437
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.0035460038028258117,
+            "intensity": NaN,
+            "prevalence": 0.9806968362034441,
+            "detection_ci": [
+              0.001706225700478619,
+              0.0055574955688170455
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.23790145485876626,
+            "intensity": NaN,
+            "prevalence": 0.08832,
+            "detection_ci": [
+              0.22026155008163406,
+              0.257736912475448
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.26457324268717036,
+            "intensity": NaN,
+            "prevalence": 0.427511858559724,
+            "detection_ci": [
+              0.2502749608130281,
+              0.2787919559829386
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.31334047247381236,
+            "intensity": NaN,
+            "prevalence": 0.22850280224179348,
+            "detection_ci": [
+              0.2954065166360298,
+              0.32891429478087525
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.13237158902856958,
+            "intensity": NaN,
+            "prevalence": 0.5311999999999999,
+            "detection_ci": [
+              0.12437923381242443,
+              0.14081043796647563
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.2617174164223114,
+            "intensity": NaN,
+            "prevalence": 0.12295999999999999,
+            "detection_ci": [
+              0.24551016811288942,
+              0.2790136608685253
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.40647816823323746,
+            "intensity": NaN,
+            "prevalence": 0.13424,
+            "detection_ci": [
+              0.3897105525790962,
+              0.4225901040493404
+            ]
+          }
+        }
+      },
+      "pyes": {
+        "detection": 0.45764327149504036,
+        "detection_ci": [
+          0.4439692133166831,
+          0.47233934587971405
+        ],
+        "intensity": null,
+        "intensity_ci": null,
+        "prevalence": 0.19781890909090907,
+        "detection_above_human_point": 11,
+        "detection_above_human_ci": 11,
+        "detection_below_human_ci": 0,
+        "per_model": {
+          "GLM-4.6V-Flash": {
+            "detection": 0.4902782389790052,
+            "intensity": NaN,
+            "prevalence": 0.198924,
+            "detection_ci": [
+              0.47615465291416587,
+              0.505512379139725
+            ]
+          },
+          "InternVL3_5-8B-HF": {
+            "detection": 0.48456822846017467,
+            "intensity": NaN,
+            "prevalence": 0.198624,
+            "detection_ci": [
+              0.46944013583859034,
+              0.4997170580919823
+            ]
+          },
+          "MiMo-VL-7B-RL-2508": {
+            "detection": 0.45831229368035187,
+            "intensity": NaN,
+            "prevalence": 0.198808,
+            "detection_ci": [
+              0.44311977259898677,
+              0.47278739556611077
+            ]
+          },
+          "MiniCPM-V-4.6": {
+            "detection": 0.46861192515871936,
+            "intensity": NaN,
+            "prevalence": 0.192816,
+            "detection_ci": [
+              0.4522020870179859,
+              0.4836305136762224
+            ]
+          },
+          "Ministral-3-14B-Instruct-2512": {
+            "detection": 0.438710782245321,
+            "intensity": NaN,
+            "prevalence": 0.198992,
+            "detection_ci": [
+              0.4225265454778418,
+              0.4553556673573717
+            ]
+          },
+          "Qwen2.5-VL-3B-Instruct": {
+            "detection": 0.417702108801895,
+            "intensity": NaN,
+            "prevalence": 0.198748,
+            "detection_ci": [
+              0.40185712161125653,
+              0.4322237855841522
+            ]
+          },
+          "Qwen3-VL-8B-Instruct": {
+            "detection": 0.46656066308297167,
+            "intensity": NaN,
+            "prevalence": 0.19874,
+            "detection_ci": [
+              0.44946949744035053,
+              0.4814869250861878
+            ]
+          },
+          "Qwen3.5-9B": {
+            "detection": 0.4665109988382163,
+            "intensity": NaN,
+            "prevalence": 0.19914400000000002,
+            "detection_ci": [
+              0.45165431117048677,
+              0.48440429247633127
+            ]
+          },
+          "gemma-3-12b-it": {
+            "detection": 0.4394037927137907,
+            "intensity": NaN,
+            "prevalence": 0.19873599999999997,
+            "detection_ci": [
+              0.4239442510085937,
+              0.45519672240819375
+            ]
+          },
+          "gemma-3-4b-it": {
+            "detection": 0.4387766427556321,
+            "intensity": NaN,
+            "prevalence": 0.193208,
+            "detection_ci": [
+              0.422016629491846,
+              0.4544656158538806
+            ]
+          },
+          "gemma-4-12B-it": {
+            "detection": 0.4646403117293674,
+            "intensity": NaN,
+            "prevalence": 0.199268,
+            "detection_ci": [
+              0.44969972988110096,
+              0.47841842520557465
+            ]
+          }
+        }
+      },
+      "delta_detection": 0.24254635034430408,
+      "delta_detection_ci": [
+        0.23333416210310418,
+        0.24926903766606281
+      ]
+    }
+  },
+  "categories": [
+    {
+      "category": "Anger",
+      "alpha": 0.46161177518768004,
+      "expert_prevalence": 0.1634,
+      "hh_detection": 0.42287467861899336,
+      "hh_intensity": 0.28668552979170986,
+      "text_cal_heldout_detection": 0.21117605706290588,
+      "text_cal_heldout_prevalence": 0.16290942903349862,
+      "pyes_cal_heldout_detection": 0.3979263901291177,
+      "pyes_cal_heldout_prevalence": 0.16369128556145376,
+      "text_cal_oracle_detection": 0.21143079731286774,
+      "text_cal_oracle_prevalence": 0.16291406685128565,
+      "pyes_cal_oracle_detection": 0.3982409619655023,
+      "pyes_cal_oracle_prevalence": 0.1634,
+      "text_native_detection": 0.1476890860822053,
+      "text_native_prevalence": 0.33212145817117356,
+      "pyes_native_detection": 0.23850878296772982,
+      "pyes_native_prevalence": 0.04847272727272727,
+      "text_native_prev_heldout_detection": 0.1476890860822053,
+      "text_native_prev_heldout_prevalence": 0.33212145817117356,
+      "pyes_native_prev_heldout_detection": 0.4034730406994512,
+      "pyes_native_prev_heldout_prevalence": 0.15998545454545454
+    },
+    {
+      "category": "Amusement",
+      "alpha": 0.555765129729555,
+      "expert_prevalence": 0.1964,
+      "hh_detection": 0.3952189744341432,
+      "hh_intensity": 0.3603206842977467,
+      "text_cal_heldout_detection": 0.4312542300749793,
+      "text_cal_heldout_prevalence": 0.19858473443185565,
+      "pyes_cal_heldout_detection": 0.5158771778588009,
+      "pyes_cal_heldout_prevalence": 0.1964891648931876,
+      "text_cal_oracle_detection": 0.43146889079151146,
+      "text_cal_oracle_prevalence": 0.19843042914678016,
+      "pyes_cal_oracle_detection": 0.5160386227993702,
+      "pyes_cal_oracle_prevalence": 0.19639999999999996,
+      "text_native_detection": 0.29799595426054226,
+      "text_native_prevalence": 0.4179695072997433,
+      "pyes_native_detection": 0.471986116827897,
+      "pyes_native_prevalence": 0.2461818181818182,
+      "text_native_prev_heldout_detection": 0.29799595426054226,
+      "text_native_prev_heldout_prevalence": 0.4179695072997433,
+      "pyes_native_prev_heldout_detection": 0.5159336052976616,
+      "pyes_native_prev_heldout_prevalence": 0.19637636363636365
+    },
+    {
+      "category": "Astonishment/Surprise",
+      "alpha": 0.43631048704192144,
+      "expert_prevalence": 0.1319,
+      "hh_detection": 0.26023993848555194,
+      "hh_intensity": 0.33044854566287213,
+      "text_cal_heldout_detection": 0.21488635440994786,
+      "text_cal_heldout_prevalence": 0.13274543107492162,
+      "pyes_cal_heldout_detection": 0.33018042151194016,
+      "pyes_cal_heldout_prevalence": 0.13223096039944904,
+      "text_cal_oracle_detection": 0.2150978350250625,
+      "text_cal_oracle_prevalence": 0.13263834668133143,
+      "pyes_cal_oracle_detection": 0.33017644033263327,
+      "pyes_cal_oracle_prevalence": 0.13189999999999996,
+      "text_native_detection": 0.15111828428972668,
+      "text_native_prevalence": 0.3407016012657981,
+      "pyes_native_detection": 0.3073124832256359,
+      "pyes_native_prevalence": 0.11676363636363636,
+      "text_native_prev_heldout_detection": 0.15111828428972668,
+      "text_native_prev_heldout_prevalence": 0.3407016012657981,
+      "pyes_native_prev_heldout_detection": 0.33004263755153007,
+      "pyes_native_prev_heldout_prevalence": 0.1324381818181818
+    },
+    {
+      "category": "Elation",
+      "alpha": 0.5841892164462458,
+      "expert_prevalence": 0.2243,
+      "hh_detection": 0.5373094061553769,
+      "hh_intensity": 0.2844511502541958,
+      "text_cal_heldout_detection": 0.3715556798360644,
+      "text_cal_heldout_prevalence": 0.22675076266261388,
+      "pyes_cal_heldout_detection": 0.5776351292958286,
+      "pyes_cal_heldout_prevalence": 0.22423851515151513,
+      "text_cal_oracle_detection": 0.37180226063116817,
+      "text_cal_oracle_prevalence": 0.22681369738461,
+      "pyes_cal_oracle_detection": 0.5785166535771971,
+      "pyes_cal_oracle_prevalence": 0.22429999999999997,
+      "text_native_detection": 0.32738377519965084,
+      "text_native_prevalence": 0.30727049291657366,
+      "pyes_native_detection": 0.47873026788759127,
+      "pyes_native_prevalence": 0.1336,
+      "text_native_prev_heldout_detection": 0.32738377519965084,
+      "text_native_prev_heldout_prevalence": 0.30727049291657366,
+      "pyes_native_prev_heldout_detection": 0.5777608448737814,
+      "pyes_native_prev_heldout_prevalence": 0.2244709090909091
+    },
+    {
+      "category": "Thankfulness/Gratitude",
+      "alpha": 0.3000630062250822,
+      "expert_prevalence": 0.2764,
+      "hh_detection": 0.324712207638574,
+      "hh_intensity": 0.017030116751050206,
+      "text_cal_heldout_detection": 0.17742870768286856,
+      "text_cal_heldout_prevalence": 0.2787473242185649,
+      "pyes_cal_heldout_detection": 0.46105702596459835,
+      "pyes_cal_heldout_prevalence": 0.27650308053669176,
+      "text_cal_oracle_detection": 0.17736496852799827,
+      "text_cal_oracle_prevalence": 0.27878124410406907,
+      "pyes_cal_oracle_detection": 0.46142024177810453,
+      "pyes_cal_oracle_prevalence": 0.2764,
+      "text_native_detection": 0.15129750592155639,
+      "text_native_prevalence": 0.3307005876392951,
+      "pyes_native_detection": 0.40125585398997465,
+      "pyes_native_prevalence": 0.3063272727272727,
+      "text_native_prev_heldout_detection": 0.15129750592155639,
+      "text_native_prev_heldout_prevalence": 0.3307005876392951,
+      "pyes_native_prev_heldout_detection": 0.46100622905277794,
+      "pyes_native_prev_heldout_prevalence": 0.2758236363636364
+    }
+  ],
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "detection_intensity.py",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    }
+  }
+}

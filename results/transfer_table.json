@@ -1,0 +1,38 @@
+{
+  "classes": "five mapped (six minus neutral)",
+  "n_images": 1710,
+  "rows": {
+    "released": {
+      "accuracy": 0.6614035087719298,
+      "per_class": {
+        "angry": 0.0,
+        "disgust": 0.9064327485380117,
+        "fear": 0.6081871345029239,
+        "happy": 1.0,
+        "sad": 0.7923976608187134
+      },
+      "source": "faces_class_by_group.json"
+    },
+    "zscored": {
+      "accuracy": 0.7426900584795322,
+      "per_class": {
+        "angry": 0.8216374269005848,
+        "disgust": 0.2134502923976608,
+        "fear": 0.8976608187134503,
+        "happy": 1.0,
+        "sad": 0.7807017543859649
+      },
+      "source": "faces_class_by_group_zscored.json"
+    },
+    "probe": {
+      "accuracy_six_class": 0.9439571150097466,
+      "accuracy_five_class": 0.9374269005847953,
+      "source": "faces_linear_probe.json"
+    }
+  },
+  "gaps": {
+    "head_scaling": 0.0812865497076024,
+    "training_data": 0.1947368421052631,
+    "raw": 0.2760233918128655
+  }
+}

@@ -1,0 +1,4071 @@
+{
+  "models": [
+    "GLM-4.6V-Flash",
+    "InternVL3_5-8B-HF",
+    "MiMo-VL-7B-RL-2508",
+    "MiniCPM-V-4.6",
+    "Ministral-3-14B-Instruct-2512",
+    "Qwen2.5-VL-3B-Instruct",
+    "Qwen3-VL-8B-Instruct",
+    "Qwen3.5-9B",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
+    "gemma-4-12B-it"
+  ],
+  "text_arm": {
+    "GLM-4.6V-Flash": "paper_once",
+    "InternVL3_5-8B-HF": "paper_once",
+    "MiMo-VL-7B-RL-2508": "ours",
+    "MiniCPM-V-4.6": "ours",
+    "Ministral-3-14B-Instruct-2512": "paper_once",
+    "Qwen2.5-VL-3B-Instruct": "paper_once",
+    "Qwen3-VL-8B-Instruct": "paper_once",
+    "Qwen3.5-9B": "paper_once",
+    "gemma-3-12b-it": "paper_once",
+    "gemma-3-4b-it": "ours",
+    "gemma-4-12B-it": "paper_once"
+  },
+  "sets": {
+    "reliable_5": {
+      "references": {
+        "anchor": {
+          "point": 0.46816129648522525,
+          "ci": [
+            0.4508462323785607,
+            0.48425667352216284
+          ]
+        },
+        "anchor_pooled": {
+          "point": 0.46831394640244495,
+          "ci": [
+            0.4510045191741102,
+            0.48432645064289115
+          ]
+        },
+        "single_mapped/heldout": {
+          "point": 0.4757522802330721,
+          "ci": [
+            0.4574326346072201,
+            0.4918878405975706
+          ]
+        },
+        "panel/heldout": {
+          "point": 0.5625566535481871,
+          "ci": [
+            0.5439798747633668,
+            0.5784644725399215
+          ]
+        },
+        "single_mapped/oracle": {
+          "point": 0.4763469290913135,
+          "ci": [
+            0.4587915820483797,
+            0.49315085962208166
+          ]
+        },
+        "panel/oracle": {
+          "point": 0.5627633529976158,
+          "ci": [
+            0.5445813500505169,
+            0.5788630227440712
+          ]
+        }
+      },
+      "tests": {
+        "text/heldout": {
+          "std_vs_anchor": {
+            "point_above": 3,
+            "ci_above": 2,
+            "ci_below": 6
+          },
+          "std_vs_single_mapped": {
+            "point_above": 3,
+            "ci_above": 2,
+            "ci_below": 6
+          },
+          "loro_vs_panel": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 11
+          }
+        },
+        "pyes/heldout": {
+          "std_vs_anchor": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "std_vs_single_mapped": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "loro_vs_panel": {
+            "point_above": 2,
+            "ci_above": 1,
+            "ci_below": 6
+          }
+        },
+        "text/oracle": {
+          "std_vs_anchor": {
+            "point_above": 3,
+            "ci_above": 2,
+            "ci_below": 6
+          },
+          "std_vs_single_mapped": {
+            "point_above": 3,
+            "ci_above": 2,
+            "ci_below": 6
+          },
+          "loro_vs_panel": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 11
+          }
+        },
+        "pyes/oracle": {
+          "std_vs_anchor": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "std_vs_single_mapped": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "loro_vs_panel": {
+            "point_above": 2,
+            "ci_above": 1,
+            "ci_below": 6
+          }
+        }
+      },
+      "fleet": {
+        "std/heldout": {
+          "text": 0.4254425975044256,
+          "pyes": 0.5530661980210373,
+          "delta": 0.12762360051661184,
+          "delta_ci": [
+            0.12134641566699939,
+            0.13331002231199757
+          ]
+        },
+        "loro/heldout": {
+          "text": 0.41838756470104443,
+          "pyes": 0.5431570808662843,
+          "delta": 0.12476951616524,
+          "delta_ci": [
+            0.11880466286723344,
+            0.13032010843827646
+          ]
+        },
+        "std/oracle": {
+          "text": 0.42618269291976874,
+          "pyes": 0.5540988785313661,
+          "delta": 0.12791618561159737,
+          "delta_ci": [
+            0.12191310915902137,
+            0.13380672144761205
+          ]
+        },
+        "loro/oracle": {
+          "text": 0.4189691151253221,
+          "pyes": 0.5438194472404025,
+          "delta": 0.12485033211508033,
+          "delta_ci": [
+            0.11892400939233203,
+            0.13069061777475405
+          ]
+        }
+      },
+      "rows": [
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4818119038596859,
+          "reference": 0.46816129648522525,
+          "diff": 0.013650607374460666,
+          "ci": [
+            -0.005205345551469049,
+            0.029978627979891082
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.423153927127281,
+          "reference": 0.46816129648522525,
+          "diff": -0.04500736935794425,
+          "ci": [
+            -0.06233469941086607,
+            -0.028514104409104957
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4116650216337054,
+          "reference": 0.46816129648522525,
+          "diff": -0.05649627485151987,
+          "ci": [
+            -0.07586179854990982,
+            -0.04089569290810473
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.287967735877205,
+          "reference": 0.46816129648522525,
+          "diff": -0.18019356060802028,
+          "ci": [
+            -0.204132674330332,
+            -0.16144286421671653
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.46720527491136404,
+          "reference": 0.46816129648522525,
+          "diff": -0.0009560215738612099,
+          "ci": [
+            -0.01783578896931296,
+            0.013274005268373542
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.29587784861120264,
+          "reference": 0.46816129648522525,
+          "diff": -0.1722834478740226,
+          "ci": [
+            -0.19245769422912282,
+            -0.15360569500179866
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4962172298048488,
+          "reference": 0.46816129648522525,
+          "diff": 0.028055933319623527,
+          "ci": [
+            0.008826271364570181,
+            0.04057732608774945
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4633650026419807,
+          "reference": 0.46816129648522525,
+          "diff": -0.004796293843244537,
+          "ci": [
+            -0.02157658346093292,
+            0.009487607528250036
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4465672107140726,
+          "reference": 0.46816129648522525,
+          "diff": -0.021594085771152627,
+          "ci": [
+            -0.03638513906830062,
+            -0.01019903038298179
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4030255185465162,
+          "reference": 0.46816129648522525,
+          "diff": -0.06513577793870906,
+          "ci": [
+            -0.0831447812186524,
+            -0.049630375639665575
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5030118988208182,
+          "reference": 0.46816129648522525,
+          "diff": 0.03485060233559295,
+          "ci": [
+            0.018101791806431452,
+            0.04736170017095474
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4818119038596859,
+          "reference": 0.4757522802330721,
+          "diff": 0.00605962362661383,
+          "ci": [
+            -0.011649228509127408,
+            0.022846444930108793
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.423153927127281,
+          "reference": 0.4757522802330721,
+          "diff": -0.052598353105791085,
+          "ci": [
+            -0.06964850487543492,
+            -0.03660278126513995
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4116650216337054,
+          "reference": 0.4757522802330721,
+          "diff": -0.0640872585993667,
+          "ci": [
+            -0.08265657156686228,
+            -0.048250566142111075
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.287967735877205,
+          "reference": 0.4757522802330721,
+          "diff": -0.1877845443558671,
+          "ci": [
+            -0.2111586541115779,
+            -0.16872188465285498
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.46720527491136404,
+          "reference": 0.4757522802330721,
+          "diff": -0.008547005321708045,
+          "ci": [
+            -0.025172782934327145,
+            0.006527986399743329
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.29587784861120264,
+          "reference": 0.4757522802330721,
+          "diff": -0.17987443162186945,
+          "ci": [
+            -0.19857312112342318,
+            -0.16045322480840588
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4962172298048488,
+          "reference": 0.4757522802330721,
+          "diff": 0.02046494957177669,
+          "ci": [
+            0.0017903294421266606,
+            0.03400632696097278
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4633650026419807,
+          "reference": 0.4757522802330721,
+          "diff": -0.012387277591091372,
+          "ci": [
+            -0.028613554688106634,
+            0.0022250778329648774
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4465672107140726,
+          "reference": 0.4757522802330721,
+          "diff": -0.029185069518999462,
+          "ci": [
+            -0.04310780429669344,
+            -0.01741558912109037
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4030255185465162,
+          "reference": 0.4757522802330721,
+          "diff": -0.0727267616865559,
+          "ci": [
+            -0.09042579364474786,
+            -0.056826455780463914
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5030118988208182,
+          "reference": 0.4757522802330721,
+          "diff": 0.027259618587746115,
+          "ci": [
+            0.01144834797702555,
+            0.041055142257633036
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4731331011980984,
+          "reference": 0.5625566535481871,
+          "diff": -0.08942355235008864,
+          "ci": [
+            -0.10822478366317635,
+            -0.07296230751573107
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4180089365530682,
+          "reference": 0.5625566535481871,
+          "diff": -0.14454771699511887,
+          "ci": [
+            -0.162056238495012,
+            -0.12758195186145221
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4049315550521714,
+          "reference": 0.5625566535481871,
+          "diff": -0.1576250984960157,
+          "ci": [
+            -0.17738540916905224,
+            -0.1418758526080587
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2841548364055578,
+          "reference": 0.5625566535481871,
+          "diff": -0.2784018171426293,
+          "ci": [
+            -0.3021123636144869,
+            -0.25878898532863426
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4586215288354036,
+          "reference": 0.5625566535481871,
+          "diff": -0.10393512471278349,
+          "ci": [
+            -0.1188690248180851,
+            -0.08894730098307936
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2917011149594557,
+          "reference": 0.5625566535481871,
+          "diff": -0.27085553858873135,
+          "ci": [
+            -0.2907815265230705,
+            -0.2521953351939376
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.48753178162177074,
+          "reference": 0.5625566535481871,
+          "diff": -0.07502487192641633,
+          "ci": [
+            -0.09242249966489899,
+            -0.061195074070890976
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4551271434118008,
+          "reference": 0.5625566535481871,
+          "diff": -0.10742951013638624,
+          "ci": [
+            -0.12366318246922205,
+            -0.0920048835661442
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4382944555836339,
+          "reference": 0.5625566535481871,
+          "diff": -0.12426219796455318,
+          "ci": [
+            -0.1382346665772673,
+            -0.11173001634050242
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.3964466665223314,
+          "reference": 0.5625566535481871,
+          "diff": -0.16610998702585567,
+          "ci": [
+            -0.18518033906596357,
+            -0.15008365620980105
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.49431209156819655,
+          "reference": 0.5625566535481871,
+          "diff": -0.06824456197999051,
+          "ci": [
+            -0.08412035827898354,
+            -0.054330038859285404
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5919338049991342,
+          "reference": 0.46816129648522525,
+          "diff": 0.12377250851390892,
+          "ci": [
+            0.1111141320912173,
+            0.13390993441715288
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5800875768116744,
+          "reference": 0.46816129648522525,
+          "diff": 0.11192628032644919,
+          "ci": [
+            0.09921005989494741,
+            0.12235939269195309
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5568267649987035,
+          "reference": 0.46816129648522525,
+          "diff": 0.08866546851347828,
+          "ci": [
+            0.0720975371143496,
+            0.10096607061243318
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5417636058868847,
+          "reference": 0.46816129648522525,
+          "diff": 0.0736023094016594,
+          "ci": [
+            0.05842249806649933,
+            0.08457315812110298
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5383808623876252,
+          "reference": 0.46816129648522525,
+          "diff": 0.07021956590239992,
+          "ci": [
+            0.05595231174563601,
+            0.08114805334402522
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5133485533773599,
+          "reference": 0.46816129648522525,
+          "diff": 0.0451872568921346,
+          "ci": [
+            0.030416881722125592,
+            0.0585453149183847
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5626768820329203,
+          "reference": 0.46816129648522525,
+          "diff": 0.09451558554769507,
+          "ci": [
+            0.08044912949648356,
+            0.10553410543521353
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5697733465132844,
+          "reference": 0.46816129648522525,
+          "diff": 0.10161205002805912,
+          "ci": [
+            0.08892793329748769,
+            0.11161021110907253
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5319503874735549,
+          "reference": 0.46816129648522525,
+          "diff": 0.06378909098832969,
+          "ci": [
+            0.049312422017672684,
+            0.07554833419121332
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5317970178574662,
+          "reference": 0.46816129648522525,
+          "diff": 0.063635721372241,
+          "ci": [
+            0.04870914481262835,
+            0.07516668792806538
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5651893758928029,
+          "reference": 0.46816129648522525,
+          "diff": 0.09702807940757768,
+          "ci": [
+            0.0827960251439154,
+            0.10723448404636941
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5919338049991342,
+          "reference": 0.4757522802330721,
+          "diff": 0.11618152476606208,
+          "ci": [
+            0.10395707570460506,
+            0.12683036676064335
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5800875768116744,
+          "reference": 0.4757522802330721,
+          "diff": 0.10433529657860235,
+          "ci": [
+            0.09260560230654266,
+            0.11577486753023193
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5568267649987035,
+          "reference": 0.4757522802330721,
+          "diff": 0.08107448476563145,
+          "ci": [
+            0.06499688270741484,
+            0.09377105381035028
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5417636058868847,
+          "reference": 0.4757522802330721,
+          "diff": 0.06601132565381257,
+          "ci": [
+            0.05139163423200733,
+            0.07777582289969001
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5383808623876252,
+          "reference": 0.4757522802330721,
+          "diff": 0.06262858215455308,
+          "ci": [
+            0.04895268074412176,
+            0.07401452848851488
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5133485533773599,
+          "reference": 0.4757522802330721,
+          "diff": 0.03759627314428776,
+          "ci": [
+            0.023642293480421735,
+            0.05126359076694477
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5626768820329203,
+          "reference": 0.4757522802330721,
+          "diff": 0.08692460179984823,
+          "ci": [
+            0.07322029847362885,
+            0.09824917588586658
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5697733465132844,
+          "reference": 0.4757522802330721,
+          "diff": 0.09402106628021228,
+          "ci": [
+            0.08154730205609051,
+            0.10465744221411738
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5319503874735549,
+          "reference": 0.4757522802330721,
+          "diff": 0.05619810724048285,
+          "ci": [
+            0.04241095685622893,
+            0.06855682210578
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5317970178574662,
+          "reference": 0.4757522802330721,
+          "diff": 0.05604473762439416,
+          "ci": [
+            0.04150377269250584,
+            0.06768753876692293
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5651893758928029,
+          "reference": 0.4757522802330721,
+          "diff": 0.08943709565973085,
+          "ci": [
+            0.0760360028018627,
+            0.10067407834082133
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.580794833607934,
+          "reference": 0.5625566535481871,
+          "diff": 0.018238180059746978,
+          "ci": [
+            0.0063215225966385905,
+            0.028688397724408708
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5702940640129519,
+          "reference": 0.5625566535481871,
+          "diff": 0.007737410464764838,
+          "ci": [
+            -0.004231635636044212,
+            0.01915885388805433
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5472508712683748,
+          "reference": 0.5625566535481871,
+          "diff": -0.015305782279812274,
+          "ci": [
+            -0.03095978866949187,
+            -0.003457398806594095
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5312354394661608,
+          "reference": 0.5625566535481871,
+          "diff": -0.03132121408202626,
+          "ci": [
+            -0.04512369289997972,
+            -0.019495194728972834
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5292125237898835,
+          "reference": 0.5625566535481871,
+          "diff": -0.03334412975830359,
+          "ci": [
+            -0.0468315818077858,
+            -0.021800365274101827
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.504723434687937,
+          "reference": 0.5625566535481871,
+          "diff": -0.05783321886025006,
+          "ci": [
+            -0.07282061549698081,
+            -0.04421612935042695
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5516909356023008,
+          "reference": 0.5625566535481871,
+          "diff": -0.01086571794588631,
+          "ci": [
+            -0.02377344541674489,
+            0.001298260499960166
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5594788294290494,
+          "reference": 0.5625566535481871,
+          "diff": -0.0030778241191377065,
+          "ci": [
+            -0.01543748495492567,
+            0.00787130845916699
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5225349778953313,
+          "reference": 0.5625566535481871,
+          "diff": -0.04002167565285575,
+          "ci": [
+            -0.053723774437274684,
+            -0.02743697217636404
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5231703585714229,
+          "reference": 0.5625566535481871,
+          "diff": -0.03938629497676416,
+          "ci": [
+            -0.05317085060599008,
+            -0.027599161873949587
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.554341621197782,
+          "reference": 0.5625566535481871,
+          "diff": -0.008215032350405105,
+          "ci": [
+            -0.02155217613705739,
+            0.0032903636196198504
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.48253683709278344,
+          "reference": 0.46816129648522525,
+          "diff": 0.01437554060755819,
+          "ci": [
+            -0.0036583943662104735,
+            0.031183473088872808
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.423790098516075,
+          "reference": 0.46816129648522525,
+          "diff": -0.04437119796915023,
+          "ci": [
+            -0.06152529442770325,
+            -0.027735747745409083
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.41272968771452545,
+          "reference": 0.46816129648522525,
+          "diff": -0.0554316087706998,
+          "ci": [
+            -0.07321069021949946,
+            -0.03860270431447083
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.28854441474201414,
+          "reference": 0.46816129648522525,
+          "diff": -0.1796168817432111,
+          "ci": [
+            -0.2023846760540398,
+            -0.15957327701310078
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4676982158676332,
+          "reference": 0.46816129648522525,
+          "diff": -0.00046308061759203767,
+          "ci": [
+            -0.015992380958651832,
+            0.014317086262976241
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.29644130975026,
+          "reference": 0.46816129648522525,
+          "diff": -0.17171998673496525,
+          "ci": [
+            -0.19149390690128773,
+            -0.15249796409032973
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.49723647168911544,
+          "reference": 0.46816129648522525,
+          "diff": 0.02907517520389019,
+          "ci": [
+            0.010312194476357768,
+            0.04214789376301037
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4645112899373148,
+          "reference": 0.46816129648522525,
+          "diff": -0.003650006547910478,
+          "ci": [
+            -0.019980787644347874,
+            0.010768960054833415
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.4473710127580747,
+          "reference": 0.46816129648522525,
+          "diff": -0.020790283727150527,
+          "ci": [
+            -0.03470680118414102,
+            -0.008447546590289144
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.40360197250291563,
+          "reference": 0.46816129648522525,
+          "diff": -0.06455932398230962,
+          "ci": [
+            -0.08200837719709611,
+            -0.048321324222424376
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5035483115467441,
+          "reference": 0.46816129648522525,
+          "diff": 0.03538701506151881,
+          "ci": [
+            0.01923363734511856,
+            0.04880588995264501
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.48253683709278344,
+          "reference": 0.4763469290913135,
+          "diff": 0.006189908001469957,
+          "ci": [
+            -0.011142172192965736,
+            0.02249043710764664
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.423790098516075,
+          "reference": 0.4763469290913135,
+          "diff": -0.05255683057523847,
+          "ci": [
+            -0.07023055977254367,
+            -0.03695937140488921
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.41272968771452545,
+          "reference": 0.4763469290913135,
+          "diff": -0.06361724137678804,
+          "ci": [
+            -0.08140512798117223,
+            -0.046911370843723516
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.28854441474201414,
+          "reference": 0.4763469290913135,
+          "diff": -0.18780251434929934,
+          "ci": [
+            -0.21079867666534374,
+            -0.168013486886373
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4676982158676332,
+          "reference": 0.4763469290913135,
+          "diff": -0.008648713223680271,
+          "ci": [
+            -0.024693640195062615,
+            0.0061733040344294525
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.29644130975026,
+          "reference": 0.4763469290913135,
+          "diff": -0.17990561934105348,
+          "ci": [
+            -0.1992164118022667,
+            -0.16073369295694076
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.49723647168911544,
+          "reference": 0.4763469290913135,
+          "diff": 0.020889542597801958,
+          "ci": [
+            0.0019424731768705324,
+            0.034117085087526186
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4645112899373148,
+          "reference": 0.4763469290913135,
+          "diff": -0.011835639153998712,
+          "ci": [
+            -0.027880733677842287,
+            0.0025264781006764645
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.4473710127580747,
+          "reference": 0.4763469290913135,
+          "diff": -0.02897591633323876,
+          "ci": [
+            -0.042608232807790636,
+            -0.017243281414893414
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.40360197250291563,
+          "reference": 0.4763469290913135,
+          "diff": -0.07274495658839786,
+          "ci": [
+            -0.09011383063866306,
+            -0.05656216681643241
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5035483115467441,
+          "reference": 0.4763469290913135,
+          "diff": 0.02720138245543058,
+          "ci": [
+            0.011643200885642753,
+            0.04050951863747206
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.47388437143222806,
+          "reference": 0.5627633529976158,
+          "diff": -0.08887898156538776,
+          "ci": [
+            -0.10713105912652658,
+            -0.07251898840841485
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.41842953366044194,
+          "reference": 0.5627633529976158,
+          "diff": -0.14433381933717387,
+          "ci": [
+            -0.16170878960015422,
+            -0.12728152764809286
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.40605723862865944,
+          "reference": 0.5627633529976158,
+          "diff": -0.15670611436895637,
+          "ci": [
+            -0.17603432697209695,
+            -0.1404832683238636
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2847299963445419,
+          "reference": 0.5627633529976158,
+          "diff": -0.27803335665307394,
+          "ci": [
+            -0.30153967056084185,
+            -0.2576233161869434
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4591001173150973,
+          "reference": 0.5627633529976158,
+          "diff": -0.1036632356825185,
+          "ci": [
+            -0.11842227931661295,
+            -0.08902478450221445
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2921942459063688,
+          "reference": 0.5627633529976158,
+          "diff": -0.27056910709124704,
+          "ci": [
+            -0.29046124569548365,
+            -0.25191715114059154
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.48815109339699764,
+          "reference": 0.5627633529976158,
+          "diff": -0.07461225960061818,
+          "ci": [
+            -0.09210457467356395,
+            -0.06061867431304448
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.4556938407386079,
+          "reference": 0.5627633529976158,
+          "diff": -0.1070695122590079,
+          "ci": [
+            -0.1229811343022945,
+            -0.09192939897991159
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.43881167849788794,
+          "reference": 0.5627633529976158,
+          "diff": -0.12395167449972788,
+          "ci": [
+            -0.13742152981376013,
+            -0.11143504846666316
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.3967852153289936,
+          "reference": 0.5627633529976158,
+          "diff": -0.16597813766862224,
+          "ci": [
+            -0.18406227898478547,
+            -0.1495676596955952
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.49482293512871883,
+          "reference": 0.5627633529976158,
+          "diff": -0.06794041786889699,
+          "ci": [
+            -0.08344657988088933,
+            -0.05387828232379701
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5931476954664221,
+          "reference": 0.46816129648522525,
+          "diff": 0.12498639898119684,
+          "ci": [
+            0.1129715198839766,
+            0.13521335176086838
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.580646736764906,
+          "reference": 0.46816129648522525,
+          "diff": 0.11248544027968072,
+          "ci": [
+            0.10118272170436564,
+            0.12405566663353493
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5578308459535718,
+          "reference": 0.46816129648522525,
+          "diff": 0.08966954946834654,
+          "ci": [
+            0.07398966403531396,
+            0.10334673610458772
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5425438573927415,
+          "reference": 0.46816129648522525,
+          "diff": 0.07438256090751622,
+          "ci": [
+            0.06072693176775169,
+            0.08644457804532642
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5394958038618829,
+          "reference": 0.46816129648522525,
+          "diff": 0.07133450737665764,
+          "ci": [
+            0.057631258292035616,
+            0.08306220415727006
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5143172991111845,
+          "reference": 0.46816129648522525,
+          "diff": 0.04615600262595926,
+          "ci": [
+            0.03298524740351992,
+            0.06063291405652855
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5637895577255218,
+          "reference": 0.46816129648522525,
+          "diff": 0.0956282612402965,
+          "ci": [
+            0.08221189687728751,
+            0.10684502202941816
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5712910625637604,
+          "reference": 0.46816129648522525,
+          "diff": 0.10312976607853513,
+          "ci": [
+            0.09066110506090809,
+            0.11356620697235338
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5323066452261972,
+          "reference": 0.46816129648522525,
+          "diff": 0.06414534874097194,
+          "ci": [
+            0.05107006717864066,
+            0.07724338592355824
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5327761353160552,
+          "reference": 0.46816129648522525,
+          "diff": 0.06461483883082991,
+          "ci": [
+            0.05044641814040175,
+            0.07718814817055394
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.5669420244627835,
+          "reference": 0.46816129648522525,
+          "diff": 0.09878072797755827,
+          "ci": [
+            0.08451702722870542,
+            0.10932432304107961
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5931476954664221,
+          "reference": 0.4763469290913135,
+          "diff": 0.11680076637510861,
+          "ci": [
+            0.10493805364629047,
+            0.12761472494395532
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.580646736764906,
+          "reference": 0.4763469290913135,
+          "diff": 0.10429980767359248,
+          "ci": [
+            0.0929156013559872,
+            0.116091012134957
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5578308459535718,
+          "reference": 0.4763469290913135,
+          "diff": 0.08148391686225831,
+          "ci": [
+            0.06557405889416285,
+            0.09478249473219608
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5425438573927415,
+          "reference": 0.4763469290913135,
+          "diff": 0.06619692830142798,
+          "ci": [
+            0.052379949461192496,
+            0.07838400627855348
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5394958038618829,
+          "reference": 0.4763469290913135,
+          "diff": 0.06314887477056941,
+          "ci": [
+            0.04952346684790542,
+            0.07513033244957465
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5143172991111845,
+          "reference": 0.4763469290913135,
+          "diff": 0.037970370019871025,
+          "ci": [
+            0.024760617518283987,
+            0.052233296946203
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5637895577255218,
+          "reference": 0.4763469290913135,
+          "diff": 0.08744262863420826,
+          "ci": [
+            0.07401016935840836,
+            0.09883904663744668
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5712910625637604,
+          "reference": 0.4763469290913135,
+          "diff": 0.0949441334724469,
+          "ci": [
+            0.08216616268146573,
+            0.10576541554893602
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5323066452261972,
+          "reference": 0.4763469290913135,
+          "diff": 0.05595971613488371,
+          "ci": [
+            0.043208928243800876,
+            0.06922124849015994
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5327761353160552,
+          "reference": 0.4763469290913135,
+          "diff": 0.05642920622474168,
+          "ci": [
+            0.042324759507302245,
+            0.06829237171215843
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.5669420244627835,
+          "reference": 0.4763469290913135,
+          "diff": 0.09059509537147004,
+          "ci": [
+            0.07608662360180085,
+            0.10141325232782457
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.580929081097227,
+          "reference": 0.5627633529976158,
+          "diff": 0.018165728099611145,
+          "ci": [
+            0.0065374880888072005,
+            0.029005782566519398
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.570981938388349,
+          "reference": 0.5627633529976158,
+          "diff": 0.008218585390733169,
+          "ci": [
+            -0.003441702914065525,
+            0.020405200857489283
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5478800894807614,
+          "reference": 0.5627633529976158,
+          "diff": -0.014883263516854428,
+          "ci": [
+            -0.029618212742926323,
+            -0.0032624540805913536
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5319962601061372,
+          "reference": 0.5627633529976158,
+          "diff": -0.03076709289147861,
+          "ci": [
+            -0.04408668718107163,
+            -0.018717126339111895
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5299733085724859,
+          "reference": 0.5627633529976158,
+          "diff": -0.032790044425129894,
+          "ci": [
+            -0.04574161697795564,
+            -0.020865836263725263
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5056927576263228,
+          "reference": 0.5627633529976158,
+          "diff": -0.057070595371293,
+          "ci": [
+            -0.07188831671570871,
+            -0.043523197748957
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5523237622939806,
+          "reference": 0.5627633529976158,
+          "diff": -0.010439590703635204,
+          "ci": [
+            -0.022605503849627083,
+            0.002032339989950857
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5607238864083607,
+          "reference": 0.5627633529976158,
+          "diff": -0.0020394665892551345,
+          "ci": [
+            -0.014453037584932752,
+            0.009435533339524167
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.523152530395399,
+          "reference": 0.5627633529976158,
+          "diff": -0.03961082260221682,
+          "ci": [
+            -0.05247128313906127,
+            -0.02639710254791448
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.5236277105837864,
+          "reference": 0.5627633529976158,
+          "diff": -0.039135642413829386,
+          "ci": [
+            -0.052661042925010206,
+            -0.026429508778988156
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.554732594691617,
+          "reference": 0.5627633529976158,
+          "diff": -0.008030758305998864,
+          "ci": [
+            -0.02095051202278693,
+            0.0040842751578108695
+          ],
+          "verdict": "indistinguishable"
+        }
+      ]
+    },
+    "all_40": {
+      "references": {
+        "anchor": {
+          "point": 0.20154813958730705,
+          "ci": [
+            0.1951546689478705,
+            0.20795102532235055
+          ]
+        },
+        "anchor_pooled": {
+          "point": 0.20421186827518154,
+          "ci": [
+            0.19780862976927147,
+            0.21055754997007156
+          ]
+        },
+        "single_mapped/heldout": {
+          "point": 0.20472228639399526,
+          "ci": [
+            0.19776676100124777,
+            0.21072361194992922
+          ]
+        },
+        "panel/heldout": {
+          "point": 0.26321477543957067,
+          "ci": [
+            0.2550213565070235,
+            0.2703423308402726
+          ]
+        },
+        "single_mapped/oracle": {
+          "point": 0.2051882446552467,
+          "ci": [
+            0.19866593562585425,
+            0.21161278615692364
+          ]
+        },
+        "panel/oracle": {
+          "point": 0.2634686536751566,
+          "ci": [
+            0.2555539647741904,
+            0.2708365979555057
+          ]
+        }
+      },
+      "tests": {
+        "text/heldout": {
+          "std_vs_anchor": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 10
+          },
+          "std_vs_single_mapped": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 11
+          },
+          "loro_vs_panel": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 11
+          }
+        },
+        "pyes/heldout": {
+          "std_vs_anchor": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "std_vs_single_mapped": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "loro_vs_panel": {
+            "point_above": 2,
+            "ci_above": 2,
+            "ci_below": 8
+          }
+        },
+        "text/oracle": {
+          "std_vs_anchor": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 10
+          },
+          "std_vs_single_mapped": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 11
+          },
+          "loro_vs_panel": {
+            "point_above": 0,
+            "ci_above": 0,
+            "ci_below": 11
+          }
+        },
+        "pyes/oracle": {
+          "std_vs_anchor": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "std_vs_single_mapped": {
+            "point_above": 11,
+            "ci_above": 11,
+            "ci_below": 0
+          },
+          "loro_vs_panel": {
+            "point_above": 2,
+            "ci_above": 2,
+            "ci_below": 8
+          }
+        }
+      },
+      "fleet": {
+        "std/heldout": {
+          "text": 0.13522884167703772,
+          "pyes": 0.2548702972853984,
+          "delta": 0.11964145560836069,
+          "delta_ci": [
+            0.11515579006871095,
+            0.1234866015365824
+          ]
+        },
+        "loro/heldout": {
+          "text": 0.13034936729292837,
+          "pyes": 0.24358055201317458,
+          "delta": 0.11323118472024624,
+          "delta_ci": [
+            0.1087674910173326,
+            0.1169586243430749
+          ]
+        },
+        "std/oracle": {
+          "text": 0.13582208318009573,
+          "pyes": 0.2555541350200955,
+          "delta": 0.11973205183999971,
+          "delta_ci": [
+            0.11548652410802566,
+            0.12373431873489923
+          ]
+        },
+        "loro/oracle": {
+          "text": 0.1308109748610962,
+          "pyes": 0.24408153747361866,
+          "delta": 0.11327056261252243,
+          "delta_ci": [
+            0.10887377463469966,
+            0.11709309967061671
+          ]
+        }
+      },
+      "rows": [
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.14805574546425587,
+          "reference": 0.20154813958730705,
+          "diff": -0.05349239412305118,
+          "ci": [
+            -0.06082607741484287,
+            -0.04734865770012496
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.13458720451255438,
+          "reference": 0.20154813958730705,
+          "diff": -0.06696093507475268,
+          "ci": [
+            -0.07365825884260682,
+            -0.06027629812458285
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.10656446731771904,
+          "reference": 0.20154813958730705,
+          "diff": -0.09498367226958801,
+          "ci": [
+            -0.10344903797526929,
+            -0.09025373111646678
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.11282015521913072,
+          "reference": 0.20154813958730705,
+          "diff": -0.08872798436817633,
+          "ci": [
+            -0.09616084881932133,
+            -0.0815676633784566
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.14793703698947072,
+          "reference": 0.20154813958730705,
+          "diff": -0.05361110259783633,
+          "ci": [
+            -0.06103593300614802,
+            -0.04709250474371451
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.05247844155151925,
+          "reference": 0.20154813958730705,
+          "diff": -0.1490696980357878,
+          "ci": [
+            -0.1568684915950548,
+            -0.14237625393458533
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.19565091132276632,
+          "reference": 0.20154813958730705,
+          "diff": -0.005897228264540727,
+          "ci": [
+            -0.013390712795509567,
+            0.00125701098233831
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.14361423400572754,
+          "reference": 0.20154813958730705,
+          "diff": -0.057933905581579515,
+          "ci": [
+            -0.0652495931172825,
+            -0.05097149616982638
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.11711238010302778,
+          "reference": 0.20154813958730705,
+          "diff": -0.08443575948427927,
+          "ci": [
+            -0.09098812557139264,
+            -0.07858750715118568
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.1511321226201671,
+          "reference": 0.20154813958730705,
+          "diff": -0.05041601696713996,
+          "ci": [
+            -0.05673377903430501,
+            -0.04440802982474895
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.1775645593410759,
+          "reference": 0.20154813958730705,
+          "diff": -0.02398358024623115,
+          "ci": [
+            -0.030562240947093967,
+            -0.01760524437852895
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.14805574546425587,
+          "reference": 0.20472228639399526,
+          "diff": -0.056666540929739384,
+          "ci": [
+            -0.06337482550698273,
+            -0.04987148997420321
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.13458720451255438,
+          "reference": 0.20472228639399526,
+          "diff": -0.07013508188144088,
+          "ci": [
+            -0.0763448743867331,
+            -0.0630097793254641
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.10656446731771904,
+          "reference": 0.20472228639399526,
+          "diff": -0.09815781907627621,
+          "ci": [
+            -0.10646470965066643,
+            -0.09266999526050827
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.11282015521913072,
+          "reference": 0.20472228639399526,
+          "diff": -0.09190213117486454,
+          "ci": [
+            -0.09867790847082654,
+            -0.0840154177576389
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.14793703698947072,
+          "reference": 0.20472228639399526,
+          "diff": -0.056785249404524535,
+          "ci": [
+            -0.06352767843078082,
+            -0.0497649285525274
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.05247844155151925,
+          "reference": 0.20472228639399526,
+          "diff": -0.152243844842476,
+          "ci": [
+            -0.15996294020024693,
+            -0.14490359416889845
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.19565091132276632,
+          "reference": 0.20472228639399526,
+          "diff": -0.009071375071228932,
+          "ci": [
+            -0.01603437400633003,
+            -0.001728820018596302
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.14361423400572754,
+          "reference": 0.20472228639399526,
+          "diff": -0.06110805238826772,
+          "ci": [
+            -0.06790791801956444,
+            -0.053675413173933643
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.11711238010302778,
+          "reference": 0.20472228639399526,
+          "diff": -0.08760990629096747,
+          "ci": [
+            -0.09351192973002698,
+            -0.08098497301498916
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.1511321226201671,
+          "reference": 0.20472228639399526,
+          "diff": -0.053590163773828164,
+          "ci": [
+            -0.059581694650212354,
+            -0.04710896981157179
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.1775645593410759,
+          "reference": 0.20472228639399526,
+          "diff": -0.027157727052919356,
+          "ci": [
+            -0.03317943809687534,
+            -0.020389816894774475
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.14288466881810738,
+          "reference": 0.26321477543957067,
+          "diff": -0.12033010662146329,
+          "ci": [
+            -0.12834834670926834,
+            -0.1120039510331021
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.13015170427958117,
+          "reference": 0.26321477543957067,
+          "diff": -0.1330630711599895,
+          "ci": [
+            -0.14045729848808056,
+            -0.1249280806628886
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.10311391486477343,
+          "reference": 0.26321477543957067,
+          "diff": -0.16010086057479722,
+          "ci": [
+            -0.16900966916746055,
+            -0.1532651350841999
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.10734733173304119,
+          "reference": 0.26321477543957067,
+          "diff": -0.1558674437065295,
+          "ci": [
+            -0.163380646755499,
+            -0.14661703701376164
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.1424790661007896,
+          "reference": 0.26321477543957067,
+          "diff": -0.12073570933878108,
+          "ci": [
+            -0.12857127892509074,
+            -0.11233507583905163
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.050642337239676025,
+          "reference": 0.26321477543957067,
+          "diff": -0.21257243819989463,
+          "ci": [
+            -0.22125035348271568,
+            -0.2039843452726445
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.18865532422806855,
+          "reference": 0.26321477543957067,
+          "diff": -0.07455945121150212,
+          "ci": [
+            -0.08208279272070802,
+            -0.06635798747559042
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.13840074659871865,
+          "reference": 0.26321477543957067,
+          "diff": -0.12481402884085202,
+          "ci": [
+            -0.1324335641870291,
+            -0.11553270449787782
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.11349911216392321,
+          "reference": 0.26321477543957067,
+          "diff": -0.14971566327564745,
+          "ci": [
+            -0.1566603418861582,
+            -0.14162191026025778
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.14600495998700938,
+          "reference": 0.26321477543957067,
+          "diff": -0.11720981545256129,
+          "ci": [
+            -0.12401944662256685,
+            -0.10993958403516457
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.17066387420852341,
+          "reference": 0.26321477543957067,
+          "diff": -0.09255090123104726,
+          "ci": [
+            -0.09969842905034604,
+            -0.08463214653419966
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2876804124537039,
+          "reference": 0.20154813958730705,
+          "diff": 0.08613227286639685,
+          "ci": [
+            0.0800816100274886,
+            0.09130146567547173
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.28735630868643725,
+          "reference": 0.20154813958730705,
+          "diff": 0.0858081690991302,
+          "ci": [
+            0.07830988358386892,
+            0.09094563851118839
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2564475053340094,
+          "reference": 0.20154813958730705,
+          "diff": 0.054899365746702344,
+          "ci": [
+            0.04608124346385767,
+            0.061362120828197864
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2473619653327896,
+          "reference": 0.20154813958730705,
+          "diff": 0.04581382574548254,
+          "ci": [
+            0.03836861224496727,
+            0.05088092226740343
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.22954721594075042,
+          "reference": 0.20154813958730705,
+          "diff": 0.02799907635344337,
+          "ci": [
+            0.019983442927490314,
+            0.0344106764940533
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2264413709363328,
+          "reference": 0.20154813958730705,
+          "diff": 0.02489323134902574,
+          "ci": [
+            0.016869764220872045,
+            0.031170864323547397
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.26226059028799253,
+          "reference": 0.20154813958730705,
+          "diff": 0.06071245070068548,
+          "ci": [
+            0.053424520666869944,
+            0.06645725110770821
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.27248563053580677,
+          "reference": 0.20154813958730705,
+          "diff": 0.07093749094849972,
+          "ci": [
+            0.06414893859679739,
+            0.07613227134389632
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.24459503842125546,
+          "reference": 0.20154813958730705,
+          "diff": 0.04304689883394841,
+          "ci": [
+            0.03609056966053062,
+            0.04869089510200684
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.23618163125442737,
+          "reference": 0.20154813958730705,
+          "diff": 0.03463349166712032,
+          "ci": [
+            0.026935352043923676,
+            0.040474237420918345
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2532156009558771,
+          "reference": 0.20154813958730705,
+          "diff": 0.05166746136857003,
+          "ci": [
+            0.044100050639782666,
+            0.05768091612890489
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2876804124537039,
+          "reference": 0.20472228639399526,
+          "diff": 0.08295812605970865,
+          "ci": [
+            0.0772402457086949,
+            0.088176419071485
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.28735630868643725,
+          "reference": 0.20472228639399526,
+          "diff": 0.08263402229244199,
+          "ci": [
+            0.07556990204424052,
+            0.0882519325138132
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2564475053340094,
+          "reference": 0.20472228639399526,
+          "diff": 0.05172521894001414,
+          "ci": [
+            0.043355776790184104,
+            0.058686346361541394
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2473619653327896,
+          "reference": 0.20472228639399526,
+          "diff": 0.042639678938794334,
+          "ci": [
+            0.03552910513410535,
+            0.04795037489451519
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.22954721594075042,
+          "reference": 0.20472228639399526,
+          "diff": 0.024824929546755165,
+          "ci": [
+            0.017199140228906604,
+            0.0316936741893936
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2264413709363328,
+          "reference": 0.20472228639399526,
+          "diff": 0.021719084542337536,
+          "ci": [
+            0.014220616943229306,
+            0.02823650987420622
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.26226059028799253,
+          "reference": 0.20472228639399526,
+          "diff": 0.05753830389399728,
+          "ci": [
+            0.05070754495779253,
+            0.06366577827844777
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.27248563053580677,
+          "reference": 0.20472228639399526,
+          "diff": 0.06776334414181151,
+          "ci": [
+            0.06093086593402119,
+            0.07361447790970586
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.24459503842125546,
+          "reference": 0.20472228639399526,
+          "diff": 0.039872752027260205,
+          "ci": [
+            0.03338862835765081,
+            0.04594767264675422
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.23618163125442737,
+          "reference": 0.20472228639399526,
+          "diff": 0.031459344860432115,
+          "ci": [
+            0.02424210298294301,
+            0.037414735827425785
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2532156009558771,
+          "reference": 0.20472228639399526,
+          "diff": 0.04849331456188183,
+          "ci": [
+            0.04121443692368016,
+            0.05497809404729328
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.27422767278766325,
+          "reference": 0.26321477543957067,
+          "diff": 0.011012897348092576,
+          "ci": [
+            0.004100681170506326,
+            0.01670235014848431
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.27413922752375963,
+          "reference": 0.26321477543957067,
+          "diff": 0.010924452084188963,
+          "ci": [
+            0.0032837456974255897,
+            0.017929569031574416
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.24546040436293395,
+          "reference": 0.26321477543957067,
+          "diff": -0.017754371076636716,
+          "ci": [
+            -0.026489097987628402,
+            -0.010060292898758637
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2370748898872496,
+          "reference": 0.26321477543957067,
+          "diff": -0.02613988555232108,
+          "ci": [
+            -0.0342800634332607,
+            -0.019682752488547374
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2196077102623295,
+          "reference": 0.26321477543957067,
+          "diff": -0.04360706517724117,
+          "ci": [
+            -0.052037340666648994,
+            -0.03617326239101372
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2162121776000528,
+          "reference": 0.26321477543957067,
+          "diff": -0.04700259783951788,
+          "ci": [
+            -0.05479865520930893,
+            -0.03979902472563333
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.24998543490664077,
+          "reference": 0.26321477543957067,
+          "diff": -0.0132293405329299,
+          "ci": [
+            -0.02074516573426759,
+            -0.006431698584535288
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.25971417501652727,
+          "reference": 0.26321477543957067,
+          "diff": -0.0035006004230433985,
+          "ci": [
+            -0.01046094020641438,
+            0.003113792208646487
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.23403039703859924,
+          "reference": 0.26321477543957067,
+          "diff": -0.029184378400971434,
+          "ci": [
+            -0.03637269871264901,
+            -0.022023313680403823
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.22674327368711786,
+          "reference": 0.26321477543957067,
+          "diff": -0.03647150175245281,
+          "ci": [
+            -0.04436006450450828,
+            -0.029122687890050358
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "heldout",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.24219070907204662,
+          "reference": 0.26321477543957067,
+          "diff": -0.021024066367524047,
+          "ci": [
+            -0.029113308865220202,
+            -0.014010258232768028
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.14848400212976628,
+          "reference": 0.20154813958730705,
+          "diff": -0.053064137457540766,
+          "ci": [
+            -0.05964169632907035,
+            -0.0464296568995354
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.13489621540878427,
+          "reference": 0.20154813958730705,
+          "diff": -0.06665192417852278,
+          "ci": [
+            -0.07311840314836061,
+            -0.0596518285046912
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.10879414435692443,
+          "reference": 0.20154813958730705,
+          "diff": -0.09275399523038262,
+          "ci": [
+            -0.09960005362088163,
+            -0.08611613084527418
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.11324831064283862,
+          "reference": 0.20154813958730705,
+          "diff": -0.08829982894446843,
+          "ci": [
+            -0.09539449029646604,
+            -0.08083080994717537
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.14845430937399437,
+          "reference": 0.20154813958730705,
+          "diff": -0.05309383021331268,
+          "ci": [
+            -0.060048176084398074,
+            -0.046016999455744195
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.05269567343671603,
+          "reference": 0.20154813958730705,
+          "diff": -0.14885246615059103,
+          "ci": [
+            -0.15635627034026076,
+            -0.14189246629313973
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.1962340458001289,
+          "reference": 0.20154813958730705,
+          "diff": -0.005314093787178148,
+          "ci": [
+            -0.01239854289570955,
+            0.0023493893856408126
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.14401369049214333,
+          "reference": 0.20154813958730705,
+          "diff": -0.057534449095163726,
+          "ci": [
+            -0.06458762590664764,
+            -0.05014954651641867
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.1175465154972108,
+          "reference": 0.20154813958730705,
+          "diff": -0.08400162409009625,
+          "ci": [
+            -0.09018430704467807,
+            -0.0775639229180819
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.1514979878085849,
+          "reference": 0.20154813958730705,
+          "diff": -0.05005015177872216,
+          "ci": [
+            -0.05585155322831419,
+            -0.04371985809427917
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.1781780200339612,
+          "reference": 0.20154813958730705,
+          "diff": -0.023370119553345864,
+          "ci": [
+            -0.029580157748434817,
+            -0.016512172595956675
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.14848400212976628,
+          "reference": 0.2051882446552467,
+          "diff": -0.056704242525480425,
+          "ci": [
+            -0.06338455965216076,
+            -0.049916045469499806
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.13489621540878427,
+          "reference": 0.2051882446552467,
+          "diff": -0.07029202924646244,
+          "ci": [
+            -0.07666314801481658,
+            -0.06327488954433086
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.10879414435692443,
+          "reference": 0.2051882446552467,
+          "diff": -0.09639410029832228,
+          "ci": [
+            -0.10325483930845718,
+            -0.0895452057044886
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.11324831064283862,
+          "reference": 0.2051882446552467,
+          "diff": -0.09193993401240809,
+          "ci": [
+            -0.09878919368382984,
+            -0.08419713395258632
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.14845430937399437,
+          "reference": 0.2051882446552467,
+          "diff": -0.05673393528125234,
+          "ci": [
+            -0.06346037374122925,
+            -0.049593243450803424
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.05269567343671603,
+          "reference": 0.2051882446552467,
+          "diff": -0.1524925712185307,
+          "ci": [
+            -0.1604576516420915,
+            -0.14519882122184388
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.1962340458001289,
+          "reference": 0.2051882446552467,
+          "diff": -0.008954198855117806,
+          "ci": [
+            -0.01609376533717543,
+            -0.0014610534802695322
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.14401369049214333,
+          "reference": 0.2051882446552467,
+          "diff": -0.061174554163103384,
+          "ci": [
+            -0.06808038742234733,
+            -0.05384275430314506
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.1175465154972108,
+          "reference": 0.2051882446552467,
+          "diff": -0.0876417291580359,
+          "ci": [
+            -0.09365282588143926,
+            -0.0809061265133694
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.1514979878085849,
+          "reference": 0.2051882446552467,
+          "diff": -0.053690256846661816,
+          "ci": [
+            -0.059586622040037236,
+            -0.047295273020068994
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.1781780200339612,
+          "reference": 0.2051882446552467,
+          "diff": -0.027010224621285522,
+          "ci": [
+            -0.03322705653502026,
+            -0.02003824645232575
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.14324120619181485,
+          "reference": 0.2634686536751566,
+          "diff": -0.12022744748334174,
+          "ci": [
+            -0.1277313927243753,
+            -0.11193370092944796
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.13035328166156432,
+          "reference": 0.2634686536751566,
+          "diff": -0.13311537201359228,
+          "ci": [
+            -0.14062097871527732,
+            -0.12502319771883777
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.10531189169202301,
+          "reference": 0.2634686536751566,
+          "diff": -0.15815676198313358,
+          "ci": [
+            -0.16564185302513143,
+            -0.15037614074017688
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.10760810307978827,
+          "reference": 0.2634686536751566,
+          "diff": -0.15586055059536832,
+          "ci": [
+            -0.16312333412940092,
+            -0.14652110977700616
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.142866386608836,
+          "reference": 0.2634686536751566,
+          "diff": -0.1206022670663206,
+          "ci": [
+            -0.1282872653479642,
+            -0.1119194757141061
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.05078216039964674,
+          "reference": 0.2634686536751566,
+          "diff": -0.21268649327550987,
+          "ci": [
+            -0.2214211536395743,
+            -0.20406083524889826
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.18900011765018937,
+          "reference": 0.2634686536751566,
+          "diff": -0.07446853602496722,
+          "ci": [
+            -0.08200918138671323,
+            -0.06621610689440507
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.13859779189541235,
+          "reference": 0.2634686536751566,
+          "diff": -0.12487086177974424,
+          "ci": [
+            -0.13241898097564567,
+            -0.11543674803080628
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.11382051793936718,
+          "reference": 0.2634686536751566,
+          "diff": -0.14964813573578942,
+          "ci": [
+            -0.15655176311024907,
+            -0.14151243833861485
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.1462273673009673,
+          "reference": 0.2634686536751566,
+          "diff": -0.11724128637418929,
+          "ci": [
+            -0.12400453426413945,
+            -0.1099183371911378
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "text",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.17111189905244878,
+          "reference": 0.2634686536751566,
+          "diff": -0.09235675462270782,
+          "ci": [
+            -0.09948200869241969,
+            -0.08429911643879635
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2882433339650342,
+          "reference": 0.20154813958730705,
+          "diff": 0.08669519437772716,
+          "ci": [
+            0.08134312321606359,
+            0.09258620737944144
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2882006915868729,
+          "reference": 0.20154813958730705,
+          "diff": 0.08665255199956584,
+          "ci": [
+            0.07976150904678256,
+            0.09263900928678816
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.25732120425814026,
+          "reference": 0.20154813958730705,
+          "diff": 0.055773064670833206,
+          "ci": [
+            0.047548420056030875,
+            0.06303391307683097
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.24829185537014736,
+          "reference": 0.20154813958730705,
+          "diff": 0.04674371578284031,
+          "ci": [
+            0.039808136304065954,
+            0.05214855768295925
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.23047059793795008,
+          "reference": 0.20154813958730705,
+          "diff": 0.028922458350643027,
+          "ci": [
+            0.021482862091455734,
+            0.03559112891009013
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2271795716514758,
+          "reference": 0.20154813958730705,
+          "diff": 0.025631432064168735,
+          "ci": [
+            0.01813798601921392,
+            0.03280937551695895
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2626129388010282,
+          "reference": 0.20154813958730705,
+          "diff": 0.061064799213721155,
+          "ci": [
+            0.05469007454851232,
+            0.06777441574076548
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.27303396140287806,
+          "reference": 0.20154813958730705,
+          "diff": 0.071485821815571,
+          "ci": [
+            0.06533063521543211,
+            0.07761355488553627
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.24504535286492485,
+          "reference": 0.20154813958730705,
+          "diff": 0.0434972132776178,
+          "ci": [
+            0.037252452750192115,
+            0.0501547571830245
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.2368288066453917,
+          "reference": 0.20154813958730705,
+          "diff": 0.035280667058084636,
+          "ci": [
+            0.028224379211329184,
+            0.04144399684946998
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_anchor",
+          "kappa": 0.25386717073720666,
+          "reference": 0.20154813958730705,
+          "diff": 0.05231903114989961,
+          "ci": [
+            0.045285844666641394,
+            0.05914003565195613
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2882433339650342,
+          "reference": 0.2051882446552467,
+          "diff": 0.0830550893097875,
+          "ci": [
+            0.07778345387160196,
+            0.08874215940074417
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2882006915868729,
+          "reference": 0.2051882446552467,
+          "diff": 0.08301244693162618,
+          "ci": [
+            0.07631771311417068,
+            0.08882213958000083
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.25732120425814026,
+          "reference": 0.2051882446552467,
+          "diff": 0.05213295960289355,
+          "ci": [
+            0.0440152024862854,
+            0.059106199094519585
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.24829185537014736,
+          "reference": 0.2051882446552467,
+          "diff": 0.04310361071490065,
+          "ci": [
+            0.03615777038200074,
+            0.04861322892250799
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.23047059793795008,
+          "reference": 0.2051882446552467,
+          "diff": 0.025282353282703368,
+          "ci": [
+            0.017709634566968044,
+            0.03211805097071296
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2271795716514758,
+          "reference": 0.2051882446552467,
+          "diff": 0.021991326996229077,
+          "ci": [
+            0.01464045708147861,
+            0.029058272870303353
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2626129388010282,
+          "reference": 0.2051882446552467,
+          "diff": 0.057424694145781496,
+          "ci": [
+            0.051206185538783235,
+            0.06412691864726028
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.27303396140287806,
+          "reference": 0.2051882446552467,
+          "diff": 0.06784571674763135,
+          "ci": [
+            0.06126868697727612,
+            0.07412833538623952
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.24504535286492485,
+          "reference": 0.2051882446552467,
+          "diff": 0.03985710820967814,
+          "ci": [
+            0.03356153275180464,
+            0.0465356583995272
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.2368288066453917,
+          "reference": 0.2051882446552467,
+          "diff": 0.03164056199014498,
+          "ci": [
+            0.024728658119152206,
+            0.03763295635719466
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "std_vs_single_mapped",
+          "kappa": 0.25386717073720666,
+          "reference": 0.2051882446552467,
+          "diff": 0.04867892608195995,
+          "ci": [
+            0.04170158163020026,
+            0.05570649158322086
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "GLM-4.6V-Flash",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.27457842052810155,
+          "reference": 0.2634686536751566,
+          "diff": 0.011109766852944958,
+          "ci": [
+            0.004564756427328916,
+            0.017688167735275716
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "InternVL3_5-8B-HF",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2746664312446546,
+          "reference": 0.2634686536751566,
+          "diff": 0.011197777569498024,
+          "ci": [
+            0.003688423829515532,
+            0.018355883757592253
+          ],
+          "verdict": "above"
+        },
+        {
+          "model": "MiMo-VL-7B-RL-2508",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2462049202157111,
+          "reference": 0.2634686536751566,
+          "diff": -0.017263733459445485,
+          "ci": [
+            -0.02595818774465256,
+            -0.009368605995753137
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "MiniCPM-V-4.6",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2378267202411531,
+          "reference": 0.2634686536751566,
+          "diff": -0.025641933434003505,
+          "ci": [
+            -0.03350899468548101,
+            -0.01867843197048278
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Ministral-3-14B-Instruct-2512",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.22026960670416101,
+          "reference": 0.2634686536751566,
+          "diff": -0.04319904697099558,
+          "ci": [
+            -0.05152319928599904,
+            -0.03561243624446528
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen2.5-VL-3B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.21668907959583125,
+          "reference": 0.2634686536751566,
+          "diff": -0.04677957407932534,
+          "ci": [
+            -0.05418097865444472,
+            -0.03914995804653415
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3-VL-8B-Instruct",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2500762732447222,
+          "reference": 0.2634686536751566,
+          "diff": -0.013392380430434392,
+          "ci": [
+            -0.020240634000787794,
+            -0.006175546455495348
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "Qwen3.5-9B",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.2602779241647447,
+          "reference": 0.2634686536751566,
+          "diff": -0.0031907295104118827,
+          "ci": [
+            -0.010147650263013732,
+            0.003556696650614949
+          ],
+          "verdict": "indistinguishable"
+        },
+        {
+          "model": "gemma-3-12b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.23467387033374493,
+          "reference": 0.2634686536751566,
+          "diff": -0.028794783341411667,
+          "ci": [
+            -0.035793473596332004,
+            -0.021613648830304383
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-3-4b-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.22697719348241638,
+          "reference": 0.2634686536751566,
+          "diff": -0.036491460192740216,
+          "ci": [
+            -0.04407523805192401,
+            -0.028878521529852937
+          ],
+          "verdict": "below"
+        },
+        {
+          "model": "gemma-4-12B-it",
+          "condition": "pyes",
+          "estimator": "oracle",
+          "comparison": "loro_vs_panel",
+          "kappa": 0.24265647245456412,
+          "reference": 0.2634686536751566,
+          "diff": -0.020812181220592474,
+          "ci": [
+            -0.02863402593405629,
+            -0.013476761872388505
+          ],
+          "verdict": "below"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "anchor_three_rater.py",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    },
+    "secondary_sets": [
+      "all_40"
+    ]
+  }
+}

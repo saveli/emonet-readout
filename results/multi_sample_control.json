@@ -1,0 +1,3460 @@
+{
+  "k": 16,
+  "k_curve": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "n_images": 500,
+  "image_indices": [
+    2,
+    8,
+    10,
+    11,
+    13,
+    18,
+    22,
+    30,
+    39,
+    48,
+    49,
+    51,
+    52,
+    56,
+    58,
+    63,
+    64,
+    65,
+    70,
+    82,
+    91,
+    93,
+    99,
+    100,
+    108,
+    111,
+    115,
+    117,
+    122,
+    124,
+    125,
+    127,
+    133,
+    134,
+    135,
+    156,
+    161,
+    164,
+    165,
+    188,
+    197,
+    204,
+    205,
+    206,
+    215,
+    217,
+    219,
+    220,
+    221,
+    222,
+    225,
+    228,
+    232,
+    237,
+    245,
+    246,
+    257,
+    264,
+    268,
+    270,
+    271,
+    273,
+    282,
+    287,
+    288,
+    294,
+    310,
+    311,
+    313,
+    314,
+    316,
+    317,
+    326,
+    331,
+    336,
+    337,
+    338,
+    344,
+    354,
+    358,
+    359,
+    360,
+    372,
+    388,
+    391,
+    392,
+    400,
+    401,
+    403,
+    406,
+    407,
+    409,
+    412,
+    419,
+    420,
+    421,
+    422,
+    437,
+    444,
+    445,
+    447,
+    451,
+    452,
+    456,
+    460,
+    462,
+    466,
+    484,
+    485,
+    487,
+    490,
+    493,
+    495,
+    499,
+    516,
+    521,
+    522,
+    532,
+    534,
+    535,
+    538,
+    543,
+    552,
+    557,
+    559,
+    563,
+    577,
+    589,
+    592,
+    594,
+    595,
+    608,
+    609,
+    617,
+    619,
+    635,
+    641,
+    642,
+    643,
+    647,
+    652,
+    663,
+    677,
+    678,
+    681,
+    682,
+    691,
+    698,
+    712,
+    718,
+    719,
+    723,
+    724,
+    732,
+    745,
+    747,
+    750,
+    766,
+    770,
+    781,
+    785,
+    786,
+    788,
+    790,
+    796,
+    799,
+    806,
+    817,
+    823,
+    825,
+    827,
+    828,
+    835,
+    840,
+    844,
+    845,
+    846,
+    852,
+    872,
+    874,
+    880,
+    892,
+    897,
+    898,
+    899,
+    900,
+    905,
+    911,
+    913,
+    919,
+    923,
+    931,
+    937,
+    938,
+    942,
+    950,
+    958,
+    960,
+    963,
+    964,
+    970,
+    972,
+    976,
+    977,
+    982,
+    989,
+    995,
+    997,
+    1000,
+    1004,
+    1011,
+    1017,
+    1020,
+    1022,
+    1024,
+    1027,
+    1034,
+    1043,
+    1056,
+    1058,
+    1062,
+    1063,
+    1071,
+    1087,
+    1088,
+    1089,
+    1093,
+    1096,
+    1097,
+    1102,
+    1104,
+    1107,
+    1112,
+    1116,
+    1117,
+    1119,
+    1120,
+    1123,
+    1124,
+    1125,
+    1126,
+    1137,
+    1138,
+    1139,
+    1141,
+    1146,
+    1147,
+    1148,
+    1157,
+    1165,
+    1167,
+    1170,
+    1171,
+    1172,
+    1180,
+    1183,
+    1188,
+    1192,
+    1194,
+    1199,
+    1201,
+    1205,
+    1206,
+    1207,
+    1208,
+    1222,
+    1227,
+    1228,
+    1229,
+    1236,
+    1239,
+    1243,
+    1246,
+    1248,
+    1252,
+    1257,
+    1258,
+    1274,
+    1275,
+    1286,
+    1287,
+    1301,
+    1302,
+    1311,
+    1322,
+    1337,
+    1342,
+    1343,
+    1355,
+    1358,
+    1365,
+    1369,
+    1372,
+    1376,
+    1378,
+    1393,
+    1398,
+    1405,
+    1415,
+    1422,
+    1458,
+    1460,
+    1463,
+    1466,
+    1468,
+    1469,
+    1479,
+    1497,
+    1503,
+    1506,
+    1512,
+    1515,
+    1516,
+    1519,
+    1523,
+    1529,
+    1535,
+    1542,
+    1545,
+    1549,
+    1555,
+    1567,
+    1568,
+    1570,
+    1575,
+    1584,
+    1591,
+    1595,
+    1600,
+    1604,
+    1610,
+    1611,
+    1618,
+    1619,
+    1620,
+    1627,
+    1629,
+    1630,
+    1636,
+    1643,
+    1651,
+    1652,
+    1655,
+    1666,
+    1667,
+    1668,
+    1669,
+    1672,
+    1682,
+    1687,
+    1688,
+    1699,
+    1700,
+    1707,
+    1717,
+    1722,
+    1726,
+    1731,
+    1732,
+    1750,
+    1760,
+    1762,
+    1763,
+    1766,
+    1768,
+    1774,
+    1783,
+    1787,
+    1793,
+    1794,
+    1796,
+    1799,
+    1818,
+    1823,
+    1826,
+    1845,
+    1853,
+    1856,
+    1859,
+    1863,
+    1874,
+    1875,
+    1878,
+    1884,
+    1890,
+    1896,
+    1897,
+    1904,
+    1910,
+    1919,
+    1920,
+    1924,
+    1926,
+    1929,
+    1940,
+    1941,
+    1947,
+    1949,
+    1965,
+    1985,
+    1989,
+    1995,
+    1997,
+    2002,
+    2003,
+    2004,
+    2005,
+    2010,
+    2011,
+    2012,
+    2018,
+    2032,
+    2035,
+    2038,
+    2046,
+    2047,
+    2067,
+    2072,
+    2075,
+    2081,
+    2082,
+    2089,
+    2098,
+    2103,
+    2108,
+    2109,
+    2114,
+    2117,
+    2123,
+    2125,
+    2129,
+    2134,
+    2140,
+    2141,
+    2147,
+    2154,
+    2156,
+    2160,
+    2165,
+    2168,
+    2172,
+    2174,
+    2180,
+    2184,
+    2189,
+    2190,
+    2214,
+    2218,
+    2221,
+    2225,
+    2226,
+    2232,
+    2234,
+    2235,
+    2241,
+    2245,
+    2249,
+    2250,
+    2251,
+    2253,
+    2268,
+    2284,
+    2286,
+    2287,
+    2292,
+    2293,
+    2299,
+    2313,
+    2320,
+    2322,
+    2333,
+    2336,
+    2344,
+    2346,
+    2370,
+    2375,
+    2379,
+    2381,
+    2400,
+    2405,
+    2410,
+    2411,
+    2413,
+    2414,
+    2417,
+    2419,
+    2423,
+    2426,
+    2433,
+    2444,
+    2454,
+    2459,
+    2463,
+    2464,
+    2465,
+    2468,
+    2479,
+    2484,
+    2490,
+    2498
+  ],
+  "n_models": 11,
+  "n_models_total": 11,
+  "models": [
+    "GLM-4.6V-Flash",
+    "InternVL3_5-8B-HF",
+    "MiMo-VL-7B-RL-2508",
+    "MiniCPM-V-4.6",
+    "Ministral-3-14B-Instruct-2512",
+    "Qwen2.5-VL-3B-Instruct",
+    "Qwen3-VL-8B-Instruct",
+    "Qwen3.5-9B",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
+    "gemma-4-12B-it"
+  ],
+  "results": {
+    "reliable_5": {
+      "anchor_subset": 0.4542153233615741,
+      "anchor_subset_ci": [
+        0.4072937353343347,
+        0.49180962293060254
+      ],
+      "estimators": {
+        "heldout": {
+          "rows": [
+            {
+              "model": "GLM-4.6V-Flash",
+              "reported_arm": "paper_once",
+              "temperature": 0.8,
+              "card_temperature": 0.8,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.2629776422631465,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.2721257646505876,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.47843625466272444,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.25633929558466856,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5742894541692944,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.00914812238744106,
+              "mean16_minus_sample0_ci": [
+                -0.01073348241307784,
+                0.02649074715268701
+              ],
+              "mean16_minus_reported": -0.20631049001213686,
+              "mean16_minus_reported_ci": [
+                -0.26844337062980483,
+                -0.1610850021164795
+              ],
+              "pyes_minus_mean16": 0.30216368951870687,
+              "pyes_minus_mean16_ci": [
+                0.2595668211910112,
+                0.3552126384980545
+              ],
+              "pyes_minus_reported": 0.09585319950657001,
+              "pyes_minus_reported_ci": [
+                0.06718548503776849,
+                0.12696726245313283
+              ],
+              "mean16_minus_ours": 0.015786469065919018,
+              "mean16_minus_ours_ci": [
+                -0.008589016084149912,
+                0.0394225511600363
+              ],
+              "k_curve": {
+                "1": 0.2629776422631465,
+                "2": 0.2796360126951999,
+                "4": 0.283319964939554,
+                "8": 0.2761066585158816,
+                "16": 0.2721257646505876
+              }
+            },
+            {
+              "model": "InternVL3_5-8B-HF",
+              "reported_arm": "paper_once",
+              "temperature": 0.6,
+              "card_temperature": 0.6,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.22457853840811418,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.3479514103723028,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.3891601768118794,
+              "n_parsed_reported": 497,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.2390969281503504,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5522392628174504,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.12337287196418864,
+              "mean16_minus_sample0_ci": [
+                0.08097502295047786,
+                0.16856945747199387
+              ],
+              "mean16_minus_reported": -0.041208766439576605,
+              "mean16_minus_reported_ci": [
+                -0.08599495120917994,
+                0.0005201273061761803
+              ],
+              "pyes_minus_mean16": 0.20428785244514758,
+              "pyes_minus_mean16_ci": [
+                0.1610548187927428,
+                0.25147105552523147
+              ],
+              "pyes_minus_reported": 0.16307908600557097,
+              "pyes_minus_reported_ci": [
+                0.127893081500243,
+                0.1975766281883699
+              ],
+              "mean16_minus_ours": 0.1088544822219524,
+              "mean16_minus_ours_ci": [
+                0.05827706598376659,
+                0.15219678758166513
+              ],
+              "k_curve": {
+                "1": 0.22457853840811418,
+                "2": 0.2783315752382286,
+                "4": 0.3023185843115279,
+                "8": 0.3262127614823477,
+                "16": 0.3479514103723028
+              }
+            },
+            {
+              "model": "MiMo-VL-7B-RL-2508",
+              "reported_arm": "ours",
+              "temperature": 0.3,
+              "card_temperature": 0.3,
+              "temperature_overridden": false,
+              "samples_parsed": 6120,
+              "samples_total": 8000,
+              "kappa_sample0": 0.39827070237029916,
+              "n_parsed_sample0": 383,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.4270093062429023,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.38372605635370116,
+              "n_parsed_reported": 395,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.38372605635370116,
+              "n_parsed_ours": 395,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5327137428010876,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.02873860387260313,
+              "mean16_minus_sample0_ci": [
+                0.010712299208954739,
+                0.06075066585096601
+              ],
+              "mean16_minus_reported": 0.043283249889201125,
+              "mean16_minus_reported_ci": [
+                0.013533171772083002,
+                0.07424677858272244
+              ],
+              "pyes_minus_mean16": 0.10570443655818534,
+              "pyes_minus_mean16_ci": [
+                0.08176373163797396,
+                0.13348203104604345
+              ],
+              "pyes_minus_reported": 0.14898768644738647,
+              "pyes_minus_reported_ci": [
+                0.117153622925574,
+                0.19094663666140743
+              ],
+              "mean16_minus_ours": 0.043283249889201125,
+              "mean16_minus_ours_ci": [
+                0.013533171772083002,
+                0.07424677858272244
+              ],
+              "k_curve": {
+                "1": 0.39827070237029916,
+                "2": 0.40081299884817384,
+                "4": 0.4077779428587597,
+                "8": 0.4115788799206734,
+                "16": 0.4270093062429023
+              }
+            },
+            {
+              "model": "MiniCPM-V-4.6",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 7533,
+              "samples_total": 8000,
+              "kappa_sample0": 0.23849039098575706,
+              "n_parsed_sample0": 472,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.3419240672685686,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.30153599827162847,
+              "n_parsed_reported": 480,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.30153599827162847,
+              "n_parsed_ours": 480,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5125690929676605,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.10343367628281155,
+              "mean16_minus_sample0_ci": [
+                0.0669193079159664,
+                0.1437616940540254
+              ],
+              "mean16_minus_reported": 0.04038806899694014,
+              "mean16_minus_reported_ci": [
+                -0.0004459765647988748,
+                0.078093572306981
+              ],
+              "pyes_minus_mean16": 0.1706450256990919,
+              "pyes_minus_mean16_ci": [
+                0.13414395477696123,
+                0.21143833617102686
+              ],
+              "pyes_minus_reported": 0.21103309469603204,
+              "pyes_minus_reported_ci": [
+                0.1706627205945688,
+                0.2543524468134764
+              ],
+              "mean16_minus_ours": 0.04038806899694014,
+              "mean16_minus_ours_ci": [
+                -0.0004459765647988748,
+                0.078093572306981
+              ],
+              "k_curve": {
+                "1": 0.23849039098575706,
+                "2": 0.288764048258063,
+                "4": 0.29267001483901767,
+                "8": 0.32613813495547045,
+                "16": 0.3419240672685686
+              }
+            },
+            {
+              "model": "Ministral-3-14B-Instruct-2512",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 0.09,
+              "temperature_overridden": true,
+              "samples_parsed": 7789,
+              "samples_total": 8000,
+              "kappa_sample0": 0.4173995656120121,
+              "n_parsed_sample0": 487,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.5050431753279859,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "above",
+              "kappa_reported": 0.4524974561131233,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.4180244204322337,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5046349473992076,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.08764360971597385,
+              "mean16_minus_sample0_ci": [
+                0.062150568938544565,
+                0.11469733221448213
+              ],
+              "mean16_minus_reported": 0.05254571921486262,
+              "mean16_minus_reported_ci": [
+                0.024075297979237888,
+                0.0794525549924575
+              ],
+              "pyes_minus_mean16": -0.0004082279287783708,
+              "pyes_minus_mean16_ci": [
+                -0.02335966720222816,
+                0.029677878958717055
+              ],
+              "pyes_minus_reported": 0.05213749128608425,
+              "pyes_minus_reported_ci": [
+                0.027579452983454263,
+                0.07574406230261273
+              ],
+              "mean16_minus_ours": 0.08701875489575223,
+              "mean16_minus_ours_ci": [
+                0.06675846967851322,
+                0.11576144357765078
+              ],
+              "k_curve": {
+                "1": 0.4173995656120121,
+                "2": 0.45556846682881486,
+                "4": 0.4885859533623457,
+                "8": 0.4977339210880645,
+                "16": 0.5050431753279859
+              }
+            },
+            {
+              "model": "Qwen2.5-VL-3B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1e-06,
+              "temperature_overridden": true,
+              "samples_parsed": 7817,
+              "samples_total": 8000,
+              "kappa_sample0": 0.0774730410865171,
+              "n_parsed_sample0": 492,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.2654629370925592,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.2997200248700872,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.06658496628260756,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5061037696563349,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.1879898960060421,
+              "mean16_minus_sample0_ci": [
+                0.13865813015134085,
+                0.2470167226346808
+              ],
+              "mean16_minus_reported": -0.034257087777528006,
+              "mean16_minus_reported_ci": [
+                -0.09284160582819927,
+                0.01531072254032841
+              ],
+              "pyes_minus_mean16": 0.24064083256377566,
+              "pyes_minus_mean16_ci": [
+                0.20062546846806534,
+                0.2844358381700128
+              ],
+              "pyes_minus_reported": 0.20638374478624766,
+              "pyes_minus_reported_ci": [
+                0.1556251957468121,
+                0.24593022232998615
+              ],
+              "mean16_minus_ours": 0.19887797080995162,
+              "mean16_minus_ours_ci": [
+                0.14454243659313387,
+                0.2488223326817392
+              ],
+              "k_curve": {
+                "1": 0.0774730410865171,
+                "2": 0.12237997548024489,
+                "4": 0.13951655378250818,
+                "8": 0.2216836166621401,
+                "16": 0.2654629370925592
+              }
+            },
+            {
+              "model": "Qwen3-VL-8B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.33805619115001506,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.4071508025549675,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.46478004921194066,
+              "n_parsed_reported": 467,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.363631499774317,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.523513926892209,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.06909461140495243,
+              "mean16_minus_sample0_ci": [
+                0.052976492611824626,
+                0.09905714325796829
+              ],
+              "mean16_minus_reported": -0.057629246656973165,
+              "mean16_minus_reported_ci": [
+                -0.10319060017466625,
+                -0.018979280119698076
+              ],
+              "pyes_minus_mean16": 0.1163631243372415,
+              "pyes_minus_mean16_ci": [
+                0.08529718727204497,
+                0.147820525737042
+              ],
+              "pyes_minus_reported": 0.05873387768026833,
+              "pyes_minus_reported_ci": [
+                0.03118735964879571,
+                0.08543851185487861
+              ],
+              "mean16_minus_ours": 0.04351930278065047,
+              "mean16_minus_ours_ci": [
+                0.014020719736566394,
+                0.07423581527081313
+              ],
+              "k_curve": {
+                "1": 0.33805619115001506,
+                "2": 0.3607304518201276,
+                "4": 0.3822048893508937,
+                "8": 0.4041332048851755,
+                "16": 0.4071508025549675
+              }
+            },
+            {
+              "model": "Qwen3.5-9B",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.3715059781228144,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.4917852020152494,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.45196309071815904,
+              "n_parsed_reported": 499,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.4063262413753416,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5387609494897048,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.120279223892435,
+              "mean16_minus_sample0_ci": [
+                0.09362993939013355,
+                0.14692936902622591
+              ],
+              "mean16_minus_reported": 0.039822111297090346,
+              "mean16_minus_reported_ci": [
+                0.016248627029509393,
+                0.07146582053528945
+              ],
+              "pyes_minus_mean16": 0.046975747474455376,
+              "pyes_minus_mean16_ci": [
+                0.021277554777658456,
+                0.0719750586181115
+              ],
+              "pyes_minus_reported": 0.08679785877154572,
+              "pyes_minus_reported_ci": [
+                0.05710101592198773,
+                0.12122286343148928
+              ],
+              "mean16_minus_ours": 0.08545896063990777,
+              "mean16_minus_ours_ci": [
+                0.06373480926824496,
+                0.10944546976813022
+              ],
+              "k_curve": {
+                "1": 0.3715059781228144,
+                "2": 0.4085025327563979,
+                "4": 0.43181617523598986,
+                "8": 0.4623769093086464,
+                "16": 0.4917852020152494
+              }
+            },
+            {
+              "model": "gemma-3-12b-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.3385451101311223,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.4201975457911898,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.4300436453602994,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.3406293508461776,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5050664555338871,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.08165243566006747,
+              "mean16_minus_sample0_ci": [
+                0.05931660802635373,
+                0.10508726106872679
+              ],
+              "mean16_minus_reported": -0.00984609956910959,
+              "mean16_minus_reported_ci": [
+                -0.039568381946123575,
+                0.01876392021060457
+              ],
+              "pyes_minus_mean16": 0.08486890974269728,
+              "pyes_minus_mean16_ci": [
+                0.05386358308625227,
+                0.11823650802605774
+              ],
+              "pyes_minus_reported": 0.0750228101735877,
+              "pyes_minus_reported_ci": [
+                0.05174450308897003,
+                0.09712842511270481
+              ],
+              "mean16_minus_ours": 0.07956819494501216,
+              "mean16_minus_ours_ci": [
+                0.055333947967179206,
+                0.1080643126839616
+              ],
+              "k_curve": {
+                "1": 0.3385451101311223,
+                "2": 0.37479679846441505,
+                "4": 0.3883900958307452,
+                "8": 0.402513519238497,
+                "16": 0.4201975457911898
+              }
+            },
+            {
+              "model": "gemma-3-4b-it",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.4087714849074935,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.48413593488662715,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.3945461305841049,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.3945461305841049,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5044204579071628,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.07536444997913366,
+              "mean16_minus_sample0_ci": [
+                0.05670119302873169,
+                0.09317404675064653
+              ],
+              "mean16_minus_reported": 0.08958980430252222,
+              "mean16_minus_reported_ci": [
+                0.06509889609502838,
+                0.11616854328484834
+              ],
+              "pyes_minus_mean16": 0.020284523020535683,
+              "pyes_minus_mean16_ci": [
+                -0.001582467457473184,
+                0.04604609356200112
+              ],
+              "pyes_minus_reported": 0.10987432732305791,
+              "pyes_minus_reported_ci": [
+                0.08568693482403335,
+                0.13944662580649453
+              ],
+              "mean16_minus_ours": 0.08958980430252222,
+              "mean16_minus_ours_ci": [
+                0.06509889609502838,
+                0.11616854328484834
+              ],
+              "k_curve": {
+                "1": 0.4087714849074935,
+                "2": 0.43581716478663085,
+                "4": 0.45895433949388886,
+                "8": 0.47576615233349145,
+                "16": 0.48413593488662715
+              }
+            },
+            {
+              "model": "gemma-4-12B-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.4147291013777533,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.45751688726504874,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.49722803669729077,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "above",
+              "kappa_ours": 0.4082196796503402,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5424191819705146,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.042787785887295426,
+              "mean16_minus_sample0_ci": [
+                0.01770966683787281,
+                0.059635643677394795
+              ],
+              "mean16_minus_reported": -0.03971114943224202,
+              "mean16_minus_reported_ci": [
+                -0.07844030002039684,
+                -0.022765958027474956
+              ],
+              "pyes_minus_mean16": 0.0849022947054659,
+              "pyes_minus_mean16_ci": [
+                0.06684430570175177,
+                0.12435781737718118
+              ],
+              "pyes_minus_reported": 0.045191145273223876,
+              "pyes_minus_reported_ci": [
+                0.023728315257025897,
+                0.06666261068820008
+              ],
+              "mean16_minus_ours": 0.04929720761470857,
+              "mean16_minus_ours_ci": [
+                0.01312049670563183,
+                0.06852271648849129
+              ],
+              "k_curve": {
+                "1": 0.4147291013777533,
+                "2": 0.42810459368779413,
+                "4": 0.43145705117355665,
+                "8": 0.45487961604482974,
+                "16": 0.45751688726504874
+              }
+            }
+          ],
+          "fleet": {
+            "n_models": 11,
+            "kappa_sample0": 0.31734524967409494,
+            "sample0_above_anchor_point": 0,
+            "sample0_above_anchor_ci": 0,
+            "sample0_below_anchor_ci": 11,
+            "kappa_mean16": 0.4018457303152717,
+            "mean16_above_anchor_point": 4,
+            "mean16_above_anchor_ci": 1,
+            "mean16_below_anchor_ci": 7,
+            "kappa_reported": 0.41305790178681256,
+            "reported_above_anchor_point": 3,
+            "reported_above_anchor_ci": 1,
+            "reported_below_anchor_ci": 6,
+            "kappa_ours": 0.32533277884595196,
+            "ours_above_anchor_point": 0,
+            "ours_above_anchor_ci": 0,
+            "ours_below_anchor_ci": 11,
+            "kappa_pyes": 0.5269755674185922,
+            "pyes_above_anchor_point": 11,
+            "pyes_above_anchor_ci": 11,
+            "pyes_below_anchor_ci": 0,
+            "mean16_minus_sample0": 0.08450048064117675,
+            "mean16_minus_sample0_ci": [
+              0.07515269041979353,
+              0.09547793140100888
+            ],
+            "mean16_minus_sample0_sig_pos": 10,
+            "mean16_minus_sample0_sig_neg": 0,
+            "mean16_minus_reported": -0.01121217147154089,
+            "mean16_minus_reported_ci": [
+              -0.02597781970443992,
+              -0.0005740056518693398
+            ],
+            "mean16_minus_reported_sig_pos": 4,
+            "mean16_minus_reported_sig_neg": 3,
+            "pyes_minus_mean16": 0.12512983710332046,
+            "pyes_minus_mean16_ci": [
+              0.11006970596866761,
+              0.14611764011432662
+            ],
+            "pyes_minus_mean16_sig_pos": 9,
+            "pyes_minus_mean16_sig_neg": 0,
+            "pyes_minus_reported": 0.11391766563177952,
+            "pyes_minus_reported_ci": [
+              0.098452052876718,
+              0.12878090526425837
+            ],
+            "pyes_minus_reported_sig_pos": 11,
+            "pyes_minus_reported_sig_neg": 0,
+            "mean16_minus_ours": 0.0765129514693198,
+            "mean16_minus_ours_ci": [
+              0.06445179798003184,
+              0.08547870993838072
+            ],
+            "mean16_minus_ours_sig_pos": 9,
+            "mean16_minus_ours_sig_neg": 0,
+            "k_curve": [
+              {
+                "K": 1,
+                "kappa": 0.31734524967409494,
+                "minus_sample0": 0.0,
+                "minus_sample0_ci": [
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "K": 2,
+                "kappa": 0.34849496535128094,
+                "minus_sample0": 0.031149715677185996,
+                "minus_sample0_ci": [
+                  0.026414111234172182,
+                  0.0372161176781289
+                ]
+              },
+              {
+                "K": 4,
+                "kappa": 0.36427377865261706,
+                "minus_sample0": 0.04692852897852207,
+                "minus_sample0_ci": [
+                  0.040243550331539084,
+                  0.05673127023134876
+                ]
+              },
+              {
+                "K": 8,
+                "kappa": 0.38719303403956523,
+                "minus_sample0": 0.06984778436547029,
+                "minus_sample0_ci": [
+                  0.06147367774782139,
+                  0.07973764175105302
+                ]
+              },
+              {
+                "K": 16,
+                "kappa": 0.4018457303152717,
+                "minus_sample0": 0.08450048064117675,
+                "minus_sample0_ci": [
+                  0.07515269041979353,
+                  0.09547793140100888
+                ]
+              }
+            ]
+          }
+        },
+        "oracle": {
+          "rows": [
+            {
+              "model": "GLM-4.6V-Flash",
+              "reported_arm": "paper_once",
+              "temperature": 0.8,
+              "card_temperature": 0.8,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.26540556139618976,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.2842073950961864,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.4825761655406316,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.26098048077471436,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5785473858017997,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.018801833699996662,
+              "mean16_minus_sample0_ci": [
+                -0.0026375657301826966,
+                0.04249952554535138
+              ],
+              "mean16_minus_reported": -0.19836877044444517,
+              "mean16_minus_reported_ci": [
+                -0.2512299185188964,
+                -0.15045240861578552
+              ],
+              "pyes_minus_mean16": 0.29433999070561323,
+              "pyes_minus_mean16_ci": [
+                0.25440388533921604,
+                0.34435758969033475
+              ],
+              "pyes_minus_reported": 0.09597122026116806,
+              "pyes_minus_reported_ci": [
+                0.06946939043543746,
+                0.13081342503615564
+              ],
+              "mean16_minus_ours": 0.02322691432147206,
+              "mean16_minus_ours_ci": [
+                -0.002925838863235121,
+                0.05018565026199908
+              ],
+              "k_curve": {
+                "1": 0.26540556139618976,
+                "2": 0.2822194483203574,
+                "4": 0.28626553481283257,
+                "8": 0.28378824971237016,
+                "16": 0.2842073950961864
+              }
+            },
+            {
+              "model": "InternVL3_5-8B-HF",
+              "reported_arm": "paper_once",
+              "temperature": 0.6,
+              "card_temperature": 0.6,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.22495227190209058,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.35228913223670144,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.3911938667474903,
+              "n_parsed_reported": 497,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.25434118789674454,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5582197176317469,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.12733686033461086,
+              "mean16_minus_sample0_ci": [
+                0.08453639903801444,
+                0.16815119968924802
+              ],
+              "mean16_minus_reported": -0.03890473451078885,
+              "mean16_minus_reported_ci": [
+                -0.08484359961808635,
+                0.002590347331287002
+              ],
+              "pyes_minus_mean16": 0.2059305853950455,
+              "pyes_minus_mean16_ci": [
+                0.16335272745445162,
+                0.25282170086013894
+              ],
+              "pyes_minus_reported": 0.16702585088425664,
+              "pyes_minus_reported_ci": [
+                0.1336788399834252,
+                0.20073826934445613
+              ],
+              "mean16_minus_ours": 0.0979479443399569,
+              "mean16_minus_ours_ci": [
+                0.055609357830804194,
+                0.13562211358577778
+              ],
+              "k_curve": {
+                "1": 0.22495227190209058,
+                "2": 0.2799443004663363,
+                "4": 0.3060110200973236,
+                "8": 0.329376523733823,
+                "16": 0.35228913223670144
+              }
+            },
+            {
+              "model": "MiMo-VL-7B-RL-2508",
+              "reported_arm": "ours",
+              "temperature": 0.3,
+              "card_temperature": 0.3,
+              "temperature_overridden": false,
+              "samples_parsed": 6120,
+              "samples_total": 8000,
+              "kappa_sample0": 0.4052653539911152,
+              "n_parsed_sample0": 383,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.42960226776572874,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.3916680034694813,
+              "n_parsed_reported": 395,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.3916680034694813,
+              "n_parsed_ours": 395,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5358012142606117,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.024336913774613556,
+              "mean16_minus_sample0_ci": [
+                0.003212735071716855,
+                0.05386471487740059
+              ],
+              "mean16_minus_reported": 0.037934264296247466,
+              "mean16_minus_reported_ci": [
+                0.00638091758213511,
+                0.07261805724188093
+              ],
+              "pyes_minus_mean16": 0.10619894649488293,
+              "pyes_minus_mean16_ci": [
+                0.08260392468850886,
+                0.13426564800143112
+              ],
+              "pyes_minus_reported": 0.1441332107911304,
+              "pyes_minus_reported_ci": [
+                0.10965697753626742,
+                0.18431743858164382
+              ],
+              "mean16_minus_ours": 0.037934264296247466,
+              "mean16_minus_ours_ci": [
+                0.00638091758213511,
+                0.07261805724188093
+              ],
+              "k_curve": {
+                "1": 0.4052653539911152,
+                "2": 0.40366787099507356,
+                "4": 0.41110245530033734,
+                "8": 0.414838491204739,
+                "16": 0.42960226776572874
+              }
+            },
+            {
+              "model": "MiniCPM-V-4.6",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 7533,
+              "samples_total": 8000,
+              "kappa_sample0": 0.24328673648793747,
+              "n_parsed_sample0": 472,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.34478968170992147,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.3061139001345518,
+              "n_parsed_reported": 480,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.3061139001345518,
+              "n_parsed_ours": 480,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5194630406318572,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.101502945221984,
+              "mean16_minus_sample0_ci": [
+                0.06567587804616423,
+                0.14478783391205466
+              ],
+              "mean16_minus_reported": 0.03867578157536966,
+              "mean16_minus_reported_ci": [
+                -9.278004399900132e-05,
+                0.07888935476484799
+              ],
+              "pyes_minus_mean16": 0.17467335892193575,
+              "pyes_minus_mean16_ci": [
+                0.13595554382705374,
+                0.21543332341518764
+              ],
+              "pyes_minus_reported": 0.2133491404973054,
+              "pyes_minus_reported_ci": [
+                0.1722623512463361,
+                0.25544960147660756
+              ],
+              "mean16_minus_ours": 0.03867578157536966,
+              "mean16_minus_ours_ci": [
+                -9.278004399900132e-05,
+                0.07888935476484799
+              ],
+              "k_curve": {
+                "1": 0.24328673648793747,
+                "2": 0.2946712236548857,
+                "4": 0.2974518244810915,
+                "8": 0.33135485839450335,
+                "16": 0.34478968170992147
+              }
+            },
+            {
+              "model": "Ministral-3-14B-Instruct-2512",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 0.09,
+              "temperature_overridden": true,
+              "samples_parsed": 7789,
+              "samples_total": 8000,
+              "kappa_sample0": 0.42278579226590657,
+              "n_parsed_sample0": 487,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "indistinguishable",
+              "kappa_mean16": 0.5078600749400701,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "above",
+              "kappa_reported": 0.4552875832924494,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.42160900281190655,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "indistinguishable",
+              "kappa_pyes": 0.5100317733618897,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.08507428267416356,
+              "mean16_minus_sample0_ci": [
+                0.061870233942183134,
+                0.11294658462942095
+              ],
+              "mean16_minus_reported": 0.052572491647620734,
+              "mean16_minus_reported_ci": [
+                0.02516410768054724,
+                0.07944129021237088
+              ],
+              "pyes_minus_mean16": 0.0021716984218195234,
+              "pyes_minus_mean16_ci": [
+                -0.02301297340257801,
+                0.030583689786484958
+              ],
+              "pyes_minus_reported": 0.05474419006944026,
+              "pyes_minus_reported_ci": [
+                0.030254465765297087,
+                0.07882740411112647
+              ],
+              "mean16_minus_ours": 0.08625107212816358,
+              "mean16_minus_ours_ci": [
+                0.06381342118775783,
+                0.11402127489812736
+              ],
+              "k_curve": {
+                "1": 0.42278579226590657,
+                "2": 0.46004328051474797,
+                "4": 0.49409654202066566,
+                "8": 0.5052941425757547,
+                "16": 0.5078600749400701
+              }
+            },
+            {
+              "model": "Qwen2.5-VL-3B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1e-06,
+              "temperature_overridden": true,
+              "samples_parsed": 7817,
+              "samples_total": 8000,
+              "kappa_sample0": 0.08214339830516179,
+              "n_parsed_sample0": 492,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.27010811350079944,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.30110926489604395,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.07810342639130777,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5110467643996345,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.18796471519563765,
+              "mean16_minus_sample0_ci": [
+                0.1320021657044697,
+                0.24066383446110617
+              ],
+              "mean16_minus_reported": -0.03100115139524451,
+              "mean16_minus_reported_ci": [
+                -0.08994598899753813,
+                0.0212329526801497
+              ],
+              "pyes_minus_mean16": 0.24093865089883504,
+              "pyes_minus_mean16_ci": [
+                0.20424895262946208,
+                0.2849826798639489
+              ],
+              "pyes_minus_reported": 0.20993749950359053,
+              "pyes_minus_reported_ci": [
+                0.1627027154343581,
+                0.25285554695347723
+              ],
+              "mean16_minus_ours": 0.19200468710949167,
+              "mean16_minus_ours_ci": [
+                0.13965689987968438,
+                0.2444115003802698
+              ],
+              "k_curve": {
+                "1": 0.08214339830516179,
+                "2": 0.1253849871933453,
+                "4": 0.14567704015563157,
+                "8": 0.22634174091542988,
+                "16": 0.27010811350079944
+              }
+            },
+            {
+              "model": "Qwen3-VL-8B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.33903542720950297,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.40968947503660874,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.46883833942285114,
+              "n_parsed_reported": 467,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.36679657407218946,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5271532235650785,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.07065404782710577,
+              "mean16_minus_sample0_ci": [
+                0.051614801227445994,
+                0.09224914100803974
+              ],
+              "mean16_minus_reported": -0.059148864386242395,
+              "mean16_minus_reported_ci": [
+                -0.10437258536078906,
+                -0.0208918691425649
+              ],
+              "pyes_minus_mean16": 0.1174637485284698,
+              "pyes_minus_mean16_ci": [
+                0.08970763420515246,
+                0.14999812407136345
+              ],
+              "pyes_minus_reported": 0.05831488414222741,
+              "pyes_minus_reported_ci": [
+                0.03301707130021222,
+                0.08806777878928633
+              ],
+              "mean16_minus_ours": 0.04289290096441928,
+              "mean16_minus_ours_ci": [
+                0.012746066831448341,
+                0.06902619239265191
+              ],
+              "k_curve": {
+                "1": 0.33903542720950297,
+                "2": 0.3611094195747985,
+                "4": 0.38304622879286787,
+                "8": 0.406323913730711,
+                "16": 0.40968947503660874
+              }
+            },
+            {
+              "model": "Qwen3.5-9B",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.3730609939383195,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.49723325218164127,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "above",
+              "kappa_reported": 0.4560663431129858,
+              "n_parsed_reported": 499,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.4096948297762067,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5419280583006988,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.12417225824332179,
+              "mean16_minus_sample0_ci": [
+                0.09582511117295553,
+                0.14946399571260863
+              ],
+              "mean16_minus_reported": 0.0411669090686555,
+              "mean16_minus_reported_ci": [
+                0.015676184843890655,
+                0.07220315301628188
+              ],
+              "pyes_minus_mean16": 0.04469480611905752,
+              "pyes_minus_mean16_ci": [
+                0.02288887845048051,
+                0.07213369639281966
+              ],
+              "pyes_minus_reported": 0.08586171518771302,
+              "pyes_minus_reported_ci": [
+                0.05676006423230465,
+                0.1218946832708796
+              ],
+              "mean16_minus_ours": 0.08753842240543458,
+              "mean16_minus_ours_ci": [
+                0.06673727035816082,
+                0.11211312411262836
+              ],
+              "k_curve": {
+                "1": 0.3730609939383195,
+                "2": 0.4116765384384342,
+                "4": 0.4358722668282242,
+                "8": 0.4670291480239156,
+                "16": 0.49723325218164127
+              }
+            },
+            {
+              "model": "gemma-3-12b-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.34257164698646003,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.42454155365841706,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.4339735716589715,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.3439907787077416,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5103215057871746,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.08196990667195703,
+              "mean16_minus_sample0_ci": [
+                0.057994379449042115,
+                0.10512642392128521
+              ],
+              "mean16_minus_reported": -0.009432018000554432,
+              "mean16_minus_reported_ci": [
+                -0.04053231957382131,
+                0.017166964827526075
+              ],
+              "pyes_minus_mean16": 0.08577995212875755,
+              "pyes_minus_mean16_ci": [
+                0.05456383911062746,
+                0.11917554263802582
+              ],
+              "pyes_minus_reported": 0.07634793412820312,
+              "pyes_minus_reported_ci": [
+                0.051340349234157444,
+                0.09894440336408739
+              ],
+              "mean16_minus_ours": 0.08055077495067547,
+              "mean16_minus_ours_ci": [
+                0.05536248743250981,
+                0.10730640706532288
+              ],
+              "k_curve": {
+                "1": 0.34257164698646003,
+                "2": 0.37909113327923166,
+                "4": 0.3937501849051717,
+                "8": 0.40841673873257384,
+                "16": 0.42454155365841706
+              }
+            },
+            {
+              "model": "gemma-3-4b-it",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.4128457062393297,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.4891331238702096,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.39679978246124703,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.39679978246124703,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.5082752067298437,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.07628741763087987,
+              "mean16_minus_sample0_ci": [
+                0.05859781457051247,
+                0.09593656812170717
+              ],
+              "mean16_minus_reported": 0.09233334140896254,
+              "mean16_minus_reported_ci": [
+                0.06971965770859047,
+                0.1201952804915149
+              ],
+              "pyes_minus_mean16": 0.019142082859634146,
+              "pyes_minus_mean16_ci": [
+                -0.004603693786885228,
+                0.04565871810996559
+              ],
+              "pyes_minus_reported": 0.11147542426859669,
+              "pyes_minus_reported_ci": [
+                0.0894252717085228,
+                0.1418123540443174
+              ],
+              "mean16_minus_ours": 0.09233334140896254,
+              "mean16_minus_ours_ci": [
+                0.06971965770859047,
+                0.1201952804915149
+              ],
+              "k_curve": {
+                "1": 0.4128457062393297,
+                "2": 0.4415351878291813,
+                "4": 0.4632856269987141,
+                "8": 0.4795886897453525,
+                "16": 0.4891331238702096
+              }
+            },
+            {
+              "model": "gemma-4-12B-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.42362970609724426,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "indistinguishable",
+              "kappa_mean16": 0.4611525503123364,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.5009103987957159,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": true,
+              "reported_vs_anchor": "above",
+              "kappa_ours": 0.4250994929725147,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "indistinguishable",
+              "kappa_pyes": 0.5476653346699415,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.03752284421509211,
+              "mean16_minus_sample0_ci": [
+                0.021576296445941095,
+                0.056853793440514507
+              ],
+              "mean16_minus_reported": -0.03975784848337949,
+              "mean16_minus_reported_ci": [
+                -0.06124564473984674,
+                -0.0158962546066728
+              ],
+              "pyes_minus_mean16": 0.08651278435760512,
+              "pyes_minus_mean16_ci": [
+                0.06102611120056599,
+                0.10956565031281466
+              ],
+              "pyes_minus_reported": 0.046754935874225634,
+              "pyes_minus_reported_ci": [
+                0.024670646626016823,
+                0.06814980933574763
+              ],
+              "mean16_minus_ours": 0.03605305733982167,
+              "mean16_minus_ours_ci": [
+                0.015582555166619721,
+                0.060403804303341094
+              ],
+              "k_curve": {
+                "1": 0.42362970609724426,
+                "2": 0.4384090924042504,
+                "4": 0.44507863703008094,
+                "8": 0.45876791070785095,
+                "16": 0.4611525503123364
+              }
+            }
+          ],
+          "fleet": {
+            "n_models": 11,
+            "kappa_sample0": 0.321362054074478,
+            "sample0_above_anchor_point": 0,
+            "sample0_above_anchor_ci": 0,
+            "sample0_below_anchor_ci": 9,
+            "kappa_mean16": 0.40641878366442,
+            "mean16_above_anchor_point": 4,
+            "mean16_above_anchor_ci": 2,
+            "mean16_below_anchor_ci": 6,
+            "kappa_reported": 0.4167761108665836,
+            "reported_above_anchor_point": 5,
+            "reported_above_anchor_ci": 1,
+            "reported_below_anchor_ci": 5,
+            "kappa_ours": 0.33229067813350965,
+            "ours_above_anchor_point": 0,
+            "ours_above_anchor_ci": 0,
+            "ours_below_anchor_ci": 9,
+            "kappa_pyes": 0.5316775659218433,
+            "pyes_above_anchor_point": 11,
+            "pyes_above_anchor_ci": 11,
+            "pyes_below_anchor_ci": 0,
+            "mean16_minus_sample0": 0.08505672958994208,
+            "mean16_minus_sample0_ci": [
+              0.07584578525586005,
+              0.0947425260281719
+            ],
+            "mean16_minus_sample0_sig_pos": 10,
+            "mean16_minus_sample0_sig_neg": 0,
+            "mean16_minus_reported": -0.01035732720216354,
+            "mean16_minus_reported_ci": [
+              -0.023401807707303563,
+              0.0016785305796390183
+            ],
+            "mean16_minus_reported_sig_pos": 4,
+            "mean16_minus_reported_sig_neg": 3,
+            "pyes_minus_mean16": 0.1252587822574233,
+            "pyes_minus_mean16_ci": [
+              0.10954096251347013,
+              0.14470730970681553
+            ],
+            "pyes_minus_mean16_sig_pos": 9,
+            "pyes_minus_mean16_sig_neg": 0,
+            "pyes_minus_reported": 0.11490145505525975,
+            "pyes_minus_reported_ci": [
+              0.10023418182611249,
+              0.13030478918540286
+            ],
+            "pyes_minus_reported_sig_pos": 11,
+            "pyes_minus_reported_sig_neg": 0,
+            "mean16_minus_ours": 0.07412810553091044,
+            "mean16_minus_ours_ci": [
+              0.0640883789491662,
+              0.08419870756666108
+            ],
+            "mean16_minus_ours_sig_pos": 9,
+            "mean16_minus_ours_sig_neg": 0,
+            "k_curve": [
+              {
+                "K": 1,
+                "kappa": 0.321362054074478,
+                "minus_sample0": 0.0,
+                "minus_sample0_ci": [
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "K": 2,
+                "kappa": 0.35252295297005837,
+                "minus_sample0": 0.0311608988955804,
+                "minus_sample0_ci": [
+                  0.02532147783777368,
+                  0.036424313080371376
+                ]
+              },
+              {
+                "K": 4,
+                "kappa": 0.36923976012935833,
+                "minus_sample0": 0.04787770605488031,
+                "minus_sample0_ci": [
+                  0.03974057967795663,
+                  0.0559097955012396
+                ]
+              },
+              {
+                "K": 8,
+                "kappa": 0.39192003704336575,
+                "minus_sample0": 0.07055798296888782,
+                "minus_sample0_ci": [
+                  0.0616603381217659,
+                  0.07936788103258505
+                ]
+              },
+              {
+                "K": 16,
+                "kappa": 0.40641878366442,
+                "minus_sample0": 0.08505672958994208,
+                "minus_sample0_ci": [
+                  0.07584578525586005,
+                  0.0947425260281719
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "all_40": {
+      "anchor_subset": 0.20724292050063617,
+      "anchor_subset_ci": [
+        0.1902718965094908,
+        0.22017289863695894
+      ],
+      "estimators": {
+        "heldout": {
+          "rows": [
+            {
+              "model": "GLM-4.6V-Flash",
+              "reported_arm": "paper_once",
+              "temperature": 0.8,
+              "card_temperature": 0.8,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.13394816929977474,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.15830137775456982,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.15475686518366105,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.12828529444302172,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.2911540543387017,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.024353208454795078,
+              "mean16_minus_sample0_ci": [
+                0.01763694248273484,
+                0.03223270994938623
+              ],
+              "mean16_minus_reported": 0.0035445125709087644,
+              "mean16_minus_reported_ci": [
+                -0.011468203639493055,
+                0.01721862254191088
+              ],
+              "pyes_minus_mean16": 0.13285267658413186,
+              "pyes_minus_mean16_ci": [
+                0.1180120269636118,
+                0.1447756832750753
+              ],
+              "pyes_minus_reported": 0.13639718915504062,
+              "pyes_minus_reported_ci": [
+                0.12014079754315657,
+                0.14747143248617675
+              ],
+              "mean16_minus_ours": 0.030016083311548092,
+              "mean16_minus_ours_ci": [
+                0.021780193428192433,
+                0.03659868031786407
+              ]
+            },
+            {
+              "model": "InternVL3_5-8B-HF",
+              "reported_arm": "paper_once",
+              "temperature": 0.6,
+              "card_temperature": 0.6,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.09870521203310215,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.1626016048045118,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.1276740129203257,
+              "n_parsed_reported": 497,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1111973187297953,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.28592318499026426,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.06389639277140965,
+              "mean16_minus_sample0_ci": [
+                0.0516908261359877,
+                0.07511244273926294
+              ],
+              "mean16_minus_reported": 0.03492759188418609,
+              "mean16_minus_reported_ci": [
+                0.018874164946096984,
+                0.04905813110228216
+              ],
+              "pyes_minus_mean16": 0.12332158018575246,
+              "pyes_minus_mean16_ci": [
+                0.10677848561846291,
+                0.13689397959567678
+              ],
+              "pyes_minus_reported": 0.15824917206993855,
+              "pyes_minus_reported_ci": [
+                0.1391362988704471,
+                0.1710207642911064
+              ],
+              "mean16_minus_ours": 0.051404286074716504,
+              "mean16_minus_ours_ci": [
+                0.0394260642807295,
+                0.06258646358392454
+              ]
+            },
+            {
+              "model": "MiMo-VL-7B-RL-2508",
+              "reported_arm": "ours",
+              "temperature": 0.3,
+              "card_temperature": 0.3,
+              "temperature_overridden": false,
+              "samples_parsed": 6120,
+              "samples_total": 8000,
+              "kappa_sample0": 0.10333271432707436,
+              "n_parsed_sample0": 383,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.14967641014000638,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.10211103696833339,
+              "n_parsed_reported": 395,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.10211103696833339,
+              "n_parsed_ours": 395,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.25562435182227616,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.04634369581293202,
+              "mean16_minus_sample0_ci": [
+                0.036841357397821864,
+                0.05728951646666212
+              ],
+              "mean16_minus_reported": 0.04756537317167299,
+              "mean16_minus_reported_ci": [
+                0.03131350170590441,
+                0.05728437482688829
+              ],
+              "pyes_minus_mean16": 0.10594794168226979,
+              "pyes_minus_mean16_ci": [
+                0.09362678186005306,
+                0.12082145101307834
+              ],
+              "pyes_minus_reported": 0.15351331485394276,
+              "pyes_minus_reported_ci": [
+                0.13408787722504445,
+                0.16799206500513356
+              ],
+              "mean16_minus_ours": 0.04756537317167299,
+              "mean16_minus_ours_ci": [
+                0.03131350170590441,
+                0.05728437482688829
+              ]
+            },
+            {
+              "model": "MiniCPM-V-4.6",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 7533,
+              "samples_total": 8000,
+              "kappa_sample0": 0.1121197634296208,
+              "n_parsed_sample0": 472,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.1709779285254744,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.12213038807763596,
+              "n_parsed_reported": 480,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.12213038807763596,
+              "n_parsed_ours": 480,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.2455115177934853,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.05885816509585359,
+              "mean16_minus_sample0_ci": [
+                0.043750638806190484,
+                0.07234807937005701
+              ],
+              "mean16_minus_reported": 0.04884754044783843,
+              "mean16_minus_reported_ci": [
+                0.03556526115495202,
+                0.06034688120696454
+              ],
+              "pyes_minus_mean16": 0.0745335892680109,
+              "pyes_minus_mean16_ci": [
+                0.05493222077777179,
+                0.09056413122578019
+              ],
+              "pyes_minus_reported": 0.12338112971584933,
+              "pyes_minus_reported_ci": [
+                0.10289261713970115,
+                0.13840271035211602
+              ],
+              "mean16_minus_ours": 0.04884754044783843,
+              "mean16_minus_ours_ci": [
+                0.03556526115495202,
+                0.06034688120696454
+              ]
+            },
+            {
+              "model": "Ministral-3-14B-Instruct-2512",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 0.09,
+              "temperature_overridden": true,
+              "samples_parsed": 7789,
+              "samples_total": 8000,
+              "kappa_sample0": 0.1636738998589911,
+              "n_parsed_sample0": 487,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.22207878342719786,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.14505819818262294,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.14722019495547975,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.22206072838782137,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "indistinguishable",
+              "mean16_minus_sample0": 0.05840488356820675,
+              "mean16_minus_sample0_ci": [
+                0.04806954349451179,
+                0.0689153610652477
+              ],
+              "mean16_minus_reported": 0.07702058524457492,
+              "mean16_minus_reported_ci": [
+                0.0634655350227946,
+                0.08880333565199108
+              ],
+              "pyes_minus_mean16": -1.805503937649111e-05,
+              "pyes_minus_mean16_ci": [
+                -0.012460401270160067,
+                0.013117386262017885
+              ],
+              "pyes_minus_reported": 0.07700253020519843,
+              "pyes_minus_reported_ci": [
+                0.06253187958594901,
+                0.0897251020060335
+              ],
+              "mean16_minus_ours": 0.07485858847171811,
+              "mean16_minus_ours_ci": [
+                0.06279815614955936,
+                0.08671023720930386
+              ]
+            },
+            {
+              "model": "Qwen2.5-VL-3B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1e-06,
+              "temperature_overridden": true,
+              "samples_parsed": 7817,
+              "samples_total": 8000,
+              "kappa_sample0": 0.024542301535739337,
+              "n_parsed_sample0": 492,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.08562700102218512,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.0543675581939246,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.027029096557471977,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.22639021512685825,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.061084699486445786,
+              "mean16_minus_sample0_ci": [
+                0.04832311136527936,
+                0.07384203964362325
+              ],
+              "mean16_minus_reported": 0.03125944282826052,
+              "mean16_minus_reported_ci": [
+                0.015388051110822485,
+                0.044821465166432484
+              ],
+              "pyes_minus_mean16": 0.14076321410467313,
+              "pyes_minus_mean16_ci": [
+                0.12414178327150655,
+                0.15518020747020722
+              ],
+              "pyes_minus_reported": 0.17202265693293364,
+              "pyes_minus_reported_ci": [
+                0.15134292019309545,
+                0.18606288970964244
+              ],
+              "mean16_minus_ours": 0.05859790446471315,
+              "mean16_minus_ours_ci": [
+                0.04511025790244671,
+                0.07329995973227908
+              ]
+            },
+            {
+              "model": "Qwen3-VL-8B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.13794736797219076,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.1750306982500748,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.19342730768088368,
+              "n_parsed_reported": 467,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.14582017894949573,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.2525928591820106,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.03708333027788405,
+              "mean16_minus_sample0_ci": [
+                0.02739524989652624,
+                0.04856178042081157
+              ],
+              "mean16_minus_reported": -0.01839660943080887,
+              "mean16_minus_reported_ci": [
+                -0.034234203201884854,
+                -0.00022399036636709636
+              ],
+              "pyes_minus_mean16": 0.07756216093193577,
+              "pyes_minus_mean16_ci": [
+                0.06404883952403928,
+                0.09125855727984156
+              ],
+              "pyes_minus_reported": 0.0591655515011269,
+              "pyes_minus_reported_ci": [
+                0.044825788920850415,
+                0.07409218959176844
+              ],
+              "mean16_minus_ours": 0.02921051930057908,
+              "mean16_minus_ours_ci": [
+                0.01826217052117241,
+                0.03903996892711663
+              ]
+            },
+            {
+              "model": "Qwen3.5-9B",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.1444058230844926,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.21985192107687718,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.15468684129417204,
+              "n_parsed_reported": 499,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1624257196289971,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.2672348868717631,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.07544609799238458,
+              "mean16_minus_sample0_ci": [
+                0.06005085008050761,
+                0.08845665347833384
+              ],
+              "mean16_minus_reported": 0.06516507978270514,
+              "mean16_minus_reported_ci": [
+                0.04998715677968127,
+                0.08153149421603237
+              ],
+              "pyes_minus_mean16": 0.047382965794885934,
+              "pyes_minus_mean16_ci": [
+                0.0372838432454318,
+                0.06145500151473781
+              ],
+              "pyes_minus_reported": 0.11254804557759107,
+              "pyes_minus_reported_ci": [
+                0.09563590746863553,
+                0.1321820505412707
+              ],
+              "mean16_minus_ours": 0.057426201447880076,
+              "mean16_minus_ours_ci": [
+                0.04371703579848655,
+                0.07094733561457829
+              ]
+            },
+            {
+              "model": "gemma-3-12b-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.15931367707310423,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.19673050824455146,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.11192425447438434,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1535391376711363,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.23905390382516561,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.03741683117144723,
+              "mean16_minus_sample0_ci": [
+                0.03137468818003717,
+                0.04422340377527609
+              ],
+              "mean16_minus_reported": 0.08480625377016712,
+              "mean16_minus_reported_ci": [
+                0.07064155431327324,
+                0.09542983576843717
+              ],
+              "pyes_minus_mean16": 0.042323395580614154,
+              "pyes_minus_mean16_ci": [
+                0.027607393133470826,
+                0.054829273825466665
+              ],
+              "pyes_minus_reported": 0.12712964935078128,
+              "pyes_minus_reported_ci": [
+                0.10742708754561675,
+                0.1406251962871411
+              ],
+              "mean16_minus_ours": 0.043191370573415155,
+              "mean16_minus_ours_ci": [
+                0.03445813686414033,
+                0.05488640869925406
+              ]
+            },
+            {
+              "model": "gemma-3-4b-it",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.16037394200540495,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.19662168900031304,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.15153836401577037,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.15153836401577037,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.231309645631268,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.0362477469949081,
+              "mean16_minus_sample0_ci": [
+                0.029892151465617533,
+                0.04359004118965512
+              ],
+              "mean16_minus_reported": 0.04508332498454268,
+              "mean16_minus_reported_ci": [
+                0.035133924217832575,
+                0.053785595832554565
+              ],
+              "pyes_minus_mean16": 0.03468795663095495,
+              "pyes_minus_mean16_ci": [
+                0.023434697217575455,
+                0.047749690299581676
+              ],
+              "pyes_minus_reported": 0.07977128161549762,
+              "pyes_minus_reported_ci": [
+                0.06920128737058687,
+                0.0916935695468224
+              ],
+              "mean16_minus_ours": 0.04508332498454268,
+              "mean16_minus_ours_ci": [
+                0.035133924217832575,
+                0.053785595832554565
+              ]
+            },
+            {
+              "model": "gemma-4-12B-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.17278178805485242,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.20616197221407603,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.18339331948253013,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1766962817794362,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.24696848461430645,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.033380184159223614,
+              "mean16_minus_sample0_ci": [
+                0.023536027079299714,
+                0.038159515478850256
+              ],
+              "mean16_minus_reported": 0.022768652731545908,
+              "mean16_minus_reported_ci": [
+                0.006931173739600257,
+                0.031137944652192478
+              ],
+              "pyes_minus_mean16": 0.04080651240023042,
+              "pyes_minus_mean16_ci": [
+                0.030298793702826718,
+                0.05651136898153298
+              ],
+              "pyes_minus_reported": 0.06357516513177633,
+              "pyes_minus_reported_ci": [
+                0.051037435312231295,
+                0.07657859826107799
+              ],
+              "mean16_minus_ours": 0.02946569043463984,
+              "mean16_minus_ours_ci": [
+                0.01990536378475896,
+                0.034332150745755956
+              ]
+            }
+          ],
+          "fleet": {
+            "n_models": 11,
+            "kappa_sample0": 0.1282858780613043,
+            "sample0_above_anchor_point": 0,
+            "sample0_above_anchor_ci": 0,
+            "sample0_below_anchor_ci": 11,
+            "kappa_mean16": 0.17669635404180342,
+            "mean16_above_anchor_point": 2,
+            "mean16_above_anchor_ci": 0,
+            "mean16_below_anchor_ci": 6,
+            "kappa_reported": 0.13646074058856764,
+            "reported_above_anchor_point": 0,
+            "reported_above_anchor_ci": 0,
+            "reported_below_anchor_ci": 11,
+            "kappa_ours": 0.12981754652514307,
+            "ours_above_anchor_point": 0,
+            "ours_above_anchor_ci": 0,
+            "ours_below_anchor_ci": 11,
+            "kappa_pyes": 0.2512567120530837,
+            "pyes_above_anchor_point": 11,
+            "pyes_above_anchor_ci": 10,
+            "pyes_below_anchor_ci": 0,
+            "mean16_minus_sample0": 0.04841047598049913,
+            "mean16_minus_sample0_ci": [
+              0.043995606451002194,
+              0.051659160802300284
+            ],
+            "mean16_minus_sample0_sig_pos": 11,
+            "mean16_minus_sample0_sig_neg": 0,
+            "mean16_minus_reported": 0.04023561345323579,
+            "mean16_minus_reported_ci": [
+              0.03282288719078674,
+              0.04482542342747055
+            ],
+            "mean16_minus_reported_sig_pos": 9,
+            "mean16_minus_reported_sig_neg": 1,
+            "pyes_minus_mean16": 0.07456035801128026,
+            "pyes_minus_mean16_ci": [
+              0.06653423367087863,
+              0.08186291133270013
+            ],
+            "pyes_minus_mean16_sig_pos": 10,
+            "pyes_minus_mean16_sig_neg": 0,
+            "pyes_minus_reported": 0.11479597146451606,
+            "pyes_minus_reported_ci": [
+              0.1031786810337595,
+              0.12336693380436818
+            ],
+            "pyes_minus_reported_sig_pos": 11,
+            "pyes_minus_reported_sig_neg": 0,
+            "mean16_minus_ours": 0.046878807516660376,
+            "mean16_minus_ours_ci": [
+              0.0413298281351191,
+              0.05086126894182666
+            ],
+            "mean16_minus_ours_sig_pos": 11,
+            "mean16_minus_ours_sig_neg": 0
+          }
+        },
+        "oracle": {
+          "rows": [
+            {
+              "model": "GLM-4.6V-Flash",
+              "reported_arm": "paper_once",
+              "temperature": 0.8,
+              "card_temperature": 0.8,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.13721113346105596,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.1624197443908618,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.1578467728764086,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.13002239496681164,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.29445880494054044,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.025208610929805836,
+              "mean16_minus_sample0_ci": [
+                0.017695748486500212,
+                0.03430861526346335
+              ],
+              "mean16_minus_reported": 0.0045729715144531835,
+              "mean16_minus_reported_ci": [
+                -0.010192632339680532,
+                0.017544116620237568
+              ],
+              "pyes_minus_mean16": 0.13203906054967865,
+              "pyes_minus_mean16_ci": [
+                0.11932376456078661,
+                0.14543564526464728
+              ],
+              "pyes_minus_reported": 0.13661203206413183,
+              "pyes_minus_reported_ci": [
+                0.12176159178609315,
+                0.1487632685183331
+              ],
+              "mean16_minus_ours": 0.03239734942405015,
+              "mean16_minus_ours_ci": [
+                0.02454086702893314,
+                0.03973214486305369
+              ]
+            },
+            {
+              "model": "InternVL3_5-8B-HF",
+              "reported_arm": "paper_once",
+              "temperature": 0.6,
+              "card_temperature": 0.6,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.09974082121720425,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.1657098680428401,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.1302704434007727,
+              "n_parsed_reported": 497,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.11433757695207643,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.289990691187048,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.06596904682563585,
+              "mean16_minus_sample0_ci": [
+                0.05407983883094037,
+                0.07779960596912623
+              ],
+              "mean16_minus_reported": 0.035439424642067396,
+              "mean16_minus_reported_ci": [
+                0.019487696623456237,
+                0.05110477083200487
+              ],
+              "pyes_minus_mean16": 0.12428082314420791,
+              "pyes_minus_mean16_ci": [
+                0.10840671669215006,
+                0.13901918815064135
+              ],
+              "pyes_minus_reported": 0.1597202477862753,
+              "pyes_minus_reported_ci": [
+                0.1414218287738148,
+                0.17366261597393368
+              ],
+              "mean16_minus_ours": 0.051372291090763675,
+              "mean16_minus_ours_ci": [
+                0.040578398928532655,
+                0.0620583356517192
+              ]
+            },
+            {
+              "model": "MiMo-VL-7B-RL-2508",
+              "reported_arm": "ours",
+              "temperature": 0.3,
+              "card_temperature": 0.3,
+              "temperature_overridden": false,
+              "samples_parsed": 6120,
+              "samples_total": 8000,
+              "kappa_sample0": 0.11431571109916341,
+              "n_parsed_sample0": 383,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.1564495042586412,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.11015482098086467,
+              "n_parsed_reported": 395,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.11015482098086467,
+              "n_parsed_ours": 395,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.25855801302719483,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.042133793159477795,
+              "mean16_minus_sample0_ci": [
+                0.03303261370328534,
+                0.054064978918383154
+              ],
+              "mean16_minus_reported": 0.04629468327777654,
+              "mean16_minus_reported_ci": [
+                0.031270149686853294,
+                0.06156377254705821
+              ],
+              "pyes_minus_mean16": 0.10210850876855362,
+              "pyes_minus_mean16_ci": [
+                0.08771635163362088,
+                0.11559931046738027
+              ],
+              "pyes_minus_reported": 0.14840319204633018,
+              "pyes_minus_reported_ci": [
+                0.12901065910496123,
+                0.16462670705602786
+              ],
+              "mean16_minus_ours": 0.04629468327777654,
+              "mean16_minus_ours_ci": [
+                0.031270149686853294,
+                0.06156377254705821
+              ]
+            },
+            {
+              "model": "MiniCPM-V-4.6",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 7533,
+              "samples_total": 8000,
+              "kappa_sample0": 0.1142871911458299,
+              "n_parsed_sample0": 472,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.17390096199399419,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.1250325268105403,
+              "n_parsed_reported": 480,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1250325268105403,
+              "n_parsed_ours": 480,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.24936866641612906,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.059613770848164285,
+              "mean16_minus_sample0_ci": [
+                0.044002824328971325,
+                0.0727867862490304
+              ],
+              "mean16_minus_reported": 0.04886843518345388,
+              "mean16_minus_reported_ci": [
+                0.03542633751570891,
+                0.06179164842143172
+              ],
+              "pyes_minus_mean16": 0.07546770442213488,
+              "pyes_minus_mean16_ci": [
+                0.05457659448820175,
+                0.0929689220513349
+              ],
+              "pyes_minus_reported": 0.12433613960558876,
+              "pyes_minus_reported_ci": [
+                0.10354079049995642,
+                0.1403329575632368
+              ],
+              "mean16_minus_ours": 0.04886843518345388,
+              "mean16_minus_ours_ci": [
+                0.03542633751570891,
+                0.06179164842143172
+              ]
+            },
+            {
+              "model": "Ministral-3-14B-Instruct-2512",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 0.09,
+              "temperature_overridden": true,
+              "samples_parsed": 7789,
+              "samples_total": 8000,
+              "kappa_sample0": 0.16663420329261497,
+              "n_parsed_sample0": 487,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.22480001146566728,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "above",
+              "kappa_reported": 0.1473568571674173,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1531671412150322,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.22476269340408556,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.05816580817305231,
+              "mean16_minus_sample0_ci": [
+                0.04816193839606121,
+                0.06924717054170007
+              ],
+              "mean16_minus_reported": 0.07744315429824997,
+              "mean16_minus_reported_ci": [
+                0.06404195918854265,
+                0.09096901153325226
+              ],
+              "pyes_minus_mean16": -3.731806158172035e-05,
+              "pyes_minus_mean16_ci": [
+                -0.013099004408701275,
+                0.012762873325400237
+              ],
+              "pyes_minus_reported": 0.07740583623666825,
+              "pyes_minus_reported_ci": [
+                0.06220535674457637,
+                0.09057070707040833
+              ],
+              "mean16_minus_ours": 0.07163287025063508,
+              "mean16_minus_ours_ci": [
+                0.0609735066278758,
+                0.08236318484574306
+              ]
+            },
+            {
+              "model": "Qwen2.5-VL-3B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1e-06,
+              "temperature_overridden": true,
+              "samples_parsed": 7817,
+              "samples_total": 8000,
+              "kappa_sample0": 0.026142330844508687,
+              "n_parsed_sample0": 492,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.08737183818014942,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.05522638944790721,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.03257447080495028,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.22980318812421435,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.061229507335640726,
+              "mean16_minus_sample0_ci": [
+                0.0464950841817298,
+                0.07403294498499206
+              ],
+              "mean16_minus_reported": 0.032145448732242204,
+              "mean16_minus_reported_ci": [
+                0.016351528344423816,
+                0.04649566893111146
+              ],
+              "pyes_minus_mean16": 0.14243134994406492,
+              "pyes_minus_mean16_ci": [
+                0.12616531146607232,
+                0.15828860470295056
+              ],
+              "pyes_minus_reported": 0.17457679867630715,
+              "pyes_minus_reported_ci": [
+                0.15390750345337117,
+                0.18950772458478507
+              ],
+              "mean16_minus_ours": 0.054797367375199135,
+              "mean16_minus_ours_ci": [
+                0.039004145953573474,
+                0.06932527855262738
+              ]
+            },
+            {
+              "model": "Qwen3-VL-8B-Instruct",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.14047285755131028,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.17904020679609453,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "below",
+              "kappa_reported": 0.19631683561022512,
+              "n_parsed_reported": 467,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "indistinguishable",
+              "kappa_ours": 0.15006496542187747,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.25565147973581304,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.03856734924478425,
+              "mean16_minus_sample0_ci": [
+                0.027076305070111596,
+                0.049800714396615584
+              ],
+              "mean16_minus_reported": -0.017276628814130585,
+              "mean16_minus_reported_ci": [
+                -0.035907656557677435,
+                -0.0004767633170834614
+              ],
+              "pyes_minus_mean16": 0.0766112729397185,
+              "pyes_minus_mean16_ci": [
+                0.06271159801137291,
+                0.09141259883190007
+              ],
+              "pyes_minus_reported": 0.05933464412558792,
+              "pyes_minus_reported_ci": [
+                0.044035998530835486,
+                0.07367400192352515
+              ],
+              "mean16_minus_ours": 0.02897524137421706,
+              "mean16_minus_ours_ci": [
+                0.01665518754631482,
+                0.037687749895336735
+              ]
+            },
+            {
+              "model": "Qwen3.5-9B",
+              "reported_arm": "paper_once",
+              "temperature": 0.7,
+              "card_temperature": 0.7,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.1458488792870585,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.22384083178480957,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.1583363880045785,
+              "n_parsed_reported": 499,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.165324109239793,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.27052971686449245,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.07799195249775107,
+              "mean16_minus_sample0_ci": [
+                0.062094382053614436,
+                0.09104447824006841
+              ],
+              "mean16_minus_reported": 0.06550444378023107,
+              "mean16_minus_reported_ci": [
+                0.04783384482898521,
+                0.08261149738882434
+              ],
+              "pyes_minus_mean16": 0.046688885079682885,
+              "pyes_minus_mean16_ci": [
+                0.036712610967984886,
+                0.061404622692872515
+              ],
+              "pyes_minus_reported": 0.11219332885991395,
+              "pyes_minus_reported_ci": [
+                0.09206809690110881,
+                0.13169298506143953
+              ],
+              "mean16_minus_ours": 0.05851672254501658,
+              "mean16_minus_ours_ci": [
+                0.043828763237683914,
+                0.07199756745744294
+              ]
+            },
+            {
+              "model": "gemma-3-12b-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.16425201795429592,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.20145403022839292,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.11311633512525751,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1575651067057249,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.2427209713337924,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.037202012274097,
+              "mean16_minus_sample0_ci": [
+                0.03057022733952516,
+                0.044201497264625765
+              ],
+              "mean16_minus_reported": 0.08833769510313541,
+              "mean16_minus_reported_ci": [
+                0.07487909556719519,
+                0.10049460797658802
+              ],
+              "pyes_minus_mean16": 0.04126694110539947,
+              "pyes_minus_mean16_ci": [
+                0.025219941027506475,
+                0.05497579934173261
+              ],
+              "pyes_minus_reported": 0.12960463620853488,
+              "pyes_minus_reported_ci": [
+                0.1097485841473029,
+                0.14448635133875126
+              ],
+              "mean16_minus_ours": 0.043888923522668016,
+              "mean16_minus_ours_ci": [
+                0.03396036942145528,
+                0.05617389177098326
+              ]
+            },
+            {
+              "model": "gemma-3-4b-it",
+              "reported_arm": "ours",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.1625714439143689,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.19954958692095545,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": false,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.15329705572742994,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.15329705572742994,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.23437231480269616,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.036978143006586556,
+              "mean16_minus_sample0_ci": [
+                0.030496731239492616,
+                0.04406419910943601
+              ],
+              "mean16_minus_reported": 0.046252531193525515,
+              "mean16_minus_reported_ci": [
+                0.03590587608617571,
+                0.05530860163097593
+              ],
+              "pyes_minus_mean16": 0.034822727881740706,
+              "pyes_minus_mean16_ci": [
+                0.022003720458420955,
+                0.04749488494384659
+              ],
+              "pyes_minus_reported": 0.08107525907526622,
+              "pyes_minus_reported_ci": [
+                0.06860869767685718,
+                0.09287998907812163
+              ],
+              "mean16_minus_ours": 0.046252531193525515,
+              "mean16_minus_ours_ci": [
+                0.03590587608617571,
+                0.05530860163097593
+              ]
+            },
+            {
+              "model": "gemma-4-12B-it",
+              "reported_arm": "paper_once",
+              "temperature": 1.0,
+              "card_temperature": 1.0,
+              "temperature_overridden": false,
+              "samples_parsed": 8000,
+              "samples_total": 8000,
+              "kappa_sample0": 0.181026525628053,
+              "n_parsed_sample0": 500,
+              "sample0_above_anchor_point": false,
+              "sample0_vs_anchor": "below",
+              "kappa_mean16": 0.21162262834956347,
+              "n_parsed_mean16": 500,
+              "mean16_above_anchor_point": true,
+              "mean16_vs_anchor": "indistinguishable",
+              "kappa_reported": 0.18571873522692783,
+              "n_parsed_reported": 500,
+              "reported_above_anchor_point": false,
+              "reported_vs_anchor": "below",
+              "kappa_ours": 0.1826500966521777,
+              "n_parsed_ours": 500,
+              "ours_above_anchor_point": false,
+              "ours_vs_anchor": "below",
+              "kappa_pyes": 0.2503060377666503,
+              "n_parsed_pyes": 500,
+              "pyes_above_anchor_point": true,
+              "pyes_vs_anchor": "above",
+              "mean16_minus_sample0": 0.030596102721510476,
+              "mean16_minus_sample0_ci": [
+                0.02324375398828303,
+                0.038922071734388226
+              ],
+              "mean16_minus_reported": 0.025903893122635635,
+              "mean16_minus_reported_ci": [
+                0.01358326681521735,
+                0.03924573076287642
+              ],
+              "pyes_minus_mean16": 0.03868340941708681,
+              "pyes_minus_mean16_ci": [
+                0.02436257881140172,
+                0.051815681279333066
+              ],
+              "pyes_minus_reported": 0.06458730253972245,
+              "pyes_minus_reported_ci": [
+                0.051366289509784016,
+                0.07729900209661325
+              ],
+              "mean16_minus_ours": 0.028972531697385756,
+              "mean16_minus_ours_ci": [
+                0.020923401425155416,
+                0.03652206649463994
+              ]
+            }
+          ],
+          "fleet": {
+            "n_models": 11,
+            "kappa_sample0": 0.13204573776322398,
+            "sample0_above_anchor_point": 0,
+            "sample0_above_anchor_ci": 0,
+            "sample0_below_anchor_ci": 11,
+            "kappa_mean16": 0.18055992840108817,
+            "mean16_above_anchor_point": 3,
+            "mean16_above_anchor_ci": 1,
+            "mean16_below_anchor_ci": 6,
+            "kappa_reported": 0.13933392367075725,
+            "reported_above_anchor_point": 0,
+            "reported_above_anchor_ci": 0,
+            "reported_below_anchor_ci": 10,
+            "kappa_ours": 0.1340172968615708,
+            "ours_above_anchor_point": 0,
+            "ours_above_anchor_ci": 0,
+            "ours_below_anchor_ci": 11,
+            "kappa_pyes": 0.2545929616002415,
+            "pyes_above_anchor_point": 11,
+            "pyes_above_anchor_ci": 11,
+            "pyes_below_anchor_ci": 0,
+            "mean16_minus_sample0": 0.0485141906378642,
+            "mean16_minus_sample0_ci": [
+              0.04412176837034336,
+              0.0518503421432777
+            ],
+            "mean16_minus_sample0_sig_pos": 11,
+            "mean16_minus_sample0_sig_neg": 0,
+            "mean16_minus_reported": 0.041226004730330924,
+            "mean16_minus_reported_ci": [
+              0.03461410285886308,
+              0.04678612605450354
+            ],
+            "mean16_minus_reported_sig_pos": 9,
+            "mean16_minus_reported_sig_neg": 1,
+            "pyes_minus_mean16": 0.07403303319915332,
+            "pyes_minus_mean16_ci": [
+              0.06530978301675697,
+              0.08112801842577322
+            ],
+            "pyes_minus_mean16_sig_pos": 10,
+            "pyes_minus_mean16_sig_neg": 0,
+            "pyes_minus_reported": 0.11525903792948423,
+            "pyes_minus_reported_ci": [
+              0.1035128184982709,
+              0.12416339267199909
+            ],
+            "pyes_minus_reported_sig_pos": 11,
+            "pyes_minus_reported_sig_neg": 0,
+            "mean16_minus_ours": 0.046542631539517404,
+            "mean16_minus_ours_ci": [
+              0.041794147384172295,
+              0.050319846432650576
+            ],
+            "mean16_minus_ours_sig_pos": 11,
+            "mean16_minus_ours_sig_neg": 0
+          }
+        }
+      }
+    }
+  },
+  "arms": {
+    "sample0": "first of the K samples (ours prompt, multi-run decoder)",
+    "mean16": "mean of the parsed samples, K=16",
+    "reported": "the paper's reported text condition (results_e0) on these images",
+    "ours": "results_e0 `ours` on these images",
+    "pyes": "verification P(yes) on these images"
+  },
+  "provenance": {
+    "primary": "heldout",
+    "estimators": [
+      "heldout",
+      "oracle"
+    ],
+    "B": 500,
+    "seed": 0,
+    "S": 20,
+    "split_seed": 3407,
+    "category_set": "reliable_5",
+    "tie_rule": "fractional",
+    "target": "rater_pooled",
+    "code_sha": "2ebf1ea302ccd8b5",
+    "code_files": [
+      "scoring.py",
+      "controls_common.py",
+      "e0_report.py",
+      "e1_report.py",
+      "verify_bootstrap_ci.py",
+      "reliability_vs_performance.py"
+    ],
+    "script": "multi_sample_control.py",
+    "sources": {
+      "results_e0": "a1f7b0466c74987d",
+      "results_verify_prefill": "333dc0120441f863",
+      "data/hq.csv": "662711e53a8eb7b8",
+      "results_e0_multi": "6c529c31af77ddc7",
+      "data/hq_image_index_map.json": "fcb1f1676b063866"
+    },
+    "subset_n": 500,
+    "subset_seed": 3407
+  }
+}
